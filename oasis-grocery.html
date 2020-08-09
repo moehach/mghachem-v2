@@ -1,0 +1,1981 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Moe Hachem - Oasis Grocery E-Commerce User Experience Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="User experience, user experience design, user experience designer, ux, ux design, ux designer, design, lebanese designer, experience design, xd,UI/UX Designer Lebanon, UI/UX Designer, UI/UX Design Lebanon, UX/UI Designer Lebanon, UX/UI Design Lebanon, UX/UI Designer, UX/UI Designer Lebanon, User Interface Designer, UX Designer Lebanon, UX Design Lebanon, UI Design Lebanon, User Experience Designer Lebanon, User Interface Designer Lebanon, Graphic Design, Graphic Designer Lebanon, Design Services Lebanon, Lebanese Designer, Lebanese Graphic Designer, Logo Design Lebanon, Digital Designer, Digital Designer Lebanon, Visual Designer, Visual Design Lebanon, Branding Design Lebanon, Branding Design, Branding Designer Lebanon, Experience Designer, Multidiscplinary Designer, Multidiscplinary Designer Lebanon, Multidiscplinary Design, Mohamad Hachem Design, Mohamad Hachem, Mohamad Hachem Lebanon, M.G. Hachem Lebanon, M.G Hachem">
+  <meta name="description" content="A design proposal that looks at improving the user experience and user interface (UX/UI) of a pet shelter's online presence, and encourage people to choose pet adoption over simply going to a pet store and buying a pet.">
+  <meta name="author" content="Mohamad Hachem">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+  <link href="simple-grid.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  </script>
+</head>
+
+
+
+<body>
+  <nav role="navigation" class="navbar">
+    <a class="logotype" href="home.html">
+      m.g. hachem
+    </a>
+    <div class="menuToggle">
+      <input class="burger-box" aria-label="Menu" type="checkbox"/>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="nav-menu">
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="work.html">Work</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <main>
+
+    <section class="container-fluid work-hero background">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="project-lead">Oasis</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row section-gap">
+        <div class="col-12">
+          <h2>Preface</h2>
+          <p>
+            The e-commerce wave is on the rise. Online grocery shopping is one
+            of the fastest-growing niches within e-commerce. The Lebanese market
+            is no different, and the growth of this niche was accelerated after
+            the COVID pandemic landed in Lebanon.  Oasis is a grocery delivery
+            scheduled to launch in Lebanon.
+          </p>
+          <p>
+            My role in this project is one that encompasses: product design,
+            product management, user experience design, and customer experience
+            design. As the design lead, or well the only designer on this
+            project, the goals were simple: To create an app that will place the
+            user right in the centre of the business model.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Ideation-->
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Due Diligence</h2>
+        </div>
+      </div>
+
+      <!--Market Research-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h-3">Market Research</h3>
+          <p>
+            While it's tempting to jump straight into the design process, we
+            need to make sure we gather the data we need for a
+            data-informed/driven design process. I can't share the full market
+            research finding, but I can share a summary:
+          </p>
+          <ol>
+            <li>The market is young and fast-growing.</li>
+            <li>COVID has accelerated market-growth.</li>
+            <li>
+              Most apps in the market fall into one of the following categories:
+              <ul>
+                <li>Dedicated online grocers.</li>
+                <li>Extensions of supermarket chains.</li>
+                <li>Apps that allow different sellers to operate under their name.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!--Competitive Analysis-->
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Competitive Analysis</h3>
+          <p>
+            The following are the common issues found between the apps that
+            currently exist in the market:
+          </p>
+          <ol>
+            <li>Most applications fail WCAG (Web Content Accessibility Guidelines) requirements.</li>
+            <li>Most applications have not applied basic best practices.</li>
+            <li>The apps only cover specific areas but not the entire country.</li>
+            <li>OTP verification is widely adopted to ease the registration process.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!--Noknok-->
+      <div class="row">
+        <div class="col-12">
+          <p>
+            I've shared a small snippet of the case study conducted on several
+            existing applications in the market. The example I'm sharing looks
+            at Noknok, one of the more successful players in the Lebanese
+            market.
+          </p>
+        </div>
+      </div>
+      <!--Noknok Image 1-->
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img1"  id="portfolio_item">
+              <img class="img-fluid img-cover" src="assets\oasis\noknok-01.png" title="Registration Process" alt="Registration process eye flow diagram demonstrating how users can sign up using the Noknok application"/>
+            </a>
+            <figcaption class="img-caption"> Registration Process </figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img1">
+            <img src="assets\oasis\noknok-01.png" title="Registration Process" alt="Registration process eye flow diagram demonstrating how users can sign up using the Noknok application"/>
+          </a>
+
+
+        </div>
+      </div>
+
+      <!--Noknok Image 2-->
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img2"  id="portfolio_item">
+              <img class="img-fluid img-cover" src="assets\oasis\noknok-02.png" title="Add Address Process" alt="Add address process eye flow diagram demonstrating how users are instantly asked to add their address as soon as they interact with the application"/>
+            </a>
+            <figcaption class="img-caption">Add Address Prompt</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img2">
+            <img src="assets\oasis\noknok-02.png" title="Add Address Process" alt="Add address process eye flow diagram demonstrating how users are instantly asked to add their address as soon as they interact with the application"/>
+          </a>
+        </div>
+      </div>
+
+      <!--Noknok Image 3-->
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img3"  id="portfolio_item">
+              <img class="img-fluid img-cover" src="assets\oasis\noknok-03.png" title="Shopping and Search Process" alt="Eye flow diagram showing how users can navigate and shop within the application"/>
+            </a>
+            <figcaption class="img-caption">Shopping Experience Flow</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img3">
+            <img src="assets\oasis\noknok-03.png" title="Shopping and Search Process" alt="Eye flow diagram showing how users can navigate and shop within the application"/>
+          </a>
+
+
+        </div>
+      </div>
+
+      <!--Noknok Image 4-->
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img4"  id="portfolio_item">
+              <img class="img-fluid img-cover" src="assets\oasis\noknok-04.png" title="Checkout Process" alt="Eye flow diagram of the add-to-cart and checkout process to confirm an order in the app being studied"/>
+            </a>
+            <figcaption class="img-caption">Checkout Flow</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img4">
+            <img src="assets\oasis\noknok-04.png"  title="Checkout Process" alt="Eye flow diagram of the add-to-cart and checkout process to confirm an order in the app being studied"/>
+          </a>
+
+
+        </div>
+      </div>
+
+      <!--Noknok Conclusion-->
+      <div class="row">
+        <div class="col-12">
+          <h4 class="h5-size project-h">Application Pain Points</h4>
+          <p>
+            The checkout process is simple and straight forward, but there are
+            quite a few awkward moments. Below is a basic list of pain-points
+            the Noknok application has the is detrimental to the user
+            experience:
+          </p>
+          <ol>
+            <li>
+              Button colours are not optimised to meet accessibility requirements
+              <ol>
+                <li>
+                  Contrast ratio of 1.78 at worst and 2.77 at best failing to
+                  meet at least the AA requirements
+                </li>
+              </ol>
+            </li>
+            <li>
+              The target hit area is small.
+              <ul>
+                <li>
+                  The Add (Añadir) button measures roughly 24px in height, if
+                  you aren't careful you'll end up opening the product detail
+                  page
+                </li>
+              </ul>
+            </li>
+            <li>
+              There are two different "Add Item" patterns which might cause a
+              temporary bit of confusion for users.
+            </li>
+            <li>
+              The "Recommended Items" section in the cart page is awkwardly
+              placed.
+              <ul>
+                <li>
+                  Noknok did address the "Recommended Items" section in a later
+                  update but ruined it by naming it "Impulse Buy".
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!--Problem Statement-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Defining the Problems</h3>
+          <p>
+            We now have data backed by market data and an in-depth analysis of
+            our main competitor. It's time to identify the problems we hope to
+            address with this application.
+          </p>
+          <p>
+            Based on the 5 Whys Principles established in the IBM Enterprise
+            Design Thinking process:
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!--Statement 1-->
+        <div class="col-6">
+          <h4 class="project-h h5-size">Initial Statement 1</h4>
+          <p>
+            We need to reduce the time spent by users shopping for groceries.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            People have less spare time during their day to devote to shopping.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            Modern life and careers have become to difficult to balance with one another.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            We have 16 waking hours per day of which we: spend 9 hours at work,
+            2 hours in commute, and only 5 hours worth of personal time. Weekly
+            this would mean we only have 35 hours worth of free time, and we
+            would have to sacrifice our free time to go grocery shopping.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            The average consumer goes shopping an average of 1.7 times for
+            approximately 5 hours a week.
+          </p>
+        </div>
+
+        <!--Statement 2-->
+        <div class="col-6">
+          <h4 class="project-h h5-size">Initial Statement 2</h4>
+          <p>
+            Most people would prefer to go grocery shopping at their local
+            markets.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            People find it hard to trust applications and strangers to purchase
+            their produce.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            People like to touch their products and interact with it to judge if
+            they're adequate or not, even if they don't know what they're doing.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            Food is a very personal experience, and people like to believe they
+            have control over what they're consuming.
+          </p>
+          <strong>Why?</strong>
+          <p>
+            People are fearful of consuming products that might be potentially
+            harmful due to a lack of quality control.
+          </p>
+        </div>
+      </div>
+
+      <!--Final Statements-->
+      <div class="row">
+        <div class="col-6">
+          <h5>Final Statement 1</h5>
+          <p>
+            People have to spend 15% of their free time to shop for groceries
+            when they could use that time to do the things they want.
+          </p>
+        </div>
+        <div class="col-6">
+          <h5>Final Statement 2</h5>
+          <p>
+            People care for their well-being even and need to feel in control
+            over the choices they make for their health.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Meet the Personas-->
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="project-h">The User</h2>
+          <p>
+            We've identified the problems that we're going to take on, and
+            we've conducted our research. After combining market research and
+            going through a series of qualitative and quantitative surveys,
+            we've identified our primary user groups.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row persona-display">
+        <!--Meet Marwa-->
+        <div class="persona-card">
+          <!--PErsona Iamge-->
+          <div class="persona-img">
+            <div class="persona-img">
+              <a href="#img5"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\marwa-persona-freepik.jpg" title="Marwa Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img5">
+                <img src="assets\oasis\marwa-persona-freepik.jpg"  title="Marwa Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+            </div>
+          </div>
+          <!--Persona Overview-->
+          <div class="persona-overview">
+            <div class="persona-life">
+              <ul class="no-format-list">
+                <li><i class="iconpad small material-icons">person</i>48 Years Old</li>
+                <li><i class="iconpad small material-icons">school</i>Lebanese University</li>
+                <li><i class="iconpad small material-icons">business_center</i>Secretary</li>
+                <li><i class="iconpad mall material-icons">account_balance_wallet</i>$2,100/mo</li>
+                <li><i class="iconpad small material-icons">location_on</i>Beirut, Lebanon</li>
+                <li><i class="iconpad small material-icons">home</i>Lives with Family</li>
+              </ul>
+            </div>
+            <div class="persona-personality">
+              <h3 class="h6-size project-h-3">Personality</h3>
+              <ul class="no-format-list">
+                <li>Healthy</li>
+                <li>Extrovert</li>
+                <li>Friendly</li>
+                <li>Frugal</li>
+                <li>Homebody</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Persona Description-->
+          <div class="persona-description">
+            <h3 class="h6-size project-h-3">About Marwa</h3>
+            <p>
+              Marwa is a mother of three. She cooks healthy food and is frugal
+              due to her limited income. Marwa goes shopping once a week and
+              doesn't carry a shopping list. She prefers to purchase meat and
+              produce from local sources because she perceives them as being
+              fresher.
+            </p>
+
+            <h3 class="h6-size project-h-3">Economic Crisis Behaviour</h3>
+            <p>
+              Marwa has become very economical ever since the financial crisis
+              in Lebanon and will typically look for the cheapest product
+              without compromising on quality.
+            </p>
+
+
+            <h3 class="h6-size project-h-3">Needs</h3>
+            <ol>
+              <li>Prompt delivery.</li>
+              <li>Use time efficiently.</li>
+              <li>Easy to use interface.</li>
+              <li>Cash on delivery.</li>
+              <li>High quality produce.</li>
+            </ol>
+            <h3 class="h6-size project-h-3">Frustrations</h3>
+            <ol>
+              <li>Doesn't always have car access.</li>
+              <li>Not tech-savvy.</li>
+              <li>Doesn't trust card payments.</li>
+              <li>Financial concerns.</li>
+            </ol>
+
+            <h3 class="h4-size">Empathy Map</h3>
+
+            <a href="#img6"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\mawra-em.jpg" title="UX User Empathy Map for Marwa" alt="UX User Empathy Map for the Persona Marwa"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img6">
+              <img src="assets\oasis\mawra-em.jpg" title="UX User Empathy Map for Marwa" alt="UX User Empathy Map for the Persona Marwa"/>
+            </a>
+
+            <!--User Journey-->
+            <h3 class="h4-size">User Journey</h3>
+
+            <a href="#img7"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\marwa-uj.jpg" title="UX User Empathy Map for Marwa" alt="UX User Journey Map for the Persona Marwa"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img7">
+              <img src="assets\oasis\marwa-uj.jpg" title="UX User Empathy Map for Marwa" alt="UX User Journey Map for the Persona Marwa"/>
+            </a>
+
+
+          </div>
+        </div>
+
+
+        <!--Meet Sahaar-->
+        <div class="persona-card">
+          <!--PErsona Iamge-->
+          <div class="persona-img">
+            <div class="persona-img">
+              <a href="#img8"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\Sahar-Semaan-Meghan-Holmes-Unsplash.jpg" title="Sahaar Persona Photo" alt="Photoshoped stock image originally from Meghan Holmes from Unsplash"/>
+              </a>
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img8">
+                <img src="assets\oasis\Sahar-Semaan-Meghan-Holmes-Unsplash.jpg"  title="Sahaar Persona Photo" alt="Photoshoped stock image originally from Meghan Holmes from Unsplash"/>
+              </a>
+            </div>
+          </div>
+          <!--Persona Overview-->
+          <div class="persona-overview">
+            <div class="persona-life">
+              <ul class="no-format-list">
+                <li><i class="iconpad small material-icons">person</i>51 Years Old</li>
+                <li><i class="iconpad small material-icons">school</i>Public School</li>
+                <li><i class="iconpad small material-icons">business_center</i>Housewife</li>
+                <li><i class="iconpad mall material-icons">account_balance_wallet</i>$6,000+/mo</li>
+                <li><i class="iconpad small material-icons">location_on</i>Beirut, Lebanon</li>
+                <li><i class="iconpad small material-icons">home</i>Lives with Family</li>
+              </ul>
+            </div>
+            <div class="persona-personality">
+              <h3 class="h6-size project-h-3">Personality</h3>
+              <ul class="no-format-list">
+                <li>Extrovert</li>
+                <li>Homebody</li>
+                <li>Haughty</li>
+                <li>Healthy</li>
+                <li>Friendly</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Persona Description-->
+          <div class="persona-description">
+            <h3 class="h6-size project-h-3">About Sahar</h3>
+            <p>
+              Sahar is a mother of four and lives in a high-end
+              neighbourhood in Beirut. She only cooks healthy food
+              and does not allow junk or snack food in her house.
+              Sahar enjoys shopping and hunting for good deals and
+              bargains. She is prone to purchasing luxury goods for
+              bragging rights.
+            </p>
+
+            <h3 class="h6-size project-h-3">Economic Crisis Behaviour</h3>
+            <p>
+              Sahaar’s family has not been affected by the economic
+              crisis. In contrast to most families, her family's
+              spending power increased due to primarily earning
+              dollars.
+            </p>
+
+
+            <h3 class="h6-size project-h-3">Needs</h3>
+            <ol>
+              <li>Prompt delivery.</li>
+              <li>Product variety.</li>
+              <li>Special promotions and deals.</li>
+              <li>Health and nutritional information.</li>
+              <li>Refuse products at will.</li>
+            </ol>
+            <h3 class="h6-size project-h-3">Frustrations</h3>
+            <ol>
+              <li>Easily distracted.</li>
+              <li>Unsure if products will be fresh.</li>
+              <li>Not tech-savvy.</li>
+              <li>Will she find everything she wants?</li>
+            </ol>
+
+            <h3 class="h4-size">Empathy Map</h3>
+
+            <a href="#img9"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\sahaar-em.jpg" title="UX User Empathy Map for Sahaar" alt="UX User Empathy Map for the Persona Sahaar"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img9">
+              <img src="assets\oasis\sahaar-em.jpg" title="UX User Empathy Map for Sahaar" alt="UX User Empathy Map for the Persona Sahaar"/>
+            </a>
+
+            <!--User Journey-->
+            <h3 class="h4-size">User Journey</h3>
+
+            <a href="#img10"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\sahaar-uj.jpg" title="UX User Journey Map for Sahaar" alt="UX User Journey Map for the Persona Sahaar"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img10">
+              <img src="assets\oasis\sahaar-uj.jpg"  title="UX User Journey Map for Sahaar" alt="UX User Journey Map for the Persona Sahaar"/>
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row persona-display">
+        <!--Meet Wael-->
+        <div class="persona-card">
+          <!--PErsona Iamge-->
+          <div class="persona-img">
+            <div class="persona-img">
+              <a href="#img11"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\wael-persona-freepik.jpg" title="Wael Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img11">
+                <img src="assets\oasis\wael-persona-freepik.jpg" title="Wael Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+            </div>
+          </div>
+          <!--Persona Overview-->
+          <div class="persona-overview">
+            <div class="persona-life">
+              <ul class="no-format-list">
+                <li><i class="iconpad small material-icons">person</i>27 Years Old</li>
+                <li><i class="iconpad small material-icons">school</i>AUB</li>
+                <li><i class="iconpad small material-icons">business_center</i>Communications Engineer</li>
+                <li><i class="iconpad mall material-icons">account_balance_wallet</i>$1,800/mo</li>
+                <li><i class="iconpad small material-icons">location_on</i>Beirut, Lebanon</li>
+                <li><i class="iconpad small material-icons">home</i>Lives Alone</li>
+              </ul>
+            </div>
+            <div class="persona-personality">
+              <h3 class="h6-size project-h-3">Personality</h3>
+              <ul class="no-format-list">
+                <li>Introverted</li>
+                <li>Adventurous</li>
+                <li>Carefree</li>
+                <li>Extravagant</li>
+                <li>Workaholic</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Persona Description-->
+          <div class="persona-description">
+            <h3 class="h6-size project-h-3">About Wael</h3>
+            <p>
+              Wael is a single man, lives alone, and spends most of his time
+              at work. He enjoys trying new things, and cooking when
+              he has the time. He buys groceries at nearby markets
+              and isn't picky about produce since he doesn't know how to
+              judge produce quality. Wael is likely to shop over
+              his budget.
+            </p>
+
+            <h3 class="h6-size project-h-3">Economic Crisis Behaviour</h3>
+            <p>
+              Wael's spending power took a hit after the economy started
+              to tank. Before the crisis, his monthly salary was worth
+              $1,800 but is now the equivalent to $340. Wael is
+              looking for a way to be more conscious over his spending
+              habits.
+            </p>
+
+
+            <h3 class="h6-size project-h-3">Needs</h3>
+            <ol>
+              <li>Track expenses.</li>
+              <li>Cheap prices.</li>
+              <li>Ready-made meals.</li>
+              <li>Prompt delivery.</li>
+              <li>Support local products.</li>
+            </ol>
+            <h3 class="h6-size project-h-3">Frustrations</h3>
+            <ol>
+              <li>Can't afford previous lifestyle.</li>
+              <li>Limited budget.</li>
+              <li>Not always available to receive order.</li>
+              <li>Does not know what he needs.</li>
+            </ol>
+
+            <h3 class="h4-size">Empathy Map</h3>
+
+            <a href="#img12"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\wael-em.jpg" title="UX User Empathy Map for Wael" alt="UX User Empathy Map for the Persona Wael"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img12">
+              <img src="assets\oasis\wael-em.jpg" title="UX User Empathy Map for Wael" alt="UX User Empathy Map for the Persona Wael"/>
+            </a>
+
+            <!--User Journey-->
+            <h3 class="h4-size">User Journey</h3>
+
+            <a href="#img13"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\wael-uj.jpg" title="UX User Journey Map for Wael" alt="UX User Empathy Map for the Persona Wael"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img13">
+              <img src="assets\oasis\wael-uj.jpg"  title="UX User Journey Map for Wael" alt="UX User Empathy Map for the Persona Wael"/>
+            </a>
+
+
+
+          </div>
+        </div>
+
+
+        <!--Meet Daniella-->
+        <div class="persona-card">
+          <!--PErsona Iamge-->
+          <div class="persona-img">
+            <div class="persona-img">
+              <a href="#img14"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\daniella-persona-freepik.jpg" title="Daniella Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img14">
+                <img src="assets\oasis\daniella-persona-freepik.jpg" title="Daniella Persona Photo" alt="Stock image originally from FreePik"/>
+              </a>
+            </div>
+          </div>
+          <!--Persona Overview-->
+          <div class="persona-overview">
+            <div class="persona-life">
+              <ul class="no-format-list">
+                <li><i class="iconpad small material-icons">person</i>33 Years Old</li>
+                <li><i class="iconpad small material-icons">school</i>ALBA</li>
+                <li><i class="iconpad small material-icons">business_center</i>Entrepreneur</li>
+                <li><i class="iconpad mall material-icons">account_balance_wallet</i>$1,500+/mo</li>
+                <li><i class="iconpad small material-icons">location_on</i>Beirut, Lebanon</li>
+                <li><i class="iconpad small material-icons">home</i>Lives with Spouse</li>
+              </ul>
+            </div>
+            <div class="persona-personality">
+              <h3 class="h6-size project-h-3">Personality</h3>
+              <ul class="no-format-list">
+                <li>Extrovert</li>
+                <li>Ambitious</li>
+                <li>Tech-savvy</li>
+                <li>Pragmatic</li>
+                <li>Diligent</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Persona Description-->
+          <div class="persona-description">
+            <h3 class="h6-size project-h-3">About Daniella</h3>
+            <p>
+              Daniella owns an up and coming restaurant. She's a
+              tech-savvy entrepreneur that is looking for different ways
+              to grow her business. Daniella has a contract with a local
+              company that supplies her with produce and ingredients. She
+              would prefer to automate the ordering process.
+            </p>
+
+            <h3 class="h6-size project-h-3">Economic Crisis Behaviour</h3>
+            <p>
+              Daniella has been looking for ways to incorporate more
+              local goods to her business, in hopes of savings costs,
+              and acquiring more local support for her restaurant. She
+              is at risk of closing down if prices continue to
+              sky-rocket.
+            </p>
+
+
+            <h3 class="h6-size project-h-3">Needs</h3>
+            <ol>
+              <li>Scheduled delivery.</li>
+              <li>Bulk delivery.</li>
+              <li>Monthly payment.</li>
+              <li>Quality assurance.</li>
+              <li>Prompt delivery.</li>
+            </ol>
+            <h3 class="h6-size project-h-3">Frustrations</h3>
+            <ol>
+              <li>Needs to cut costs.</li>
+              <li>Can't afford late deliveries.</li>
+              <li>Will products be high quality?</li>
+              <li>What if order items are missing?</li>
+            </ol>
+
+            <h3 class="h4-size">Empathy Map</h3>
+
+            <a href="#img15"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\daniella-em.jpg" title="UX User Empathy Map for Daniella" alt="UX User Empathy Map for the Persona Daniella"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img15">
+              <img src="assets\oasis\daniella-em.jpg" title="UX User Empathy Map for Daniella" alt="UX User Empathy Map for the Persona Daniella"/>
+            </a>
+
+            <!--User Journey-->
+            <h3 class="h4-size">User Journey</h3>
+
+            <a href="#img16"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\daniella-uj.jpg" title="UX User Journey Map for Daniella" alt="UX User Journey Map for the Persona Daniella"/>
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img16">
+              <img src="assets\oasis\daniella-uj.jpg" title="UX User Journey Map for Daniella" alt="UX User Journey Map for the Persona Daniella"/>
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--MVP-->
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="project-h">Minimal Viable Product</h2>
+          <p>
+            We have a clear picture of who our primary users are, and it's now time
+            to understand what features we will need to create a minimum viable
+            product. For this specific project, I used the "MoSCoW" method to create
+            a clearer image of the MVP.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h3 class="project-h h5-size">Must-Have</h3>
+          <p>
+            The features listed under "Must Haves" are required or else the project
+            is going to fail. The presence of these features is non-negotiable.
+          </p>
+          <ul>
+            <li>Home Delivery</li>
+            <li>Item Description</li>
+            <li>Offers and Deals</li>
+            <li>Order History</li>
+            <li>Cash on delivery</li>
+            <li>Product Search</li>
+          </ul>
+        </div>
+
+        <div class="col-6">
+          <h3 class="project-h h5-size">Should-Have</h3>
+          <p>
+            The features listed under "Must Haves" are required or else the project
+            is going to fail. The presence of these features is non-negotiable.
+          </p>
+          <ul>
+            <li>One-Hour Delivery Time</li>
+            <li>Order Cancellation</li>
+            <li>Online payment</li>
+            <li>Recommended Products</li>
+            <li>Set Up Delivery Time</li>
+            <li>Order Tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h3 class="project-h h5-size">Could-Have</h3>
+          <p>
+            "Could Haves" are desirable features that aren't crucial for the
+            product launch. These can be removed from the project scope if
+            the time frame is limited for the current build.
+          </p>
+          <ul>
+            <li>Loyalty Points</li>
+            <li>Item Detail</li>
+            <li>Clarification</li>
+            <li>Nutrition Details</li>
+            <li>Card Machine on Delivery</li>
+            <li>Product Search by Barcode</li>
+            <li>Recurring Orders</li>
+            <li>Referral Points</li>
+          </ul>
+        </div>
+
+        <div class="col-6">
+          <h3 class="project-h h5-size">Won't-Have</h3>
+          <p>
+            "Won't Haves" are the least critical features at the current
+            time but may be considered for future releases.
+          </p>
+          <ul>
+            <li>Alternative payment methods - ApplePay or Cryptocurrency</li>
+            <li>Recipes</li>
+            <li>Recipe shopping lists</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--Design Process-->
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="project-h">The Design Process</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Establishing User Flow</h3>
+          <p>
+            We need to understand what the typical user flow would look
+            like, and optimise it to create a smooth user experience through
+            the checkout process.
+          </p>
+          <!--Image-->
+          <p>
+            It's important to note that customers that purchase meats and
+            produce will have the ability to reject orders and either
+            request a replacement or a refund. Giving customers the ability
+            to refuse orders will help generate trust and promote stricter
+            quality control on meats and produce.
+          </p>
+        </div>
+      </div>
+      <!--Establishing User Flow-->
+      <div class="row">
+        <div class="col-12">
+          <a href="#img17"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\user-flow-chart-01.png" title="UX User Flow Chart" alt="The typical User Flow Chart mapping the user's flow from start to end"/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img17">
+            <img src="assets\oasis\user-flow-chart-01.png" title="UX User Flow Chart" alt="The typical User Flow Chart mapping the user's flow from start to end"/>
+          </a>
+        </div>
+      </div>
+
+      <!--Wireframing-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Wireframes</h3>
+          <p>
+            I have a strict rule before I begin implementing any digital work:
+            Use my hands and sketch out the idea in mind. If the logic behind
+            the wireframes makes sense, I'll move on to digital media. If the
+            logic doesn't make any sense or is a bit rough, then it's back to
+            the drawing board. Of course, the design process never leaves pen
+            and paper as a medium up until the very end of the project. I find
+            it very crucial for designers to be comfortable to work with their
+            hands because each medium taps into a different mental framework
+            than the other. In a way, you could say all my works are a hybrid
+            made from a collaboration between the digital and the analogue.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img18"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\wireframe-1.jpg" title="UX Wireframe 1" alt="Initial UX wireframes ideating the concept design process of the app"/>
+          </a>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img18">
+            <img src="assets\oasis\wireframe-1.jpg" title="UX Wireframe 1" alt="Initial UX wireframes ideating the concept design process of the app"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img19"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\wireframe-2.jpg" title="UX Wireframe 2" alt="Initial UX wireframes experimenting with the navigation elements"/>
+          </a>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img19">
+            <img src="assets\oasis\wireframe-2.jpg" title="UX Wireframe 2" alt="Initial UX wireframes experimenting with the navigation elements"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img20"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\wireframe-3.jpg" title="UX Wireframe 3" alt="UX wireframes looking at the Product Detail page"/>
+          </a>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img20">
+            <img src="assets\oasis\wireframe-3.jpg" title="UX Wireframe 3" alt="UX wireframes looking at the Product Detail page"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img21"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\wireframe-4.jpg" title="UX Wireframes 4" alt="UX wireframes conceptualising the product listing pages"/>
+          </a>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img21">
+            <img src="assets\oasis\wireframe-4.jpg" title="UX Wireframes 4" alt="UX wireframes conceptualising the product listing pages"/>
+          </a>
+        </div>
+      </div>
+
+      <!--Typography-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Typography</h3>
+          <p>
+            The idea here is to use green, blue, and brown to bring in an
+            earthly and natural feel to the application. Our background
+            colour will always be set in white to promote a heightened sense
+            of hygiene and cleanliness. You can't see the butcher in action,
+            but you can at least get a sense of comfort when the app
+            presents itself hygienically.
+          </p>
+        </div>
+      </div>
+
+      <!--Headings-->
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img22"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\typography-1.png" title="Heading Typeface" alt="Heading typeface size guide using Comfortaa as a font"/>
+            </a>
+            <figcaption class="img-caption">Comfortaa is used as the heading typeface</figcaption>
+          </figure>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img22">
+            <img src="assets\oasis\typography-1.png" title="Heading Typeface" alt="Heading typeface size guide using Comfortaa as a font"/>
+          </a>
+        </div>
+      </div>
+
+      <!--Body Text-->
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <figure>
+            <a href="#img23"  id="portfolio_item">
+              <img class="img-fluid" src="assets\oasis\typography-2.png" title="Body Typeface" alt="Heading typeface size guide using Comfortaa as a font"/>
+            </a>
+            <figcaption class="img-caption">Nunito Sans is used as the body typeface</figcaption>
+          </figure>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img23">
+            <img src="assets\oasis\typography-2.png" title="Body Typeface" alt="Heading typeface size guide using Comfortaa as a font"/>
+          </a>
+        </div>
+      </div>
+
+
+      <!--Colours-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Colours</h3>
+          <p>
+            The idea here is to use green, blue, and brown to bring in an
+            earthly and natural feel to the application. Our background
+            colour will always be set in white to promote a heightened sense
+            of hygiene and cleanliness. You can't see the butcher in action,
+            but you can at least get a sense of comfort when the app
+            presents itself hygienically.
+          </p>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <a href="#img24"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\colour-1.png" title="Brandmark and Colour Guidelines" alt="The colour guidelines to be used in the branding for Oasis and it's application"/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img24">
+            <img src="assets\oasis\colour-1.png" title="Brandmark and Colour Guidelines" alt="The colour guidelines to be used in the branding for Oasis and it's application"/>
+          </a>
+        </div>
+      </div>
+
+
+      <!--Navigation - Tabs-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h">Navigation Elements</h3>
+          <h4 class="project-h-3 h5-size">Top Navigation</h4>
+        </div>
+      </div>
+
+      <!-- Top Nav 1-->
+      <div class="row">
+        <div class="col-12 img-margin-bottom">
+          <a href="#img25"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\top-nav-2.png"  title="Top Navigation Element 1" alt="The Top Navigation Element showing the status bar alone, and the delivery address"/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img25">
+            <img src="assets\oasis\top-nav-2.png"  title="Top Navigation Element 1" alt="The Top Navigation Element showing the status bar alone, and the delivery address"/>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Top Nav 2-->
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <a href="#img26"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\top-nav-1.png" title="Top Navigation Element 2" alt="The Top Navigation Element showing Left and Right side action prompts"/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img26">
+            <img src="assets\oasis\top-nav-1.png" title="Top Navigation Element 2" alt="The Top Navigation Element showing Left and Right side action prompts"/>
+          </a>
+        </div>
+      </div>
+
+      <!-- Top Nav 3-->
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <a href="#img27"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\top-nav-3.png" title="Top Navigation Element 3" alt="The Top Navigation Element showing an icon action prompt"/>
+          </a>/>
+        </a>
+
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img27">
+          <img src="assets\oasis\top-nav-3.png" title="Top Navigation Element 3" alt="The Top Navigation Element showing an icon action prompt"/>
+        </a>
+      </div>
+    </div>
+
+    <!--Navigation - Tabs-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h-3 h5-size">Bottom Navigation Tabs</h4>
+        <p>
+          I ended up going with tab navigation because I didn't want to
+          complicate the navigation process. I wanted you to be able to go
+          in and out without thinking about what you're doing, and for
+          most parts, there was no need to create deep navigation.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <a href="#img28"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\nav-tab.png" title="Bottom Navigation" alt="The Bottom Navigation or the Primary navigation showing the presence of the category menu, tab navigation elements, and the search bar navigation."/>
+        </a>
+
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img28">
+          <img src="assets\oasis\nav-tab.png" title="Bottom Navigation" alt="The Bottom Navigation or the Primary navigation showing the presence of the category menu, tab navigation elements, and the search bar navigation."/>
+        </a>
+      </div>
+    </div>
+
+    <!--Search Elements-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h h5-size">Search Bar</h4>
+        <p>
+          The star of the application isn't the tab navigation but the
+          search bar element. You can instantly reach the search bar and
+          use it to find the exact product you're looking for regardless
+          of what page you're on. The search bar also has a barcode search
+          function that allows users to search the product against our
+          database.
+        </p>
+        <p>
+          The barcode search will allow users to compare our prices
+          against another seller while in a supermarket. Our plan here is
+          quite simple: We want to be able to steal the lollipop right out
+          of the big chain supermarket's hand.
+        </p>
+        <p>
+          The search bar is placed at the bottom intentionally to keep it
+          within thumb's reach to encourage users to use the bar as the
+          primary navigation method.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="#img29"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\search-bar.png" title="Search Bar Element" alt="The search bar element that is to be used as the primary method to find products"/>
+        </a>
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img29">
+          <img src="assets\oasis\search-bar.png" title="Search Bar Element" alt="The search bar element that is to be used as the primary method to find products"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>
+          The barcode search will allow users to compare our prices
+          against another seller while in a supermarket. Our plan here is
+          quite simple: We want to be able to steal the lollipop right out
+          of the big chain supermarket's hand.
+        </p>
+      </div>
+    </div>
+
+    <!--Sizing-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h h5-size">Sizing</h4>
+        <p>
+          All interactive elements have a minimum dimension of 44 x 44
+          pixels to ensure they're incredibly easy to access and leave
+          no room for error because of small target hit areas.
+        </p>
+      </div>
+    </div>
+
+    <!--Architecture-->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="project-h">Architecture</h3>
+        <p>
+          You're never far from the options that matter. If you're
+          setting up the app, you can quickly go back to continue your
+          shopping experience and vice versa.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="#img30"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\app-architecture.png" title="App Architecture Map" alt="The Application Architecture Map, or the site map of the application showing the main navigation trees."/>
+        </a>
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img30">
+          <img src="assets\oasis\app-architecture.png" title="App Architecture Map" alt="The Application Architecture Map, or the site map of the application showing the main navigation trees."/>
+        </a>
+      </div>
+    </div>
+
+    <!--Libraries-->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="project-h">Libraries</h3>
+      </div>
+    </div>
+
+    <!--Button-->
+    <div class="row img-margin-bottom">
+      <div class="col-12">
+        <h4 class="project-h-3 h5-size">Button Library</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="#img31"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\buttons.png" title="Button Library" alt="The button library of the application showing the style guide for primary, secondary, and tertiary buttons"/>
+        </a>
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img31">
+          <img src="assets\oasis\buttons.png" title="Button Library" alt="The button library of the application showing the style guide for primary, secondary, and tertiary buttons"/>
+        </a>
+      </div>
+    </div>
+
+
+
+    <!--Icon-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h-3 h5-size">Icon Library</h4>
+      </div>
+    </div>
+    <div class="row img-margin-bottom">
+      <div class="col-12">
+        <a href="#img32"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\icons.png" title="Icon Library" alt="The icon library showing icons in their various interactive states"/>
+        </a>
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img32">
+          <img src="assets\oasis\icons.png" title="Icon Library" alt="The icon library showing icons in their various interactive states"/>
+        </a>
+      </div>
+    </div>
+
+    <!--Listing-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h-3 h5-size">Listed Product</h4>
+      </div>
+    </div>
+
+    <div class="row img-margin-bottom">
+      <div class="col-12">
+        <a href="#img33"  id="portfolio_item">
+          <img class="img-fluid" src="assets\oasis\listing.png" title="Product Listing Item" alt="The style guide of a listed item in the product listing page"/>
+        </a>
+
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img33">
+          <img src="assets\oasis\listing.png" title="Product Listing Item" alt="The style guide of a listed item in the product listing page"/>
+        </a>
+      </div>
+    </div>
+
+    <!--Product Recommendation-->
+    <div class="row">
+      <div class="col-12">
+        <h4 class="project-h-3 h5-size">Product Recommendations</h4>
+
+      </div>
+    </div>
+
+    <div class="row img-margin-bottom">
+      <div class="col-4">
+        <video class="img-fluid" loop autoplay><source src="assets\oasis\oasis-product-recommendations.mp4" type="video/mp4"  title="Product Recommendations"></video>
+        </div>
+
+        <div class="col-4">
+          <a href="#img34"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\product-rec-1.png" title="Product Recommendation 1" alt="The Product Recommendation component before being swiped."/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img34">
+            <img src="assets\oasis\product-rec-1.png" title="Product Recommendation 1" alt="The Product Recommendation component before being swiped."/>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="#img35"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\product-rec-2.png" title="Product Recommendation 2" alt="The Product Recommendation component after being swiped."/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img35">
+            <img src="assets\oasis\product-rec-2.png" title="Product Recommendation 2" alt="The Product Recommendation component after being swiped."/>
+          </a>
+        </div>
+      </div>
+
+      <!--Cart-->
+      <div class="row">
+        <div class="col-12">
+          <h4 class="project-h-3 h5-size">Cart Items</h4>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <a href="#img36"  id="portfolio_item">
+            <img class="img-fluid" src="assets\oasis\add-to-cart.png" title="Cart Items" alt="The Cart Item component in it's default state and edit mode."/>
+          </a>
+
+          <!-- lightbox container hidden with CSS -->
+          <a href="#_" class="lightbox" id="img36">
+            <img src="assets\oasis\add-to-cart.png" title="Cart Items" alt="The Cart Item component in it's default state and edit mode."/>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!--Screens-->
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Prototype</h2>
+        </div>
+      </div>
+
+
+      <!--Registration-->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h h5-size">Registration Process</h3>
+          <p>
+            The registration process gives users two different flows.
+            Users can either register through OTP or via social media.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Registration Video-->
+        <div class="col-4">
+          <video class="img-fluid" loop autoplay controls>
+            <source src="assets\oasis\oasis-sign-up-process.mp4" type="video/mp4"  title="Registration Process 1"></video>
+            </div>
+
+            <!--Registration 1-->
+            <div class="col-4">
+              <a href="#img37"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\screen-01.png" title="Registration Process 2" alt="Screenshot of the registration process prototype in the account creation page"/>
+              </a>
+
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img37">
+                <img src="assets\oasis\screen-01.png" title="Registration Process 2" alt="Screenshot of the registration process prototype in the account creation page"/>
+              </a>
+            </div>
+
+            <!--Registration 2-->
+            <div class="col-4">
+              <a href="#img38"  id="portfolio_item">
+                <img class="img-fluid" src="assets\oasis\screen-02.png" title="Registration Process 3" alt="Screenshot of the registration process prototype in the OTP verification page"/>
+              </a>
+
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img38">
+                <img src="assets\oasis\screen-02.png" title="Registration Process 3" alt="Screenshot of the registration process prototype in the OTP verification page"/>
+              </a>
+            </div>
+          </div>
+
+          <!--Homes Screen-->
+          <div class="row">
+            <div class="col-12">
+              <h3 class="project-h h5-size">Home</h3>
+              <p>
+                The Home screen serves as the central hub that allows users to
+                navigate through the app's features between the promotional
+                pages, categories, and any featured or new products.
+              </p>
+            </div>
+          </div>
+
+          <div class="row img-margin-bottom">
+            <!--Home Video-->
+            <div class="col-4">
+              <video class="img-fluid" loop autoplay controls><source src="assets\oasis\oasis-home.mp4" type="video/mp4"  title="Home and Promo Page"></video>
+              </div>
+
+              <!--Promo Landing-->
+              <div class="col-4">
+                <a href="#img40"  id="portfolio_item">
+                  <img class="img-fluid" src="assets\oasis\screen-03.png" title="Promotion Page" alt="Screenshot of the Promotion page prototype"/>
+                </a>
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img40">
+                  <img src="assets\oasis\screen-03.png"  title="Promotion Page" alt="Screenshot of the Promotion page prototype"/>
+                </a>
+              </div>
+
+              <!--Home Category-->
+              <div class="col-4">
+                <a href="#img39"  id="portfolio_item">
+                  <img class="img-fluid" src="assets\oasis\screen-04.png" title="Home Page" alt="Screenshot of the Home page prototype"/>
+                </a>
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img39">
+                  <img src="assets\oasis\screen-04.png" title="Home Page" alt="Screenshot of the Home page prototype"/>
+                </a>
+              </div>
+
+
+
+            </div>
+
+            <!--Recommended Product-->
+            <div class="row">
+              <div class="col-12">
+                <h3 class="project-h h5-size">Account Settings</h3>
+                <p>
+                  The account settings give users all the tools that they will
+                  need to fine-tune their shopping experience.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row img-margin-bottom">
+              <!--No Account-->
+              <div class="col-4">
+                <figure>
+                  <a href="#img41"  id="portfolio_item">
+                    <img class="img-fluid" src="assets\oasis\screen-05.png" title="Account Page - Sign Up Prompt" alt="Screenshot of the Account Page Sign Up Prompt prototype"/>
+                  </a>
+                  <figcaption class="img-caption">Account Page - User not registered</figcaption>
+                </figure>
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img41">
+                  <img src="assets\oasis\screen-05.png" title="Account Page - Sign Up Prompt" alt="Screenshot of the Account Page Sign Up Prompt prototype"/>
+                </a>
+              </div>
+
+              <!--Account Page-->
+              <div class="col-4">
+                <figure>
+                  <a href="#img42"  id="portfolio_item">
+                    <img class="img-fluid" src="assets\oasis\screen-06.png" title="Account Page 1" alt="Screenshot of the Account Page prototype"/>
+                  </a>
+                  <figcaption class="img-caption">Account Page - Signed In</figcaption>
+                </figure>
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img42">
+                  <img src="assets\oasis\screen-06.png" title="Account Page 1" alt="Screenshot of the Account Page prototype"/>
+                </a>
+              </div>
+
+              <!--Coupon Code-->
+              <div class="col-4">
+                <figure>
+                  <a href="#img43"  id="portfolio_item">
+                    <img class="img-fluid" src="assets\oasis\screen-07.png" title="Enter Coupon Code" alt="Screenshot of the Enter Coupon Code Prompt"/>
+                  </a>
+                  <figcaption class="img-caption">Enter Coupon Code</figcaption>
+                </figure>
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img43">
+                  <img src="assets\oasis\screen-07.png" title="Enter Coupon Code" alt="Screenshot of the Enter Coupon Code Prompt"/>
+                </a>
+              </div>
+            </div>
+
+
+
+            <!--Search Filter-->
+
+            <div class="row">
+              <div class="col-12">
+                <h3 class="project-h h5-size">Manage Address</h3>
+                <p>
+                  Adding an address is simple. Pin your location, and type down
+                  the fine details. Delivery drivers will be able to find
+                  customer locations through Google Maps, but will also be able
+                  to refer to written instructions to help them find the exact
+                  building. What we did here is crucial for countries like
+                  Lebanon, where there are no formal street addresses.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row img-margin-bottom">
+
+              <!--Address Video-->
+              <div class="col-4">
+                <video class="img-fluid" loop autoplay controls><source src="assets\oasis\oasis-add-address.mp4" type="video/mp4"  title="Add Address"></video>
+                </div>
+
+                <!--Address Details-->
+                <div class="col-4">
+                  <a href="#img44"  id="portfolio_item">
+                    <img class="img-fluid" src="assets\oasis\screen-08.png" title="Add Address - Pin Address" alt="Screenshot of the Add Address' map location pin prototype"/>
+                  </a>
+                  <!-- lightbox container hidden with CSS -->
+                  <a href="#_" class="lightbox" id="img44">
+                    <img src="assets\oasis\screen-08.png" title="Add Address - Pin Address" alt="Screenshot of the Add Address' map location pin prototype"/>
+                  </a>
+                </div>
+
+                <!--Coupon Code-->
+                <div class="col-4">
+                  <a href="#img45"  id="portfolio_item">
+                    <img class="img-fluid" src="assets\oasis\screen-09.png" title="Add Address Details" alt="Screenshot of the Add Address Details Prototype"/>
+                  </a>
+                  <!-- lightbox container hidden with CSS -->
+                  <a href="#_" class="lightbox" id="img45">
+                    <img src="assets\oasis\screen-09.png" title="Add Address Details" alt="Screenshot of the Add Address Details Prototype"/>
+                  </a>
+                </div>
+
+              </div>
+
+
+              <!--Order Confirmation-->
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="project-h h5-size">App Settings</h3>
+                  <p>
+                    The "App Settings" allows customers to customize their
+                    experience. In a country as diverse as Lebanon, there are many
+                    different dietary restrictions based on religious and
+                    lifestyle preferences. The plans for this section is to
+                    eventually expand and include app-wide filters such as Kosher,
+                    vegan, gluten-free, and more. This feature will allow users to
+                    shop without having to worry about their dietary requirements.
+                  </p>
+                  <p>
+                    The Order History section allows users to track orders, view
+                    order history, or re-order a previous order. I've never used
+                    the word 'order' this many times in a sentence before.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row img-margin-bottom">
+                <!--Order History-->
+                <div class="col-4">
+                  <figure>
+                    <a href="#img46"  id="portfolio_item">
+                      <img class="img-fluid" src="assets\oasis\screen-10.png" title="Order History" alt="Screenshot of the Order History Prototype"/>
+                    </a>
+                    <figcaption class="img-caption">Order History Page</figcaption>
+                  </figure>
+                  <!-- lightbox container hidden with CSS -->
+                  <a href="#_" class="lightbox" id="img46">
+                    <img src="assets\oasis\screen-10.png" title="Order History" alt="Screenshot of the Order History Prototype"/>
+                  </a>
+                </div>
+
+                <!--App Settings-->
+                <div class="col-4">
+                  <figure>
+                    <a href="#img47"  id="portfolio_item">
+                      <img class="img-fluid" src="assets\oasis\screen-11.png" title="App Settings" alt="Screenshot of the App Settings page showcasing the different types of orders a user can track between in-progress, delivered, and failed orders"/>
+                    </a>
+                    <figcaption class="img-caption">App Settings Page</figcaption>
+                  </figure>
+                  <!-- lightbox container hidden with CSS -->
+                  <a href="#_" class="lightbox" id="img47">
+                    <img src="assets\oasis\screen-11.png" title="App Settings" alt="Screenshot of the App Settings page showcasing the different types of orders a user can track between in-progress, delivered, and failed orders"/>
+                  </a>
+                </div>
+
+                <!--Contact-->
+                <div class="col-4">
+                  <figure>
+                    <a href="#img48"  id="portfolio_item">
+                      <img class="img-fluid" src="assets\oasis\screen-12.png" title="Contact Page" alt="Screenshot of the contact page that allows users to contact the service headquarters easily"/>
+                    </a>
+                    <figcaption class="img-caption">Contact Page</figcaption>
+                  </figure>
+                  <!-- lightbox container hidden with CSS -->
+                  <a href="#_" class="lightbox" id="img48">
+                    <img src="assets\oasis\screen-12.png"  title="Contact Page" alt="Screenshot of the contact page that allows users to contact the service headquarters easily"/>
+                  </a>
+                </div>
+
+              </div>
+
+
+              <!--Payment Method-->
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="project-h h5-size">Payment methods</h3>
+                  <h4 class="project-h h6-size">Security Features</h6>
+                    <p>
+                      If you've seen the <a href="nfc-payment.html" target="_blank">NFC Payment project</a>, you know what's
+                      happening here: we're implementing all the methods that we can
+                      to create a safe experience for users that are looking to pay
+                      by card. With the help of a security expert, I was able to
+                      ensure optimised safety from the design right down to the code
+                      level.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row img-margin-bottom">
+                  <!--Payment Video-->
+                  <div class="col-4">
+                    <video class="img-fluid" loop autoplay controls><source src="assets\oasis\oasis-add-card.mp4" type="video/mp4" title="Add Payment Method"></video>
+                    </div>
+
+                    <!--Payment Keyboard-->
+                    <div class="col-4">
+                      <a href="#img49"  id="portfolio_item">
+                        <img class="img-fluid" src="assets\oasis\screen-13.png" title="Credit Card Input" alt="Screenshot showing the Credit Card input process that takes the user through a guided process to allow for successful data input using a graphic representation"/>
+                      </a>
+                      <!-- lightbox container hidden with CSS -->
+                      <a href="#_" class="lightbox" id="img49">
+                        <img src="assets\oasis\screen-13.png" title="Credit Card Input" alt="Screenshot showing the Credit Card input process that takes the user through a guided process to allow for successful data input using a graphic representation"/>
+                      </a>
+                    </div>
+
+                    <!--Payment Primary Card-->
+                    <div class="col-4">
+                      <a href="#img50"  id="portfolio_item">
+                        <img class="img-fluid" src="assets\oasis\screen-14.png" title="My Wallet" alt="Screenshot of the My Wallet page prototype showcasing how a user can pick between various saved cards to use as a primary payment method"/>
+                      </a>
+                      <!-- lightbox container hidden with CSS -->
+                      <a href="#_" class="lightbox" id="img50">
+                        <img src="assets\oasis\screen-14.png" title="My Wallet" alt="Screenshot of the My Wallet page prototype showcasing how a user can pick between various saved cards to use as a primary payment method"/>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--Product Detail Page-->
+                  <div class="row">
+                    <div class="col-12">
+                      <h3 class="project-h h5-size">Product Detail Page</h3>
+                      <p>
+                        On select products such as vegetables, users will be able to
+                        purchase based on unit quantity, or weight quantity. When a
+                        product has a size variant, the product detail page will
+                        have a dropdown menu that will allow users to choose between
+                        the different available sizes. One of the plans for this
+                        page is to include nutritional details for users that
+                        require them.
+                      </p>
+                      <p>
+                        There is also a product recommendation section that gives
+                        users recommendation based on the product they are currently
+                        viewing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row img-margin-bottom">
+                    <!--Product Recommendation Video-->
+                    <div class="col-4">
+                      <video class="img-fluid" loop autoplay controls><source src="assets\oasis\oasis-product-detail-page.mp4" type="video/mp4"  title="Product Detail Page"></video>
+                      </div>
+
+                      <!--Product Detail Page 1-->
+                      <div class="col-4">
+                        <a href="#img53"  id="portfolio_item">
+                          <img class="img-fluid" src="assets\oasis\screen-17.png" title="Product Detail Page 1" alt="The Product Detail Page showing the options a product might have such as being purchased by individual pieces or total weight if applicable"/>
+                        </a>
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="#_" class="lightbox" id="img53">
+                          <img src="assets\oasis\screen-17.png" title="Product Detail Page 1" alt="The Product Detail Page showing the options a product might have such as being purchased by individual pieces or total weight if applicable"/>
+                        </a>
+                      </div>
+
+                      <!--Product Detail Page 2-->
+                      <div class="col-4">
+                        <a href="#img54"  id="portfolio_item">
+                          <img class="img-fluid" src="assets\oasis\screen-18.png" title="Product Detail Page 2" alt="The Product Detail Page with the product description open, and a size variant selector dropdown"/>
+                        </a>
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="#_" class="lightbox" id="img54">
+                          <img src="assets\oasis\screen-18.png" title="Product Detail Page 2" alt="The Product Detail Page with the product description open, and a size variant selector dropdown"/>
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <!--Search Filter Page-->
+                    <div class="row">
+                      <div class="col-12">
+                        <h3 class="project-h h5-size">Search Filter</h3>
+                        <p>
+                          Searching has never been this easy. You can easily filter
+                          your search results precisely and activate multiple filters
+                          at the same time. Through a rigorous research process, I
+                          managed to find what should be the most suitable search
+                          filter behaviour solution for this specific app. You can
+                          also access quick filters by tapping on tags to filter by
+                          categories, brands, and subcategories (product type)
+                          instantly.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row img-margin-bottom">
+                      <!--Search Filter 1-->
+                      <div class="col-4">
+                        <figure>
+                          <a href="#img55"  id="portfolio_item">
+                            <img class="img-fluid" src="assets\oasis\screen-19.png" title="Search Filter Page - No Filters" alt="The search filter page on first open showing the different options a user can filter by"/>
+                          </a>
+                          <figcaption class="img-caption">Search Filter Page - No Filters</figcaption>
+                        </figure>
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="#_" class="lightbox" id="img55">
+                          <img src="assets\oasis\screen-19.png" title="Search Filter Page - No Filters" alt="The search filter page on first open showing the different options a user can filter by"/>
+                        </a>
+                      </div>
+
+                      <!--Search Filter 2-->
+                      <div class="col-4">
+                        <figure>
+                          <a href="#img56"  id="portfolio_item">
+                            <img class="img-fluid" src="assets\oasis\screen-20.png" title="Search Filter Page 2" alt="The search filter selection page that shows the user interaction that allows users to select a page filter"/>
+                          </a>
+                          <figcaption class="img-caption">Select Filter</figcaption>
+                        </figure>
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="#_" class="lightbox" id="img56">
+                          <img src="assets\oasis\screen-20.png" title="Search Filter Page 2" alt="The search filter selection page that shows the user interaction that allows users to select a page filter"/>
+                        </a>
+                      </div>
+
+                      <!--Search Filter 3-->
+                      <div class="col-4">
+                        <figure>
+                          <a href="#img57"  id="portfolio_item">
+                            <img class="img-fluid" src="assets\oasis\screen-21.png" title="Search Filter Page - Filters Applied" alt="The Search Filter Page with filters applied"/>
+                          </a>
+                          <figcaption class="img-caption">Search Filter Page - Filters Applied
+                            <!-- lightbox container hidden with CSS -->
+                            <a href="#_" class="lightbox" id="img57">
+                              <img src="assets\oasis\screen-21.png" title="Search Filter Page - Filters Applied" alt="The Search Filter Page with filters applied"/>
+                            </a>
+                          </div>
+                        </div>
+
+                        <!--Order Process-->
+                        <div class="row">
+                          <div class="col-12">
+                            <h3 class="project-h h5-size">Checkout Process</h3>
+                            <p>
+                              Before checking out, the cart page recommends a few products
+                              that are related to the items present in the cart. The idea is
+                              not to create impulse purchases, but rather to make sure the
+                              user doesn't forget products they might need. For example, if
+                              a user bought pasta but didn't have tomato sauce, then one of
+                              the suggestions would be tomato sauce.
+                            </p>
+                            <p>
+                              Users can leave quick delivery instructions if they have any
+                              special instructions. Customers will also be able to track
+                              every single step in the delivery process. We are making sure
+                              our customer experience includes the customer in every single
+                              step along the way.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row img-margin-bottom">
+                          <!--Payment Video-->
+                          <div class="col-4">
+                            <video class="img-fluid" loop autoplay controls><source src="assets\oasis\oasis-checkout-process.mp4" type="video/mp4"  title="Checkout Process"></video>
+                            </div>
+
+                            <!--Checkout-->
+                            <div class="col-4">
+                              <a href="#img51"  id="portfolio_item">
+                                <img class="img-fluid" src="assets\oasis\screen-15.png" title="Place Order Screen" alt="Screenshot of the Place Order screen. This page allows users to give special delivery instructions, change payment methods, and confirm their order"/>
+                              </a>
+                              <!-- lightbox container hidden with CSS -->
+                              <a href="#_" class="lightbox" id="img51">
+                                <img src="assets\oasis\screen-15.png" title="Place Order Screen" alt="Screenshot of the Place Order screen. This page allows users to give special delivery instructions, change payment methods, and confirm their order"/>
+                              </a>
+                            </div>
+
+                            <!--Track Order-->
+                            <div class="col-4">
+                              <a href="#img52"  id="portfolio_item">
+                                <img class="img-fluid" src="assets\oasis\screen-16.png" title="Track Order" alt="Screenshot of the track order screen that allows users to track their orders live, and place the same order again in the future."/>
+                              </a>
+                              <!-- lightbox container hidden with CSS -->
+                              <a href="#_" class="lightbox" id="img52">
+                                <img src="assets\oasis\screen-16.png" title="Track Order" alt="Screenshot of the track order screen that allows users to track their orders live, and place the same order again in the future."/>
+                              </a>
+                            </div>
+                          </div>
+
+
+
+
+                        </section>
+
+                        <section class="container-fluid background section-gap-precise section-top-margin">
+                          <div class="container row">
+                            <div class="col-12">
+                              <h2>Final Thoughts</h2>
+                              <p>
+                                When we design solutions we're usually really ecstatic about having
+                                solved a problem but we need to make sure that our solutions aren't
+                                replacing one problem with another. In the case of pet adoption, we
+                                tend to forget that the pets are our users as well. Granted they
+                                can't use the application, but at the end of the day, the decisions
+                                made within the app will affect the rest of their lives.
+                              </p>
+                              <p>
+                                Experience design shines when it is allowed to address both the
+                                primary users and the secondary users or users that are directly or
+                                indirectly affected by the actions taken by the primary users.
+                                Taking into consideration all possible users will ensure that the
+                                application will have a net positive contribution to society rather
+                                than a negative impact.
+                              </p>
+                            </div>
+                          </div>
+                        </section>
+
+                      </main>
+
+                      <!--Project navigation-->
+                      <section class="proj-nav">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12">
+
+                              <a href="beta.html">
+                                <span class="project-next">
+                                  B.E.T.A Pet Adoption
+                                  <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 12">
+                                    <path  d="M21.274,23.022a.736.736,0,0,1-.007-1.15l4.428-3.806H8.823a.821.821,0,1,1,0-1.625H25.694L21.26,12.635a.741.741,0,0,1,.007-1.15,1.059,1.059,0,0,1,1.335.006l6.01,5.187h0a.915.915,0,0,1,.2.256.681.681,0,0,1,.073.312.758.758,0,0,1-.27.569L22.6,23A1.041,1.041,0,0,1,21.274,23.022Z" transform="translate(-7.882 -11.252)"/>
+                                  </svg>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <!--Category navigation-->
+                      <section class="x-section">
+                        <div class="x-row">
+                          <a href="physical.html">
+                            <div class="x-item">
+                              <div class="x-img-src"></div>
+                              <div class="x-txt">
+                                <h3>Physical</h3>
+                                <p class="text_small">
+                                  Exploring how experience design manifests within the physical
+                                  world primarily in the form of architecture.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="intersection.html">
+                            <div class="x-item">
+                              <div class="x-img-src-2"></div>
+                              <div class="x-txt">
+                                <h3>Intersection</h3>
+                                <p class="text_small">
+                                  Exploring experience design at the crossroads between the digital
+                                  and the physical world, as well as mixed reality (MR) experiences.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a href="digital.html">
+                            <div class="x-item">
+                              <div class="x-img-src-3"></div>
+                              <div class="x-txt">
+                                <h3>Digital</h3>
+                                <p class="text_small">
+                                  Exploring how user experience design is typically understood,
+                                  and how visual communication affects perception.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </section>
+
+
+                      <footer>
+                        <section class="container">
+                          <div class="footer-col-moe">
+                            <span class="footer-h6">
+                              Moe Hachem
+                            </span>
+                            <p class="text_small">
+                              Creating digital, physical, and mixed user experiences for humans, mostly.
+                            </p>
+                          </div>
+
+                          <div class="footer-row">
+                            <div class="footer-col-2">
+                              <ul class="footer-link-menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="footer-col-2">
+                              <ul class="footer-link-menu">
+                                <li><a>Work</a></li>
+                                <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
+                                <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
+                                <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+
+
+                          <div class="footer-col-5">
+                            <a href="contact.html" class="footer-social-icon">
+                              <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamadhachem/">
+                              <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
+                            </a>
+                          </div>
+
+                        </section>
+
+                        <section class="container">
+                          <div class="footer-trademark">
+                            <div class="footer-row">
+                              <div class="col-12">
+                                <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
+                              </div>
+
+                            </div>
+                          </div>
+                        </section>
+                      </footer>
+                    </body>
+                    </html>
