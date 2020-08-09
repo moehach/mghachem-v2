@@ -1,0 +1,13 @@
+<svg id="Footer_email" data-name="Footer email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="18" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_5" data-name="Repeat Grid 5" transform="translate(10 13)" clip-path="url(#clip-path)">
+    <g id="Group_23" data-name="Group 23">
+      <path id="Path_14" data-name="Path 14" d="M42.36,28H21.64A1.622,1.622,0,0,0,20,29.64V44.36A1.622,1.622,0,0,0,21.64,46H42.36A1.622,1.622,0,0,0,44,44.36V29.64A1.622,1.622,0,0,0,42.36,28Zm.12,16.36a.172.172,0,0,1-.16.16H21.64a.172.172,0,0,1-.16-.16V29.64a.172.172,0,0,1,.16-.16H42.36a.172.172,0,0,1,.16.16V44.36Z" transform="translate(-20 -28)" fill="#262626" fill-rule="evenodd"/>
+      <path id="Path_15" data-name="Path 15" d="M45.386,33.613l-9.548,6.655a.366.366,0,0,1-.291,0L26,33.613c-.291-.16-.581.2-.332.4l9.341,9.02a1.055,1.055,0,0,0,1.411,0l9.341-9.02A.275.275,0,0,0,45.386,33.613Z" transform="translate(-23.573 -31.554)" fill="#262626" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
