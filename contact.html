@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Moe Hachem - Contact Page - UX and Experience Designer based in Beirut, Lebanon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="User experience, user experience design, user experience designer, ux, ux design, ux designer, design, lebanese designer, experience design, xd,UI/UX Designer Lebanon, UI/UX Designer, UI/UX Design Lebanon, UX/UI Designer Lebanon, UX/UI Design Lebanon, UX/UI Designer, UX/UI Designer Lebanon, User Interface Designer, UX Designer Lebanon, UX Design Lebanon, UI Design Lebanon, User Experience Designer Lebanon, User Interface Designer Lebanon, Graphic Design, Graphic Designer Lebanon, Design Services Lebanon, Lebanese Designer, Lebanese Graphic Designer, Logo Design Lebanon, Digital Designer, Digital Designer Lebanon, Visual Designer, Visual Design Lebanon, Branding Design Lebanon, Branding Design, Branding Designer Lebanon, Experience Designer, Multidiscplinary Designer, Multidiscplinary Designer Lebanon, Multidiscplinary Design, Mohamad Hachem Design, Mohamad Hachem, Mohamad Hachem Lebanon, M.G. Hachem Lebanon, M.G Hachem">
+  <meta name="description" content="Moe Hachem is an Experience Designer, and a multi-discpilinary designer specialising in creating seamless, coherent, and memorable human experiences.">
+  <meta name="author" content="Mohamad Hachem">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+  <link href="simple-grid.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  </script>
+</head>
+
+
+
+<body>
+  <nav role="navigation" class="navbar">
+
+    <a class="logotype" href="home.html">
+      m.g. hachem
+    </a>
+    <div class="menuToggle">
+      <input class="burger-box" aria-label="Menu" type="checkbox"/>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="nav-menu">
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="work.html">Work</a></li>
+        <li class="nav-active"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <main>
+
+    <section class="container-fluid herosection background">
+      <div class="container">
+        <div class="heromode">
+
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <h1>Reachout</h1>
+
+              <p>
+                Reach out, and we can talk about work, design, philosophy, or
+                grab a cup of coffee, I'll be more than happy to get back to
+                you.
+              </p>
+              <div class="form-container">
+                <form id="my-form" name="contact" method="POST"><input type="hidden" name="form-name" value="contact">
+
+                  <label for="name">Your Name (required)
+                    <input type="text" name="name" placeholder="" label="name" required>
+                  </label>
+                  <label for="email">Your Email (required)
+                    <input type="text" name="email" placeholder="" label="email" required>
+                  </label>
+                  <label for="message">Your Message (required)
+                    <textarea name="message" placeholder="What's on your mind?" required></textarea>
+                  </label>
+                  <input type="submit" value="Send It!">
+
+                </form>
+              </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    <section class="container">
+      <div class="footer-col-moe">
+        <span class="footer-h6">
+          Moe Hachem
+        </span>
+        <p class="text_small">
+          Creating digital, physical, and mixed user experiences for humans, mostly.
+        </p>
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-col-2">
+          <ul class="footer-link-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <ul class="footer-link-menu">
+            <li><a>Work</a></li>
+            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
+            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
+            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="footer-col-5">
+        <a href="contact.html" class="footer-social-icon">
+          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamadhachem/">
+          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="footer-trademark">
+        <div class="footer-row">
+          <div class="col-12">
+            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
