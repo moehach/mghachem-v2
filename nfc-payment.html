@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Moe Hachem - NFC Payment UX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="User experience, user experience design, user experience designer, ux, ux design, ux designer, design, lebanese designer, experience design, xd,UI/UX Designer Lebanon, UI/UX Designer, UI/UX Design Lebanon, UX/UI Designer Lebanon, UX/UI Design Lebanon, UX/UI Designer, UX/UI Designer Lebanon, User Interface Designer, UX Designer Lebanon, UX Design Lebanon, UI Design Lebanon, User Experience Designer Lebanon, User Interface Designer Lebanon, Graphic Design, Graphic Designer Lebanon, Design Services Lebanon, Lebanese Designer, Lebanese Graphic Designer, Logo Design Lebanon, Digital Designer, Digital Designer Lebanon, Visual Designer, Visual Design Lebanon, Branding Design Lebanon, Branding Design, Branding Designer Lebanon, Experience Designer, Multidiscplinary Designer, Multidiscplinary Designer Lebanon, Multidiscplinary Design, Mohamad Hachem Design, Mohamad Hachem, Mohamad Hachem Lebanon, M.G. Hachem Lebanon, M.G Hachem">
+  <meta name="description" content="Taking NFC payment apps within the MENA region, that looks at creating an app that is contextually relevant and addresses the trust issues the MENA region, specifically Lebanon, has with digital and card payments.">
+  <meta name="author" content="Mohamad Hachem">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+  <link href="simple-grid.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+
+  </script>
+</head>
+
+
+
+<body>
+  <nav role="navigation" class="navbar">
+
+    <a class="logotype" href="home.html">
+      m.g. hachem
+    </a>
+    <div class="menuToggle">
+      <input class="burger-box" aria-label="Menu" type="checkbox"/>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="nav-menu">
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="work.html">Work</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="container-fluid work-hero background">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="project-lead">Context-Aware NFC App</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row section-gap">
+        <div class="col-12">
+          <h2>Preface</h2>
+          <p>
+            This is a case study that looks at an existing NFC payment platform
+            within Lebanon, specifically the Byblos Pay app, and improving it's
+            UX/UI, and giving it a whole new look and feel. ByblosPay is a
+            mobile payment application launched by Byblos Bank. The app gives
+            customers the ability to conduct purchases through contactless
+            payments from their phones based on Host Card Emulation (HCE), and
+            NFC technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Identifying Issues</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h5-size project-h-3">First Launch</h3>
+          <p>
+            On the first launch, there's a noticeable issue with the
+            application: When registering your first card, the application
+            quickly asks for permission to use the camera, you cannot proceed
+            otherwise. When you do give camera access to the application, the
+            application lets you know that you can enter your card data
+            manually, which is too little too late.
+          </p>
+          <p>
+            This is currently a privacy concern. What if the user does not want
+            to give the app permission to use their cameras? It is important to
+            keep in mind that the average Lebanese has a general distrust or
+            aversion towards the use of debit/credit cards, let alone using a
+            mobile application to conduct their card payments.
+          </p>
+          <p>
+            I propose that to establish trust between the application and the
+            user, the user flow ought to change. Instead of opening the camera
+            by default, allow for the user to land on the manual data entry page
+            first, and then give the user the option to use the camera for
+            automated data entry.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure>
+            <a href="#img1"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\firstlaunch.png" title="First Launch User Flow" alt="The UI/UX user flow pattern and screens upon first launching the application"/>
+            </a>
+            <figcaption class="img-caption">First Launch User Flow Pattern</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img1">
+            <img src="assets\byblospay\firstlaunch.png" title="First Launch User Flow" alt="The UI/UX user flow pattern and screens upon first launching the application"/>
+          </a>
+
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h5-size project-h-3">Payment User Flow</h3>
+          <p>
+            As is true with everything Lebanese - The app does a great job in
+            conducting payment. It's so smooth you don't realise you've paid
+            until it's too late, and you've no idea how much you've paid until
+            you've paid it.
+          </p>
+          <p>
+            Generally in UI/UX, it's always great to have everything go smoothly
+            - but that doesn't apply when money is on the line. The average user
+            in Lebanon already distrusts debit/credit cards (or at least does
+            not properly understand how to use them), and making this payment
+            process so smooth to the point that the user doesn't figure out how
+            much is being made until after the transaction is made makes things
+            much worse.
+          </p>
+          <p>
+            How much are you paying the merchant? This should be confirmed on
+            the screen itself. This is an opportunity to establish more trust
+            with users.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure>
+            <a href="#img2"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\paymentflow.png" title="Payment User Flow" alt="The UI/UX user flow pattern and screens to do with payments and transactions"/>
+            </a>
+            <figcaption class="img-caption">Payment User Flow</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img2">
+            <img src="assets\byblospay\paymentflow.png" title="Payment User Flow" alt="The UI/UX user flow pattern and screens to do with payments and transactions"/>
+          </a>
+
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h5-size project-h-3">Card Management</h3>
+          <p>
+            The process of adding a new card, and managing your cards is where
+            the application begins to break down. Two issues need to be
+            addressed here:
+          </p>
+          <p>
+            How is the user supposed to guess he or she needs to open the
+            hamburger menu and find the "Add a New Card" button in the "Manage
+            Cards" section? The other issue is the fact that the "Add a New
+            Card" button is tucked at the bottom of the "Manage Cards" page in
+            an in-ubiquitous manner.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <figure>
+            <a href="#img3"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\cardmanagement.png" title="Card Management User Flow" alt="The UI/UX user flow pattern and screens to do with card management and adding a new card"/>
+            </a>
+            <figcaption class="img-caption">Card Management User Flow</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img3">
+            <img src="assets\byblospay\cardmanagement.png" title="Card Management User Flow" alt="The UI/UX user flow pattern and screens to do with card management and adding a new card"/>
+          </a>
+
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Analysing Heuristics</h3>
+          <h4 class="h5-size project-h-3">Positives</h4>
+          <p>
+            What does the application do right?
+          </p>
+          <ol>
+            <li>Shallow navigation allows the application to be quick and easy to use.</li>
+            <li>The application makes use of the camera to eliminate manual data entry.</li>
+            <li>Biometric/fingerprints can be used for an added layer of security.</li>
+          </ol>
+
+          <h5>Pain Points</h5>
+          <p>
+            Where does the application go wrong, and where could it improve?
+            Please note that due to the application's security restrictions,
+            screengrabs can't be provided, so I will attempt to illustrate the
+            issues through text.
+          </p>
+          <ol>
+            <li>
+              When an application includes sensitive data entry (such as card
+              data), the UX probably should add 'friction' to the user flow.
+              This friction would allow users to feel that they are in control
+              of the entire process. Smooth flows are great, but sometimes you
+              do need some road bumps to slow down the process.
+            </li>
+            <li>
+              An intermediary page should be added between Adding a Card on the
+              first launch and requesting camera permissions. It makes little
+              sense that one can enter their information manually but still be
+              required to give the application their camera permissions.
+            </li>
+            <li>
+              An animation or image needs to be added for users to understand
+              how to use the camera, and what to scan.
+            </li>
+            <li>
+              Manual record entry has a design issue. The application doesn't
+              allow for screen-grabs so this will have to be explained through
+              text: There is an image explaining what information to enter, but
+              it is a lot more dominant than the input field. Having tested the
+              screen with 5 different users, it took the majority of them far
+              too long to understand what was happening on the screen.
+            </li>
+            <li>
+              It's unclear if there are transaction history records available.
+              This should be made clearer or made available to establish even
+              more trust between users and the application.
+            </li>
+            <li>
+              The payment menu is susceptible to accidentally hitting Pay when
+              the user might still be unsure.
+            </li>
+            <li>
+              The keypad used for numerical data entry is the default system
+              keypad with a different skin. Customizing the keypad will allow
+              the application to spread and change the coordinate points of the
+              keypad dials. This prevents malicious software or trackers from
+              listening in and being able to detect what the user's code numbers
+              are.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Design Proposal</h2>
+          <h3>Colours</h3>
+          <h4 class="h5-size project-h-3">Existing Brand Colours</h4>
+          <p>
+            The following are the colours currently used by Byblos Bank (the bank deploying the application being studied).
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <a href="#img4"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\brandcolor_1.png" title="Logo Colours" alt="The colors used in the design of the existing logo"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img4">
+            <img src="assets\byblospay\brandcolor_1.png" title="Logo Colours" alt="The colors used in the design of the existing logo"/>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="h5-size">Proposed Colour Palette</h4>
+          <p>
+            Staying in line with the colour choices established by the colours
+            chosen by the parent bank, the following colours have been chosen to
+            create a colour palette that works at further emphasising the brand
+            identity of the application.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <a href="#img5"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\brandcolor_2.png" title="Colour Palette" alt="The proposed colour palette for the application that looks at solidifying the brand identity of the application using colours based off of the logo colours used"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img5">
+            <img src="assets\byblospay\brandcolor_2.png" title="Colour Palette" alt="The proposed colour palette for the application that looks at solidifying the brand identity of the application using colours based off of the logo colours used"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Typefaces</h3>
+          <p>
+            Any text that is used as a title, or overlayed or as an accent over an
+            image will have the font family "Montserrat" ascribed to it.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img6"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\font_1.png"  title="Accent Text" alt="The font family Montserrat as it should be displayed within the application"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img6">
+            <img src="assets\byblospay\font_1.png"  title="Accent Text" alt="The font family Montserrat as it should be displayed within the application"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <p>
+            All primary or body text will have the font family "Arial" ascribed to it.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <a href="#img7"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\font_2.png" title="Primary or Body Text" alt="The font family Arial as it should be displayed within the application"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img7">
+            <img src="assets\byblospay\font_2.png" title="Primary or Body Text" alt="The font family Arial as it should be displayed within the application"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Forms</h3>
+          <p>
+            Forms as they would appear in their unfocused, and focused states. The
+            form fields shall autofocus upon loading.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <figure>
+            <a href="#img8"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\forms.png" title="Primary or Body Text" alt="The font family Arial as it should be displayed within the application"/>
+            </a>
+            <figcaption class="img-caption">Unfocused (left) and focused (right) form fields.</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img8">
+            <img src="assets\byblospay\forms.png" title="Primary or Body Text" alt="The font family Arial as it should be displayed within the application"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Navigation Design</h3>
+          <h4 class="h5-size project-h-3">Tab Navigation</h4>
+          <p>
+            The current menu is a Hamburger Menu. Hamburger Menus are known for
+            being terrible for navigation purposes from a UX perspective since
+            they hide important content.
+          </p>
+
+          <p>
+            Judging how this is a very specialized app, I proposed that the
+            navigation take place using tabs to allow for easy, quick navigation
+            without leaving the user guessing "Can I do this?".
+          </p>
+
+          <p>
+            FAQ, Tutorial, and About are best grouped into Help. The FAQ is too
+            vague a term for most users, "Tutorial" and "FAQ" are forms of Help,
+            and it's common practice for many applications to put "About" under
+            Help. The following are the new proposed menu items:
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h4 class="h5-size project-h-3">Existing Hamburger Menu</h4>
+          <ul>
+            <li>Manage Card</li>
+            <li>Security Setting</li>
+            <li>FAQ</li>
+            <li>Tutorial</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h4 class="h5-size project-h-3">Proposed Tab Menu</h4>
+          <ul>
+            <li>Add card</li>
+            <li>Manage Card</li>
+            <li>Transaction History</li>
+            <li>Security Settings</li>
+            <li>Help</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="project-h h5-size">Tab Bar</h4>
+
+          <a href="#img9"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\tab_1.png" title="Tab Bar" alt="The UI design of the tab bar as it would appear on the application"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img9">
+            <img src="assets\byblospay\tab_1.png" title="Tab Bar" alt="The UI design of the tab bar as it would appear on the application"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="project-h h5-size">Tab Bar: Inactive Icons</h4>
+          <p>Icons as they would be displayed in their inactive state.</p>
+
+          <a href="#img10"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\tab_2.png" title="Tab Bar - Inactive" alt="The UI icon design of the tab bar in their inactive state"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img10">
+            <img src="assets\byblospay\tab_2.png" title="Tab Bar - Inactive" alt="The UI icon design of the tab bar in their inactive state"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="project-h h5-size">Tab Bar: Active Icons</h4>
+          <p>Icons as they would be displayed in their active state.</p>
+
+          <a href="#img11"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\tab_3.png"  title="Tab Bar - Active" alt="The UI icon design of the tab bar in their active state"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img11">
+            <img src="assets\byblospay\tab_3.png"  title="Tab Bar - Active" alt="The UI icon design of the tab bar in their active state"/>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="project-h h5-size">Top Navigation Bar</h4>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+
+          <a href="#img12"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\nav_1.png" title="NavBar - Status and Action" alt="The UI design of the navigation bar displaying the NavBar as a Status Bar, and with Actions"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img12">
+            <img src="assets\byblospay\nav_1.png" title="NavBar - Status and Action" alt="The UI design of the navigation bar displaying the NavBar as a Status Bar, and with Actions"/>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+
+          <a href="#img13"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\nav_2.png" title="NavBar - Status and Action with Icons" alt="The UI design of the navigation bar displaying the NavBar in Standard form, and with an action bar with icons"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img13">
+            <img src="assets\byblospay\nav_2.png" title="NavBar - Status and Action with Icons" alt="The UI design of the navigation bar displaying the NavBar in Standard form, and with an action bar with icons"/>
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <h5 class="h6-size project-h">iOS: Action Bar</h5>
+
+          <p>
+            For iOS systems or any system that uses an action bar, the following
+            is how action bars ought to appear when displayed over a white
+            background, and a coloured background.
+          </p>
+
+          <a href="#img14"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\actionbar.png" title="Action Bar" alt="The UI action bar design for iOS systems"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img14">
+            <img src="assets\byblospay\actionbar.png" title="Action Bar" alt="The UI action bar design for iOS systems"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <h3>Interactive Elements</h3>
+          <h4 class="h5-size project-h-3">Call-to-Actions</h4>
+          <p>
+            The following buttons are the only styles acceptable for a call to action.
+          </p>
+          <a href="#img15"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\button_1.png" title="Call to Action Buttons" alt="The UI design of the Call to Action buttons in their various states"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img15">
+            <img src="assets\byblospay\button_1.png" title="Call to Action Buttons" alt="The UI design of the Call to Action buttons in their various states"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <h4 class="h5-size project-h-3">Secondary Action Buttons</h4>
+          <p>
+            The following are the acceptable button types for secondary actions within the application:
+          </p>
+          <a href="#img16"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\button_2.png" title="Secondary Action Buttons" alt="The UI design of the secondary action buttons in their various states"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img16">
+            <img src="assets\byblospay\button_2.png" title="Secondary Action Buttons" alt="The UI design of the secondary action buttons in their various states"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <p>
+            The following are the action buttons as displayed over a coloured background:
+          </p>
+          <a href="#img17"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\button_3.png" title="Secondary Action Buttons with Background" alt="The UI design of the secondary action buttons in their various states over a background"//>
+          </a>
+
+          <a href="#_" class="lightbox" id="img17">
+            <img src="assets\byblospay\button_3.png" title="Secondary Action Buttons with Background" alt="The UI design of the secondary action buttons in their various states over a background"//>
+          </a>
+        </div>
+      </div>
+
+      <div class="row img-margin-bottom">
+        <div class="col-12">
+          <h4 class="h5-size project-h-3">Slider</h4>
+          <p>
+            The design of a payment confirmation slider that the user would use
+            to confirm a transaction request. The slider will give the user more
+            control over how the application works and will ensure that the user
+            will be much more unlikely to make a transaction without being aware
+            of it.
+          </p>
+          <a href="#img18"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\slider.png" title="Payment Slider" alt="The UI design of the slider element used to confirm payments"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img18">
+            <img src="assets\byblospay\slider.png" title="Payment Slider" alt="The UI design of the slider element used to confirm payments"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="h5-size project-h-3">Keypad</h4>
+          <p>
+            A customized keypad with X, Y co-ordinates spread out to reduce the
+            chance of malicious apps and code from listening in to the device
+            and predicting what the user's PIN might be.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 img-margin-bottom">
+
+          <figure>
+            <a href="#img19"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\key_1.png" title="Keypad" alt="The UI design of a customized keypad"/>
+            </a>
+            <figcaption class="img-caption">Customized Keypad</figcaption>
+          </figure>
+
+
+          <a href="#_" class="lightbox" id="img19">
+            <img src="assets\byblospay\key_1.png" title="Keypad" alt="The UI design of a customized keypad"/>
+          </a>
+        </div>
+
+        <div class="col-4 img-margin-bottom">
+          <figure>
+            <a href="#img20"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\key_2.png" title="Default Keypad" alt="The design of a system keypad"/>
+            </a>
+            <figcaption class="img-caption">Default iOS Keypad</figcaption>
+          </figure>
+
+          <a href="#_" class="lightbox" id="img20">
+            <img src="assets\byblospay\key_2.png" title="Default Keypad" alt="The design of a system keypad"/>
+          </a>
+        </div>
+
+        <div class="col-4 img-margin-bottom">
+          <figure>
+            <a href="#img21"  id="portfolio_item">
+              <img class="img-fluid" src="assets\byblospay\key_3.png" title="Default keypad overlayed on top of the custom keypad" alt="The default keypad design overlayed on top of the custom keypad design showing the change of coordinates point for each number key."/>
+            </a>
+            <figcaption class="img-caption">Custom Key Overlayed on the Default Keypad</figcaption>
+          </figure>
+
+
+          <a href="#_" class="lightbox" id="img21">
+            <img src="assets\byblospay\key_3.png" title="Default keypad overlayed on top of the custom keypad" alt="The default keypad design overlayed on top of the custom keypad design showing the change of coordinates point for each number key."/>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-gap">
+      <div class="row">
+        <div class="col-12">
+          <h2>Prototype</h2>
+          <h3 class="h5-size project-h-3">First Launch</h3>
+        </div>
+      </div>
+
+      <div class="row img-margin">
+        <div class="col-4 img-margin-bottom">
+          <video class="proto-vid-1" controls><source src="assets\byblospay\proto_vid_1.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the Landing Page leading up to the purchase confirmation page">
+          </video>
+        </div>
+
+        <div class="col-4 img-margin-bottom">
+          <a href="#img22"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_1.png" title="Landing Page" alt="The UI design of the landing page of the application on first launch"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img22">
+            <img src="assets\byblospay\proto_1.png" title="Landing Page" alt="The UI design of the landing page of the application on first launch"/>
+          </a>
+        </div>
+
+        <div class="col-4 img-margin-bottom">
+          <a href="#img23"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_2.png" title="Card Data Entry Form" alt="The UI design of the card data entry form displaying options for manual and automatic data entry"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img23">
+            <img src="assets\byblospay\proto_2.png" title="Card Data Entry Form" alt="The UI design of the card data entry form displaying options for manual and automatic data entry"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h5-size project-h">Transactions</h3>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-4">
+
+          <a href="#img24"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_3.png" title="Card Added Successfully Page" alt="The UI design of the success prompt for when a card has been added successful to an account"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img24">
+            <img src="assets\byblospay\proto_3.png" title="Card Added Successfully Page" alt="The UI design of the success prompt for when a card has been added successful to an account"/>
+          </a>
+
+        </div>
+
+        <div class="col-4">
+          <a href="#img25"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_4.png" title="Transaction History Page" alt="The UI design of the transaction history page showing recent purchases using the app"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img25">
+            <img src="assets\byblospay\proto_4.png" title="Transaction History Page" alt="The UI design of the transaction history page showing recent purchases using the app"/>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="#img26"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_5.png" title="Wallet Screen" alt="The UI design of the card wallet screen showing the Pay button, and the cards associated with the wallet"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img26">
+            <img src="assets\byblospay\proto_5.png"  title="Wallet Screen" alt="The UI design of the card wallet screen showing the Pay button, and the cards associated with the wallet"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="project-h h5-size">Payment Process</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+
+          <video class="proto-vid-1" controls><source src="assets\byblospay\proto_vid_2.mp4" type="video/mp4" alt="Video demonstrating the process and animations associated with adding a card.">
+          </video>
+
+        </div>
+
+        <div class="col-4">
+          <a href="#img27"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_6.png" title="Payment Confirmation Screen" alt="The UI design of the payment confirmation screen showing the slider element that is used to swipe-confirm a transaction"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img27">
+            <img src="assets\byblospay\proto_6.png" title="Payment Confirmation Screen" alt="The UI design of the payment confirmation screen showing the slider element that is used to swipe-confirm a transaction"/>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <a href="#img28"  id="portfolio_item">
+            <img class="img-fluid" src="assets\byblospay\proto_7.png" title="Payment Successful Screen" alt="The UI design of the screen notifying the users that a payment was successful, clearly showing to the user exactly how much has been paid in the transaction process"/>
+          </a>
+
+          <a href="#_" class="lightbox" id="img28">
+            <img src="assets\byblospay\proto_7.png" title="Payment Successful Screen" alt="The UI design of the screen notifying the users that a payment was successful, clearly showing to the user exactly how much has been paid in the transaction process"/>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid background section-gap-precise section-top-margin">
+      <div class="container row">
+        <div class="col-12">
+          <h2>Final Thoughts</h2>
+          <p>
+            This project was a design charade that taught me a lot more than I
+            expected. Looking back, I believe the main lesson this project
+            taught me is that a smooth user flow is not necessarily the best
+            user flow. Of course, this all depends on the context, but in the
+            context of an application that involves money, that extra layer of
+            privacy and friction allows for a better, safer, and far more
+            trustworthy user experience. A smooth experience is great, but you
+            don't want it to be too smooth that your money is gone before you
+            even know it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Project navigation-->
+  <section class="proj-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="tunastring.html">
+            <span class="project-next">
+              TunaString
+              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+                <path  d="M21.274,23.022a.736.736,0,0,1-.007-1.15l4.428-3.806H8.823a.821.821,0,1,1,0-1.625H25.694L21.26,12.635a.741.741,0,0,1,.007-1.15,1.059,1.059,0,0,1,1.335.006l6.01,5.187h0a.915.915,0,0,1,.2.256.681.681,0,0,1,.073.312.758.758,0,0,1-.27.569L22.6,23A1.041,1.041,0,0,1,21.274,23.022Z" transform="translate(-7.882 -11.252)"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="x-section">
+    <div class="x-row">
+      <a href="physical.html">
+        <div class="x-item">
+          <div class="x-img-src"></div>
+          <div class="x-txt">
+            <h3>Physical</h3>
+            <p class="text_small">
+              Exploring how experience design manifests within the physical
+              world primarily in the form of architecture.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="intersection.html">
+        <div class="x-item">
+          <div class="x-img-src-2"></div>
+          <div class="x-txt">
+            <h3>Intersection</h3>
+            <p class="text_small">
+              Exploring experience design at the crossroads between the digital
+              and the physical world, as well as mixed reality (MR) experiences.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="digital.html">
+        <div class="x-item">
+          <div class="x-img-src-3"></div>
+          <div class="x-txt">
+            <h3>Digital</h3>
+            <p class="text_small">
+              Exploring how user experience design is typically understood,
+              and how visual communication affects perception.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <section class="container">
+      <div class="footer-col-moe">
+        <span class="footer-h6">
+          Moe Hachem
+        </span>
+        <p class="text_small">
+          Creating digital, physical, and mixed user experiences for humans, mostly.
+        </p>
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-col-2">
+          <ul class="footer-link-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <ul class="footer-link-menu">
+            <li><a>Work</a></li>
+            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
+            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
+            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="footer-col-5">
+        <a href="contact.html" class="footer-social-icon">
+          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamadhachem/">
+          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="footer-trademark">
+        <div class="footer-row">
+          <div class="col-12">
+            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
