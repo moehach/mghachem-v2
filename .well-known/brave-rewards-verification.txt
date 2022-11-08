@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mghachem.com
+Token: e47ea687a1a9bbe6a3a20df14bccc30645d97deffc9cb9181ede55d83f0e4ec8
