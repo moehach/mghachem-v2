@@ -14,47 +14,13 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="/favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143942963-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143942963-2');
-  </script>
-
-
-  <script type="text/javascript">
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-
-  </script>
+  <script src="main.js"></script>
 </head>
 
 <body>
-  <nav role="navigation" class="navbar">
-
-    <a class="logotype" href="home.html">
-      m.g. hachem
-    </a>
-    <div class="menuToggle">
-      <input class="burger-box" aria-label="Menu" type="checkbox"/>
-      <span></span>
-      <span></span>
-      <ul id="menu" class="nav-menu">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="work.html">Work</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!--Header-->
+  <div data-include="header"></div>
 
 
 
@@ -447,133 +413,8 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
   </main>
 
 
-  <!--Project navigation-->
-  <section class="proj-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <a href="beta.html">
-            <span class="project-prev">
+  <!--FOOTER-->
+  <footer data-include="footer"></footer>
 
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 12">
-                <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.49,11.481a.736.736,0,0,1,.007,1.15L11.07,16.437H27.941a.821.821,0,1,1,0,1.625H11.07L15.5,21.868a.741.741,0,0,1-.007,1.15,1.059,1.059,0,0,1-1.335-.006l-6.01-5.187h0a.915.915,0,0,1-.2-.256.681.681,0,0,1-.073-.312.758.758,0,0,1,.27-.569l6.01-5.187A1.041,1.041,0,0,1,15.49,11.481Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-              B.E.T.A Pet Adoption
-            </span>
-          </a>
-
-          <a href="the961.html">
-            <span class="project-next">
-              The961
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 12">
-                <path  d="M21.274,23.022a.736.736,0,0,1-.007-1.15l4.428-3.806H8.823a.821.821,0,1,1,0-1.625H25.694L21.26,12.635a.741.741,0,0,1,.007-1.15,1.059,1.059,0,0,1,1.335.006l6.01,5.187h0a.915.915,0,0,1,.2.256.681.681,0,0,1,.073.312.758.758,0,0,1-.27.569L22.6,23A1.041,1.041,0,0,1,21.274,23.022Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="x-section">
-    <div class="x-row">
-      <a href="physical.html">
-        <div class="x-item">
-          <div class="x-img-src"></div>
-          <div class="x-txt">
-            <h3>Physical</h3>
-            <p class="text_small">
-              Exploring how experience design manifests within the physical
-              world primarily in the form of architecture.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <a href="intersection.html">
-        <div class="x-item">
-          <div class="x-img-src-2"></div>
-          <div class="x-txt">
-            <h3>Intersection</h3>
-            <p class="text_small">
-              Exploring experience design at the crossroads between the digital
-              and the physical world, as well as mixed reality (MR) experiences.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <a href="digital.html">
-        <div class="x-item">
-          <div class="x-img-src-3"></div>
-          <div class="x-txt">
-            <h3>Digital</h3>
-            <p class="text_small">
-              Exploring how user experience design is typically understood,
-              and how visual communication affects perception.
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <section class="container">
-      <div class="footer-col-moe">
-        <span class="footer-h6">
-          Moe Hachem
-        </span>
-        <p class="text_small">
-          Creating digital, physical, and mixed user experiences for humans, mostly.
-        </p>
-      </div>
-
-      <div class="footer-row">
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a>Work</a></li>
-            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
-            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
-            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="footer-col-5">
-        <a href="contact.html" class="footer-social-icon">
-          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
-        </a>
-        <a href="https://www.linkedin.com/in/mohamadhachem/">
-          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="container">
-      <div class="footer-trademark">
-        <div class="footer-row">
-          <div class="col-12">
-            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </footer>
 </body>
 </html>

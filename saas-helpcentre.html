@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Moe Hachem - SaaS Help Centre UX and Development</title>
+  <title>Moe Hachem - SAAS Help Centre UX and Development</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="User Experience, Design, Designer, UX
-User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design, Experience, XD, XD Designer, Service Design, Product Design, Product, Product Manager, PM, Digital Transformation, Design services, branding, graphic, graphic design, multi-discplinary, Mohamad Hachem, Moe Hachem, M.G. Hachem, Dubai, Dubai-based, United Arab Emirates, UAE, UAE-based, MENA">
+  User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design, Experience, XD, XD Designer, Service Design, Product Design, Product, Product Manager, PM, Digital Transformation, Design services, branding, graphic, graphic design, multi-discplinary, Mohamad Hachem, Moe Hachem, M.G. Hachem, Dubai, Dubai-based, United Arab Emirates, UAE, UAE-based, MENA">
   <meta name="description" content="The SaaS help centre project is a comprehensive UX/UI design and development project. The help centre is an extension to an existing platform and borrows from its design identity to create a continuous brand experience. The project includes the entire UX design process as well as web development.">
   <meta name="author" content="Mohamad Hachem">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -14,47 +14,13 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="/favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143942963-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-143942963-2');
-  </script>
-
-
-  <script type="text/javascript">
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-
-  </script>
+  <script src="main.js"></script>
 </head>
 
 <body>
-  <nav role="navigation" class="navbar">
-
-    <a class="logotype" href="home.html">
-      m.g. hachem
-    </a>
-    <div class="menuToggle">
-      <input class="burger-box" aria-label="Menu" type="checkbox"/>
-      <span></span>
-      <span></span>
-      <ul id="menu" class="nav-menu">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="work.html">Work</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!--Header-->
+  <div data-include="header"></div>
 
 
 
@@ -76,1393 +42,1268 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
           <h2>Preface</h2>
           <p>
             The Help Centre is an extension of the <!--googleoff:
-            all-->Ecomz<!--googleon: index--> website project that I discussed
-            in a previous listing.  If you want to go through that project, you
-            can <a href="saas-website.html">find the project here</a>.
-          </p>
-          <p>
-            The <!--googleoff: all-->Ecomz<!--googleon: index--> website was
-            live, but we needed to turn our attention towards the Help Centre.
-            My job here was to make sure that the help centre was in line with
-            the new brand experience, and more importantly: Make sure the help
-            centre was actually useful.
-          </p>
-          <p>
-            I had three key  focuses:
-          </p>
-          <ul class="project-ul">
-            <li>Get the Help Centre on-brand.</li>
-            <li>Provide a customer support channel for our users.</li>
-            <li>Allow all information to be easily accessible.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!--Overview-->
-    <section class="container section-gap">
-      <div class="row">
-        <div class="col-12">
-          <h2>Overview</h2>
-          <p>
-            If you've been following along from the SaaS project, you'll find it
-            comes as no surprise that I once again found myself in a situation
-            where there were no free developers available.
-          </p>
-          <p>
-            The initial designs for the help centre were poorly implemented by a
-            developer who frankly didn't have the time to go to the toilet let
-            alone take care of the website. I place no blame on him for the
-            final execution, but now that new website was out, there was no
-            excuse for having a poorly executed help centre.
-          </p>
-          <p>
-            I once again found myself playing UX Developer, or as my colleagues
-            have come to call me: a Unicorn.
-          </p>
-        </div>
-      </div>
-
-      <!--To do list-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Jobs to Be Done</h3>
-          <p>
-            In comparison to the SaaS website, this project was a lot more laid
-            back. I had already set the foundation and design system. In other
-            words, the hard work was complete, and it was mostly a matter of
-            applying the system to a new user flow, and a different set of
-            experiences.
-          </p>
-          <p>
-            When I first started, I outlined the following tasks that needed to
-            be complete to consider the project complete:
-          </p>
-          <ul class="project-ul-dashed">
-            <li>Understand how the Zendesk platform works.</li>
-            <li>Design a user flow focusing on helping users find the information they need.</li>
-            <li>Create a fully structured HTML website.</li>
-            <li>Link the frontend to the backend.</li>
-          </ul>
-
-        </div>
-      </div>
-    </section>
-
-    <!--The Identity-->
-    <section class="container section-gap">
-      <div class="row">
-        <div class="col-12">
-          <h2>Identity</h2>
-        </div>
-      </div>
-
-      <!--Branding-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h-3">Branding colours</h3>
-          <p>
-            To boost brand experience and recognition, I used the brandmark that
-            we had initially set up for the SaaS website.
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <a href="#img1"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\brandcolours.png"  title="Brandmark" alt="Brandmark show casing the colours forming the identity and look-and-feel of the website"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img1">
-            <img src="assets\saas-helpcentre\brandcolours.png"  title="Brandmark" alt="Brandmark show casing the colours forming the identity and look-and-feel of the website"/>
-          </a>
-        </div>
-      </div>
-
-      <!-- Typography-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Typography</h3>
-          <p>
-            The typography used in the Help Centre uses the same typographic
-            scale system I set up in the SaaS website.
-          </p>
-          <p>
-            I set all the H1 tags in TTSuperMolot to stay in line with the brand
-            guidelines.
-          </p>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="#img2"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\typography-header.png" title="Header Typography" alt="The selected typeface for the main header or H1 tag is TTSuperMolot"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img2">
-            <img src="assets\saas-helpcentre\typography-header.png" title="Header Typography" alt="The selected typeface for the main header or H1 tag is TTSuperMolot"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            Similarly, I also set the rest of the Heading tags and Body text
-            elements in Roboto.
-          </p>
-
-          <a href="#img3"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\typography-text.png" title="Body Typography" alt="The selected typeface for all body content is Roboto in different forms ranging from light to semibold"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img3">
-            <img src="assets\saas-helpcentre\typography-text.png" title="Body Typography" alt="The selected typeface for all body content is Roboto in different forms ranging from light to semibold"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            We've finished setting the brand guidelines and showed two live
-            examples. It's important to note that when the company received the
-            new brand guidelines, they only ever received two different font
-            choices, but no identity guidelines.
-          </p>
-          <p>
-            I documented the Help Centre and SaaS website to enable the
-            Marketing team to use them as brand guidelines. I daresay I did a
-            successful job doing so as I no longer receive questions about brand
-            guidelines, nor am I finding myself needing to forward my comments
-            to the Marketing team.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container section-gap">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-h">The Design Process</h2>
-        </div>
-      </div>
-
-      <!--The Research-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h-3">The Research</h3>
-          <p>
-            Just as was the case with the SaaS website, I cannot share the
-            research details, but I will be sharing blog posts in the future
-            that focus on what makes a help centre useful. I'll be sure to link
-            the posts to this section in the future.
-
-            The following are some of my findings based on research and
-            qualitative user research:
-          </p>
-        </div>
-      </div>
-
-      <!--The Criteria-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Criteria</h3>
-          <p>
-            Based on the research I conducted, I found the following criteria I
-            needed to meet to make sure the help centre proves useful:
-          </p>
-
-          <ul class="project-h">
-            <li>The information has to be easy to find (and accessible).</li>
-            <li>The information has to be structured.</li>
-            <li>We need to tag content with words used by our users in their search queries.</li>
-            <li>The search bar needs to stand out, and we need to prioritize it. The search bar is the main element that will allow users to find the answers they're seeking.</li>
-            <li>The FAQ is the second important element in the website. We can answer 80% of user questions through 20% of our documented answers.</li>
-          </ul>
-        </div>
-      </div>
-
-
-      <!--The Wireframes-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">The Wireframes</h3>
-          <p>
-            The criteria established above created the wireframes I needed to get started.
-          </p>
-        </div>
-      </div>
-
-      <div class="row img-margin-bottom">
-        <!--Wireframe-->
-        <div class="col-6">
-          <a href="#img4"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\wf1.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img4">
-            <img src="assets\saas-helpcentre\wf1.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop"/>
-          </a>
-        </div>
-        <!--Wireframe-->
-        <div class="col-6">
-          <a href="#img5"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\wf2.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop and a much more refined drawing that clearly delineates the structure of how the homepage UX would develop"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img5">
-            <img src="assets\saas-helpcentre\wf2.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop and a much more refined drawing that clearly delineates the structure of how the homepage UX would develop"/>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p>
-            I would prototype my designs directly in HTML/CSS/JS and change them when I ran
-            into problems or when informal user tests pointed towards a different direction
-            than the one I was taking.
-          </p>
-          <p>
-            If you have a design system and a material library ready, your life
-            will be much easier. In fact, for a related project for the same
-            company, I had set aside two entire weeks to create a robust design
-            and material library to allow future platform improvements to occur
-            smoothly.
-          </p>
-        </div>
-      </div>
-
-      <!--Site Architecture-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Site Architecture</h3>
-          <p>
-            The site architecture or plan is straight forward. I'll probably mention this a
-            couple of times as we go through this, but it's worth repeating it: We need the
-            site to be as simple as possible to allow users to get their answers as quickly
-            as possible.
-          </p>
-          <p>
-            As a result, the site plan doesn't encourage depth or an overly
-            complicated menu.
-          </p>
-          <p>
-            For the guide/manual parts of the project, you have the homepage,
-            category pages, section pages, article pages. There's also the
-            community forum which doesn't go deeper than three levels: The
-            forum, the discussion board, and the post level.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <a href="#img6"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\sitemap.png" title="Sitemap" alt="Image showcasing the sitemap of the Help centre which contains the following 8 page types: Server status, search page, category page, section page, article page, community, discussion board, and post pages"/>
-          </a>
-
-
-          <a href="#_" class="lightbox" id="img6">
-            <img src="assets\saas-helpcentre\sitemap.png" title="Sitemap" alt="Image showcasing the sitemap of the Help centre which contains the following 8 page types: Server status, search page, category page, section page, article page, community, discussion board, and post pages"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            I didn't include the Zendesk utility pages such as the account or
-            profile pages since they're more-or-less a given, and I've very
-            little control over them, past their appearance.
-          </p>
-        </div>
-      </div>
-
-
-      <!--Design Components -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Component Design</h3>
-          <!--Buttons-->
-          <h4 class="h5-size project-h-3">Navigation Bar</h4>
-          <p>
-            The navigation bar will take on the same form as the one used in the
-            main website to build upon the sense of familiarity. I only changed
-            the menu items to reflect the most relevant elements to the help
-            centre.
-          </p>
-        </div>
-      </div>
-      <!--Desktop-->
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <a href="#img7"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\headers.png" title="Navigation bar" alt="Image showcasing the header design for Help Centre in all responsive format, which contains a link to the Server status page, forum, ticket request, and sign in"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img7">
-            <img src="assets\saas-helpcentre\headers.png"title="Navigation bar" alt="Image showcasing the header design for Help Centre in all responsive format, which contains a link to the Server status page, forum, ticket request, and sign in"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Footer-->
-      <div class="row">
-        <div class="col-12">
-          <h4 class="h5-size project-h">Footer</h4>
-          <p>
-            The footer will be the same footer used on the main website. I did
-            not change the footer because I wanted users to have the option to
-            navigate back to the main website.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop-->
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <a href="#img8"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\footers.png" title="Footer" alt="Image showcasing the design for the footer in it's various responsive states from desktop to mobile. The Helpcentre does not use a different footer than the SaaS website project to preserve a sense of structural continuity."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img8">
-            <img src="assets\saas-helpcentre\footers.png" title="Footer" alt="Image showcasing the design for the footer in it's various responsive states from desktop to mobile. The Helpcentre does not use a different footer than the SaaS website project to preserve a sense of structural continuity."/>
-          </a>
-        </div>
-      </div>
-
-
-      <!-- Category Selection-->
-      <div class="row">
-        <div class="col-12">
-          <h4 class="h5-size project-h">Category Selection</h4>
-          <p>
-            The category selection builds on a design created for the original
-            website. I wanted to test these specific elements for accessibility.
-            The idea being, if these elements performed better on a screen
-            reader, then I would apply the design to the main website.
-          </p>
-          <p>
-            Preliminary testing suggest the elements do perform better, and I'm
-            awaiting approval to apply them to the main website itself.
-          </p>
-        </div>
-      </div>
-      <!--Desktop-->
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <a href="#img9"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-buttons.png" title="Category Buttons" alt="Image showing the category selection buttons in it's various interactive states"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img9">
-            <img src="assets\saas-helpcentre\category-buttons.png"  title="Category Buttons" alt="Image showing the category selection buttons in it's various interactive states"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Buttons-->
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <h4 class="h5-size project-h">Buttons</h4>
-          <p>
-            The Help Centre uses more of our button library in comparison to the
-            main website. Each button-type has a specific function associated
-            with it.
-          </p>
-          <p>
-            What's in a button? In simple words: Mental models.
-          </p>
-          <p>
-            We can take advantage of our familiarity with an interface element
-            and build patterns based on that.
-          </p>
-          <p>
-            User experience design isn't about "hey, do you like the green
-            button or the red button more?". What's the point of asking that
-            question if your red button sometimes deletes an item, and at other
-            times adds an item? You've created two contradicting mental models
-            that double the mental effort required to recognize if the button
-            will do what you expect it to do.
-          </p>
-          <p>
-            While it's useful to follow real-world mental models and use 'red'
-            buttons to delete, but it's not nearly as important as consistently
-            using the button. If your red button is a positive input, you should
-            always use it in that context.
-          </p>
-          <p>
-            Let's take a look at the different button types utilized in the Help
-            Centre.
-          </p>
-        </div>
-      </div>
-
-      <!--CTA-->
-      <div class="row">
-        <div class="col-12">
-          <h5 class="h6-size">Call-to-Action Buttons</h5>
-          <p>
-            You use a CTA button when you have an action you want to encourage
-            users to use. That said, you shouldn't be spamming CTA button all
-            over the page since it'll lose its charm. In the context of the Help
-            Centre, the CTA button is the Search button. You could argue the
-            Search button might also work as a primary button, but in this
-            context, I decided I decided that the Search button needs to be
-            prominent.
-          </p>
-          <a href="#img10"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\cta-button.png" title="Call to Action Buttons" alt="The first variant of the call to action buttons that will be used on the website along with it's various visual states"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img10">
-            <img src="assets\saas-helpcentre\cta-button.png"  title="Call to Action Buttons" alt="The first variant of the call to action buttons that will be used on the website along with it's various visual states"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Primary-->
-      <div class="row">
-        <div class="col-12">
-          <h5 class="h6-size">Primary Buttons</h5>
-          <p>
-            You use a primary button when the action associated with it involves
-            inputting data into a database/search field or helps users along
-            their user journey. You might use it for commands such as "Save" or
-            "Next".
-          </p>
-          <a href="#img11"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\primary-button.png"  title="Primary Buttons" alt="The primary button that will be used on the website along with it's various visual and interactive states"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img11">
-            <img src="assets\saas-helpcentre\primary-button.png" title="Primary Buttons" alt="The primary button that will be used on the website along with it's various visual and interactive states"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Tertiary-->
-      <div class="row">
-        <div class="col-12">
-          <h5 class="h6-size">Tertiary Buttons</h5>
-          <p>
-            Use the tertiary button in situations where the action associated
-            with it is not required to complete the user journey.
-          </p>
-          <a href="#img12"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\tertiary-button.png" title="Tertiary Buttons" alt="The tertiary button that will be used on the website along with it's various visual and interactive states"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img12">
-            <img src="assets\saas-helpcentre\tertiary-button.png" title="Tertiary Buttons" alt="The tertiary button that will be used on the website along with it's various visual and interactive states"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Other buttons-->
-      <div class="row">
-        <div class="col-12">
-          <p>
-            There are other button types, namely the Secondary button and
-            perhaps the Delete button. I did not need these buttons in the Help
-            Centre, and as a result, did not include them.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-    <!--Final Designs-->
-    <section class="container section-gap">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-h">Final Designs</h2>
-          <h3 class="project-h-3">Homepage</h3>
-        </div>
-      </div>
-
-      <!-- Homepage-->
-      <div class="row">
-        <div class="col-12">
-          <p>
-            The homepage goes straight to business. If you're in the Help Centre, you're
-            probably looking for, and you've guessed it, help.
-          </p>
-          <p>
-            Users land on the page, and the first thing they'll see is a search
-            bar with the title "How can we help you today?". I don't want the
-            users to spend any more time than they had to on the page, because
-            they probably don't want to spend much time on this page either. I
-            want them to come in, get the answers they're looking for, and get
-            back right into their workflow.
-          </p>
-          <p>
-            As the users scroll down, they'll find the category selection page.
-            This section is useful if the users know what they're looking for
-            but can't quite articulate it in words yet.
-          </p>
-          <p>
-            If all else fails, the users will find the FAQ section which will
-            more likely than not have the answers for most questions on their
-            mind.
-          </p>
-        </div>
-      </div>
-      <!--Desktop-->
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-
-          <video class="proto-vid-1" loop autoplay><source src="assets\saas-helpcentre\helpcentre.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the help centre homepage">
-          </video>
-
-        </div>
-      </div>
-      <!--Mobile-->
-      <div class="row img-margin-bottom">
-        <div class="col-4">
-          <!--1-->
-          <a href="#img13"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-1.png" title="Help Centre Homepage - Mobile" alt="Image showcasing the homepage on mobile focusing on the first page fold on landing with the search bar greeting the user and prompting them to begin searching the help centre"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img13">
-            <img src="assets\saas-helpcentre\homepage-mob-1.png" title="Help Centre Homepage - Mobile" alt="Image showcasing the homepage on mobile focusing on the first page fold on landing with the search bar greeting the user and prompting them to begin searching the help centre"/>
-          </a>
-        </div>
-        <!--2-->
-        <div class="col-4">
-          <a href="#img14"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-2.png" title="Help Centre Homepage - Mobile 2" alt="Image showcasing the homepage on mobile focusing on the category selection section. Each category comes in a subtle button format with a drop-shadow. The text content describing the category has an icon above."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img14">
-            <img src="assets\saas-helpcentre\homepage-mob-2.png" title="Help Centre Homepage - Mobile 2" alt="Image showcasing the homepage on mobile focusing on the category selection section. Each category comes in a subtle button format with a drop-shadow. The text content describing the category has an icon above."/>
-          </a>
-        </div>
-        <!--3-->
-        <div class="col-4">
-          <a href="#img15"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-3.png" title="Help Centre Homepage - Mobile 3" alt="Image showcasing the homepage on mobile focusing on the FAQ section"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img15">
-            <img src="assets\saas-helpcentre\homepage-mob-3.png" title="Help Centre Homepage - Mobile 3" alt="Image showcasing the homepage on mobile focusing on the FAQ section"/>
-          </a>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            Let's take a look at some of the technical details here.
-          </p>
-          <h4 class="h5-size">Category Selection</h4>
-
-          <p>
-            Zendesk does not typically add an icon for the category section, so
-            I needed to do some coding magic here. In pseudo-code, we needed to
-            assign an icon dynamically to a category.
-          </p>
-          <p>
-            In code, this would look like this:
-          </p>
-
-          <pre class="code">
-
-            &lt;!--Generate the icons--&gt;
-            &lt;div class="hp-category-icon"&gt;
-            {{#is id 360001443477}}&lt;img src="{{asset '1.png'}}"/&gt;{{/is}}
-            {{#is id 360001827958}}&lt;img src="{{asset '3.png'}}"/&gt;{{/is}}
-            {{#is id 360001827938}}&lt;img src="{{asset '2.png'}}"/&gt;{{/is}}
-            {{#is id 360001830837}}&lt;img src="{{asset '4.png'}}"/&gt;{{/is}}
-            {{#is id 360001828078}}&lt;img src="{{asset '5.png'}}"/&gt;{{/is}}
-            {{#is id 360001828178}}&lt;img src="{{asset '6.png'}}"/&gt;{{/is}}
-            {{#is id 360001830897}}&lt;img src="{{asset '7.png'}}"/&gt;{{/is}}
-            {{#is id 360001830977}}&lt;img src="{{asset '8.png'}}"/&gt;{{/is}}
-            {{#is id 360001454018}}&lt;img src="{{asset '9.png'}}"/&gt;{{/is}}
-            {{#is id 360001454018}}&lt;img src="{{asset '10.png'}}"/&gt;{{/is}}
-            &lt;/div&gt;
-
-            &lt;!--Card text--&gt;
-            &lt;div class="hp-category-text"&gt;
-            &lt;div class="icon-array-title">{{name}}&lt;/div&gt;
-            &lt;div class="icon-array-text">{{excerpt description}}&lt;/div&gt;
-            &lt;/div&gt;
-          </pre>
-          <p>
-            So what we're doing is the following:
-          </p>
-          <p>
-            We structure the HTML/CSS to look the way we wanted it to, and then we assign
-            the dynamic elements. There's no way to do this in a completely dynamic manner.
-            We needed to allocate an icon to a section, and then let the Zendesk database
-            take care of the rest.
-          </p>
-          <p>
-            We do this through this part of the code:
-          </p>
-
-          <pre class="code">
-
-            {{#is id 360001443477}}&lt;img src="{{asset '1.png'}}"/&gt;{{/is}}
-          </pre>
-          <p>
-            We're telling Zendesk: If this section is X, then add this image.
-          </p>
-
-          <h4 class="h5-size">FAQ</h4>
-          <p>
-            The FAQ section doesn't come with Zendesk by default. Using a
-            similar method as I used above, I added a condition to an article
-            listing that only showed articles that originated from the FAQ
-            category.
-          </p>
-          <pre class="code">
-
-            {{#each categories}}
-            // You can stop paying attention after the line below.
-            // This is the line doing all the magic.
-            {{#is id 360001454018}}
-            &lt;div class="row margin"&gt;
-            //Give it a title connected to a dynamic content called Frequently_Askd.
-            //The dynamic content changes text display depending on the selected language.
-            &lt;h2 class="h2-style center-text"&gt;{{dc "frequently_asked"}} &lt;/h2&gt;
-            &lt;div class="faq-row"&gt;
-            //We're dividing content into two columns
-            &lt;div class="faq-col"&gt;
-            {{#each sections}}
-            {{#each articles}}
-            {{#is @../index 1}}
-            &lt;a href="{{url}}" class="faq-link"&gt;{{title}} &lt;/a&gt;
-            {{/is}}
-            {{/each}}
-            {{/each}}
-            &lt;/div&gt;
-            &lt;div class="faq-col"&gt;
-            {{#each sections}}
-            {{#each articles}}
-            {{#is @../index 0}}
-            &lt;a href="{{url}}" class="faq-link"&gt;{{title}} &lt;/a>
-            {{/is}}
-            {{/each}}
-            {{/each}}
-            &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;/div&gt;
-          </pre>
-
-          <p>
-            If you followed along with the Category section, you'll quickly
-            figure out what element allows the magic to happen.
-          </p>
-        </div>
-      </div>
-
-      <!--Category Pages -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Category Pages</h3>
-          <p>
-            The category page is straight forward. You have a list of sections
-            inside a category and some articles listed under them. You can
-            either go directly to an article's page or explore more listings
-            inside a section page.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop Media-->
-      <div class="row">
-        <!--Desktop 1-->
-        <div class="col-6">
-          <a href="#img16"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-1.png" title="Category - Desktop 1" alt="Image showcasing the Category page on desktop with a list of sections and some samples of articles listed under the sections. Each section leads to a section page with a complete list of articles that are associated with that section. At the top of the page there is the category title and a search bar."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img16">
-            <img src="assets\saas-helpcentre\category-1.png" title="Category - Desktop 1" alt="Image showcasing the Category page on desktop with a list of sections and some samples of articles listed under the sections. Each section leads to a section page with a complete list of articles that are associated with that section. At the top of the page there is the category title and a search bar."/>
-          </a>
-        </div>
-        <!--Desktop 2-->
-        <div class="col-6">
-          <a href="#img17" id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-2.png" title="Category - Desktop 2" alt="Image showcasing more of the category section's body and list of articles to give a better idea of how the content sits together visually in the design, with a focus on the whitespace between elements"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img17">
-            <img src="assets\saas-helpcentre\category-2.png" title="Category - Desktop 2" alt="Image showcasing more of the category section's body and list of articles to give a better idea of how the content sits together visually in the design, with a focus on the whitespace between elements"/>
-          </a>
-        </div>
-      </div>
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img18"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-mob-1.png" title="Category - Mobile 1" alt="Image showcasing the category page on mobile format focusing on the category title and search bar area."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img18">
-            <img src="assets\saas-helpcentre\category-mob-1.png" title="Category - Mobile 1" alt="Image showcasing the category page on mobile format focusing on the category title and search bar area."/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img19"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-mob-2.png" title="Category - Mobile 2" alt="Image showcasing the category page on mobile format focusing on the section listings. Each section listing shows a sample of available articles, and links to a section page with a full list of associated articles."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img19">
-            <img src="assets\saas-helpcentre\category-mob-2.png" title="Category - Mobile 2" alt="Image showcasing the category page on mobile format focusing on the section listings. Each section listing shows a sample of available articles, and links to a section page with a full list of associated articles."/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img20"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\category-mob-3.png" title="Category - Mobile 3" alt="Image showcasing how the Category page on mobile terminates and begins the footer section of the page"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img20">
-            <img src="assets\saas-helpcentre\category-mob-3.png" title="Category - Mobile 3" alt="Image showcasing how the Category page on mobile terminates and begins the footer section of the page"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Section Pages -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Section Pages</h3>
-          <p>
-            The Section page lists articles that are all related to the topic at
-            hand. The page itself is simple and straight forward, and it ought
-            to be that way - Remember: We want users to find the answer they're
-            looking for quickly.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop Media-->
-      <div class="row h-center">
-        <!--Desktop 1-->
-        <div class="col-6">
-          <a href="#img21"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\section-1.png" title="Section Page - 1" alt="Image showcasing the section page on desktop and focusing on the section title and search bar area. The section page has a follow button that allows users to receive updates when new articles are posted. Each section contains links to associated articles"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img21">
-            <img src="assets\saas-helpcentre\section-1.png" title="Section Page - 1" alt="Prototype showcasing the section page on desktop and focusing on the section title and search bar area. The section page has a follow button that allows users to receive updates when new articles are posted. Each section contains links to associated articles"/>
-          </a>
-        </div>
-        <!--Desktop 2-->
-        <div class="col-6">
-          <a href="#img22"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\section-2.png" title="Section Page - 2" alt="Prototype show casing how the section page UI terminates on desktop and begins the footer section of the page"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img22">
-            <img src="assets\saas-helpcentre\section-2.png" title="Section Page - 2" alt="Image show casing how the section page UI terminates on desktop and begins the footer section of the page"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img23"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\section-mob-1.png" title="Section Page - Mobile 1" alt="Prototype showcasing the section page on mobile and focusing on the search bar and section title area. Each section page contains a follow button that allows users to subscribe to get notifications when a new article is posted to the section"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img23">
-            <img src="assets\saas-helpcentre\section-mob-1.png" title="Section Page - Mobile 1" alt="Prototype showcasing the section page on mobile and focusing on the search bar and section title area. Each section page contains a follow button that allows users to subscribe to get notifications when a new article is posted to the section"/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img24"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\section-mob-2.png" title="Section Page - Mobile 2" alt="Prototype showcasing a list of articles listed in the mobile section page. Each article links to an article page."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img24">
-            <img src="assets\saas-helpcentre\section-mob-2.png" title="Section Page - Mobile 2" alt="Prototype showcasing a list of articles listed in the mobile section page. Each article links to an article page."/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img25"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\section-mob-3.png" title="Section Page - Mobile 3" alt="Prototype showcasing how the font family Atomic Age is to be used within the design"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img25">
-            <img src="assets\saas-helpcentre\section-mob-3.png" title="Section Page - Mobile 3" alt="Image showcasing how the section article list terminates on mobile and transitions into the footer section of the design"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            The page does have a code intervention that is worth examining.
-          </p>
-          <p>
-            By default, Zendesk only lists article titles but doesn't include
-            any of the interior text content. That usually would do the trick if
-            your article titles are articulate. I wanted to err on the side of
-            caution and give users a sneak peek into the articles so that
-            they're confident they've chosen something relevant to them.
-          </p>
-          <p>
-            I'll admit it was an easy solution, but getting to the answer wasn't. In the
-            spirit of sharing, and in case you also wanted to add an excerpt to your Zendesk
-            article link, take a look below:
-          </p>
-
-          <pre class="code">
-
-            //On Zendesk, you'll find a link such as this.
-            //This links to the article's page.
-            &lt;a href="{{url}}" class="link section-title"&gt;{{title}}&lt;/a&gt;
-            //All you need to do is create and style a CSS class for the excerpt.
-            &lt;p class="section-excerpt"&gt;
-            //Then add this handlebar in side a paragraph element.
-            {{excerpt body characters=150}}
-            &lt;/p>
-          </pre>
-        </div>
-      </div>
-
-      <!-- Article Pages -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Article Pages</h3>
-          <p>
-            The article page contains the article's content and related content.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop Media-->
-      <div class="row">
-        <!--Desktop 1-->
-        <div class="col-6">
-          <a href="#img26"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\article-1.png" title="Article Page - Desktop 1" alt="Prototype showcasing the article page and focusing on the article title, and list of related articles. The user experience allows users to easily navigate between related articles, and even follow specific authors"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img26">
-            <img src="assets\saas-helpcentre\article-1.png" title="Article Page - Desktop 1" alt="Prototype showcasing the article page and focusing on the article title, and list of related articles. The user experience allows users to easily navigate between related articles, and even follow specific authors"/>
-          </a>
-        </div>
-        <!--Desktop 2-->
-        <div class="col-6">
-          <a href="#img27"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\article-2.png" title="Article Page - Desktop 2" alt="Prototype showcasing how the Article content ends. At the end of each article is the opportunity for users to upvote or downvote articles, leave comments, and browse through related articles."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img27">
-            <img src="assets\saas-helpcentre\article-2.png" title="Article Page - Desktop 2" alt="Prototype showcasing how the Article content ends. At the end of each article is the opportunity for users to upvote or downvote articles, leave comments, and browse through related articles."/>
-          </a>
-        </div>
-      </div>
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img28"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\article-mob-1.png" title="Article Page - Mobile 1" alt="Image showcasing the article page on mobile focusing on the article title, follow button, and at the top -  Articles in this section dropdown"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img28">
-            <img src="assets\saas-helpcentre\article-mob-1.png" title="Article Page - Mobile 1" alt="Image showcasing the article page on mobile focusing on the article title, follow button, and at the top -  Articles in this section dropdown"/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img29"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\article-mob-2.png" title="Article Page - Mobile 2" alt="Image showcasing the article page on mobile with the 'articles in this section' dropdown expanded to reveal a list of relevant articles"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img29">
-            <img src="assets\saas-helpcentre\article-mob-2.png" title="Article Page - Mobile 2" alt="Image showcasing the article page on mobile with the 'articles in this section' dropdown expanded to reveal a list of relevant articles"/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img30"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\article-mob-3.png" title="Article Page - Mobile 3" alt="Image showcasing the article page on mobile at the end of an article's content. The section below the article contains a comment section, UI elements such as upvote or downvote buttons, and social share icons"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img30">
-            <img src="assets\saas-helpcentre\article-mob-3.png"title="Article Page - Mobile 3" alt="Image showcasing the article page on mobile at the end of an article's content. The section below the article contains a comment section, UI elements such as upvote or downvote buttons, and social share icons"/>
-          </a>
-        </div>
-      </div>
-
-      <!--Search Pages-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Search Page</h3>
-          <p>
-            The search page is an important page on the Help Centre. As a result, I needed
-            to make sure the information presented in it was easy to read and access. On the
-            backend of things, I had communicated a strategy with the Customer Success team
-            to structure their written content using language that users would use, and
-            using tags that are relevant to make the search function work efficiently.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop Media-->
-      <div class="row">
-        <!--Desktop 1-->
-        <div class="col-6">
-          <a href="#img44"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\search-1.png" title="Search Page - Desktop 1" alt="Image showcasing the search page on desktop with focus on the results, search terms, and a filter by type function"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img44">
-            <img src="assets\saas-helpcentre\search-1.png" title="Search Page - Desktop 1" alt="Image showcasing the search page on desktop with focus on the results, search terms, and a filter by type function"/>
-          </a>
-        </div>
-        <!--Desktop 2-->
-        <div class="col-6">
-          <a href="#img45"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\search-2.png" title="Search Page - Desktop 2" alt="Image showcasing the body of the search page on desktop focusing on the UI/UX design of the search results"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img45">
-            <img src="assets\saas-helpcentre\search-2.png" title="Search Page - Desktop 2" alt="Image showcasing the body of the search page on desktop focusing on the UI/UX design of the search results"/>
-          </a>
-        </div>
-      </div>
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img46"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\search-mob-1.png" title="Search Page - Mobile 1" alt="Prototype showcasing the UI/UX search result page on mobile with a focus on the title and the collapsed filter tab on top of the title that allows users to filter their results"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img46">
-            <img src="assets\saas-helpcentre\search-mob-1.png" title="Atomic Age Type" alt="Image showcasing how the font family Atomic Age is to be used within the design"/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img47"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\search-mob-2.png" title="Search Page - Mobile 1" alt="Prototype showcasing the UI/UX search result page on mobile with a focus on the title and the collapsed filter tab on top of the title that allows users to filter their results"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img47">
-            <img src="assets\saas-helpcentre\search-mob-2.png" title="Search Page - Mobile 2" alt="Prototype showcasing the U/UX of the search result page on mobile with the filter tab open"/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img48"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\search-mob-3.png" title="Search Page - Mobile 3" alt="Image showcasing the search results page on mobile with a focus on how the search results a visually distributing in the UI"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img48">
-            <img src="assets\saas-helpcentre\search-mob-3.png" title="Search Page - Mobile 3" alt="Image showcasing the search results page on mobile with a focus on how the search results a visually distributing in the UI"/>
-          </a>
-        </div>
-      </div>
-
-
-
-
-      <!-- Community Page -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Community Forum</h3>
-          <p>
-            The community forum allows users to post questions to the community
-            and reach out to other users and staff members. The customer support
-            team had divided the forum into different discussion boards.
-          </p>
-        </div>
-      </div>
-      <!--Desktop Media-->
-      <div class="row">
-        <!--Desktop 1-->
-        <div class="col-12">
-          <video class="proto-vid-1" loop autoplay><source src="assets\saas-helpcentre\community.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the Community forum">
-          </video>
-        </div>
-      </div>
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img31"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\community-mob-1.png" title="Community Forum - Mobile 1" alt="Prototype showcasing how the UI/UX of the community form manifests on desktop with a focus on the search bar section of the forum and create new post button"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img31">
-            <img src="assets\saas-helpcentre\community-mob-1.png" title="Community Forum - Mobile 1" alt="Prototype showcasing how the UI/UX of the community form manifests on desktop with a focus on the search bar section of the forum and create new post button"/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img32"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\community-mob-2.png" title="Community Forum - Mobile 2" alt="Prototype showcasing the U/UX forum focusing on the Discussion board listing. Each discussion board listing links to a discussion board that lists a series of posts made by users or staff to encourage an improved CX and customer relationship."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img32">
-            <img src="assets\saas-helpcentre\community-mob-2.png" title="Community Forum - Mobile 2" alt="Prototype showcasing the U/UX forum focusing on the Discussion board listing. Each discussion board listing links to a discussion board that lists a series of posts made by users or staff to encourage an improved CX and customer relationship."/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img33"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\community-mob-3.png" title="Community Forum - Mobile 3" alt="Prototype showcasing the UI/UX of the community forum and focusing on a list of recent forum activities"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img33">
-            <img src="assets\saas-helpcentre\community-mob-3.png" title="Community Forum - Mobile 3" alt="Prototype showcasing the UI/UX of the community forum and focusing on a list of recent forum activities"/>
-          </a>
-        </div>
-      </div>
-
-
-      <!-- Discussion Board Page-->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Discussion Boards</h3>
-          <p>
-            Discussion boards contain posts related to a specific subject matter.
-          </p>
-        </div>
-      </div>
-
-      <!--Desktop Media-->
-      <div class="row">
-        <!--Desktop 1-->
-        <div class="col-6">
-          <a href="#img34"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\discussion-board-1.png" title="Discussion Board - Desktop 1" alt="Prototype showcasing the UI/UX of the discussion board which allows users to follow a board and receive notifications, post new topics, or view existing posts."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img34">
-            <img src="assets\saas-helpcentre\discussion-board-1.png" title="Discussion Board - Desktop 1" alt="Prototype showcasing the UI/UX of the discussion board which allows users to follow a board and receive notifications, post new topics, or view existing posts."/>
-          </a>
-        </div>
-        <!--Desktop 2-->
-        <div class="col-6">
-          <a href="#img35"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\discussion-board-2.png"  title="Discussion Board - Desktop 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the discussion board area terminates and transitions into the footer design"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img35">
-            <img src="assets\saas-helpcentre\discussion-board-2.png" title="Discussion Board - Desktop 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the discussion board area terminates and transitions into the footer design"/>
-          </a>
-        </div>
-      </div>
-
-
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img36"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-1.png" title="Discussion Board - Mobile 1" alt="Prototype showcasing the UI/UX of the discussion board focusing on the board title, follow button, and site-wide search bar on top of the page"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img36">
-            <img src="assets\saas-helpcentre\discussion-mob-1.png" title="Discussion Board - Mobile 1" alt="Prototype showcasing the UI/UX of the discussion board focusing on the board title, follow button, and site-wide search bar on top of the page"/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img37"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-2.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on a list of posts available within a discussion board"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img37">
-            <img src="assets\saas-helpcentre\discussion-mob-2.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on a list of posts available within a discussion board"/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img38"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-3.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the list of posts terminates and transitions to the footer"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img38">
-            <img src="assets\saas-helpcentre\discussion-mob-3.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the list of posts terminates and transitions to the footer"/>
-          </a>
-        </div>
-      </div>
-
-      <!-- About Us -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Posts</h3>
-        </div>
-      </div>
-
-      <!--Desktop 1-->
-      <div class="row">
-        <div class="col-6">
-          <a href="#img39"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\post-1.png" title="Post Page - Desktop 1" alt="Prototype showcasing the UI/UX of the desktop Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post, and post content."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img39">
-            <img src="assets\saas-helpcentre\post-1.png" title="Post Page - Desktop 1" alt="Prototype showcasing the UI/UX of the Post Page template focusing on the desktop post title, and a button that allows users to receive updates about a specific post, and post content."/>
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="#img40"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\post-2.png" title="Post Page - Desktop 2" alt="Prototype showcasing the UI/UX of the desktop Post Page template focusing on the post body, the social share icons at the end of the post, and the comments sections"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img40">
-            <img src="assets\saas-helpcentre\post-2.png" title="Atomic Age Type" alt="Image showcasing how the font family Atomic Age is to be used within the design"/>
-          </a>
-        </div>
-      </div>
-      <!--Mobile Images-->
-      <div class="row">
-        <!--Mobile 1-->
-        <div class="col-4">
-          <a href="#img41"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\post-mob-1.png" title="Post Page - Mobile 1" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post."/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img41">
-            <img src="assets\saas-helpcentre\post-mob-1.png" title="Post Page - Mobile 1" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post."/>
-          </a>
-        </div>
-        <!--Mobile 2-->
-        <div class="col-4">
-          <a href="#img42"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\post-mob-2.png" title="Post Page - Mobile 2" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post body, and the social share icons at the end of the post"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img42">
-            <img src="assets\saas-helpcentre\post-mob-2.png" title="Post Page - Mobile 2" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post body, and the social share icons at the end of the post"/>
-          </a>
-        </div>
-        <!--Mobile 3 -->
-        <div class="col-4">
-          <a href="#img43"  id="portfolio_item">
-            <img class="img-fluid" src="assets\saas-helpcentre\post-mob-3.png" title="Post Page - Mobile 3" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the comments sections, and the transition of the end of the post page to the footer"/>
-          </a>
-
-          <a href="#_" class="lightbox" id="img43">
-            <img src="assets\saas-helpcentre\post-mob-3.png" title="Post Page - Mobile 3" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the comments sections, and the transition of the end of the post page to the footer"/>
-          </a>
-        </div>
-      </div>
-
-
-      <!-- Lessons Learnt-->
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Lessons Learnt</h3>
-          <p>
-            The Help Center was a fun project and a quick one, taking no more
-            than three days to complete. The project allowed me to take on a
-            purely code-driven approach towards design, and I was more than
-            happy to do so.
-          </p>
-          <p>
-            If this project highlighted anything, it's the importance of design
-            systems. Since I had already set up a material library and a design
-            system, my workflow was smooth and fast.
-          </p>
-          <p>
-            Projects like this drive home the idea that it's crucial to design
-            like an architect. What do I mean by that?
-          </p>
-          <p>
-            To design like an architect is to design with the whole picture in
-            mind and the details. In other words, you need to design the forest
-            and the trees inside the forest and understand how they work
-            together.
-          </p>
-          <p>
-            In other words, when you give a design to a developer, you need to
-            understand if what you're asking for is feasible. By understanding
-            the micro-details on a macro level, you'll take out the guesswork.
-          </p>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Final Thoughts -->
-    <section class="container-fluid background section-gap-precise section-top-margin">
-      <div class="container row">
-        <div class="col-12">
-          <h2>Final Thoughts</h2>
-          <p>
-            It's crucial to understand how to design pages/apps not from a user
-            perspective alone, but also a developer's perspective. You don't
-            need to know how to code things yourself, but understanding how code
-            works will allow you to be systematic about how you hand-off your
-            designs.
-          </p>
-          <p>
-            In this specific situation, I was the designer and the developer. I
-            designed knowing I would have to apply my designs, which greatly
-            influenced how I approached design/technical problems.  I was also
-            able to fill in the gaps in terms of available developers. By
-            getting my hands dirty with code, our developers were able to focus
-            on the platform itself.
-          </p>
-          <p>
-            In many ways, your designs have two very different audiences: Your
-            users, and your developers/executors, both of which you need to
-            cater to differently. Your users need your elements to fit together,
-            while your developers need to understand how things go together.
-          </p>
-          <p>
-            This project is an extension of the SaaS Website.
-          </p>
-          <a href="saas-website.html">You can find the SaaS website project here.</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <!--Project navigation-->
-  <section class="proj-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <a href="saas-website.html">
-            <span class="project-prev">
-
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 12">
-                <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.49,11.481a.736.736,0,0,1,.007,1.15L11.07,16.437H27.941a.821.821,0,1,1,0,1.625H11.07L15.5,21.868a.741.741,0,0,1-.007,1.15,1.059,1.059,0,0,1-1.335-.006l-6.01-5.187h0a.915.915,0,0,1-.2-.256.681.681,0,0,1-.073-.312.758.758,0,0,1,.27-.569l6.01-5.187A1.041,1.041,0,0,1,15.49,11.481Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-              Ecommerce Marketing Website
-            </span>
-          </a>
-
-          <a href="mybank.html">
-            <span class="project-next">
-              Neobanking Concept
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 12">
-                <path  d="M21.274,23.022a.736.736,0,0,1-.007-1.15l4.428-3.806H8.823a.821.821,0,1,1,0-1.625H25.694L21.26,12.635a.741.741,0,0,1,.007-1.15,1.059,1.059,0,0,1,1.335.006l6.01,5.187h0a.915.915,0,0,1,.2.256.681.681,0,0,1,.073.312.758.758,0,0,1-.27.569L22.6,23A1.041,1.041,0,0,1,21.274,23.022Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="x-section">
-    <div class="x-row">
-      <a href="physical.html">
-        <div class="x-item">
-          <div class="x-img-src"></div>
-          <div class="x-txt">
-            <h3>Physical</h3>
-            <p class="text_small">
-              Exploring how experience design manifests within the physical
-              world primarily in the form of architecture.
+              all-->Ecomz<!--googleon: index--> website project that I discussed
+              in a previous listing.  If you want to go through that project, you
+              can <a href="saas-website.html">find the project here</a>.
             </p>
+            <p>
+              The <!--googleoff: all-->Ecomz<!--googleon: index--> website was
+              live, but we needed to turn our attention towards the Help Centre.
+              My job here was to make sure that the help centre was in line with
+              the new brand experience, and more importantly: Make sure the help
+              centre was actually useful.
+            </p>
+            <p>
+              I had three key  focuses:
+            </p>
+            <ul class="project-ul">
+              <li>Get the Help Centre on-brand.</li>
+              <li>Provide a customer support channel for our users.</li>
+              <li>Allow all information to be easily accessible.</li>
+            </ul>
           </div>
         </div>
-      </a>
+      </section>
 
-      <a href="intersection.html">
-        <div class="x-item">
-          <div class="x-img-src-2"></div>
-          <div class="x-txt">
-            <h3>Intersection</h3>
-            <p class="text_small">
-              Exploring experience design at the crossroads between the digital
-              and the physical world, as well as mixed reality (MR) experiences.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <a href="digital.html">
-        <div class="x-item">
-          <div class="x-img-src-3"></div>
-          <div class="x-txt">
-            <h3>Digital</h3>
-            <p class="text_small">
-              Exploring how user experience design is typically understood,
-              and how visual communication affects perception.
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <section class="container">
-      <div class="footer-col-moe">
-        <span class="footer-h6">
-          Moe Hachem
-        </span>
-        <p class="text_small">
-          Creating digital, physical, and mixed user experiences for humans, mostly.
-        </p>
-      </div>
-
-      <div class="footer-row">
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a>Work</a></li>
-            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
-            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
-            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="footer-col-5">
-        <a href="contact.html" class="footer-social-icon">
-          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
-        </a>
-        <a href="https://www.linkedin.com/in/mohamadhachem/">
-          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="container">
-      <div class="footer-trademark">
-        <div class="footer-row">
+      <!--Overview-->
+      <section class="container section-gap">
+        <div class="row">
           <div class="col-12">
-            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
+            <h2>Overview</h2>
+            <p>
+              If you've been following along from the SaaS project, you'll find it
+              comes as no surprise that I once again found myself in a situation
+              where there were no free developers available.
+            </p>
+            <p>
+              The initial designs for the help centre were poorly implemented by a
+              developer who frankly didn't have the time to go to the toilet let
+              alone take care of the website. I place no blame on him for the
+              final execution, but now that new website was out, there was no
+              excuse for having a poorly executed help centre.
+            </p>
+            <p>
+              I once again found myself playing UX Developer, or as my colleagues
+              have come to call me: a Unicorn.
+            </p>
           </div>
-
         </div>
-      </div>
-    </section>
-  </footer>
-</body>
-</html>
+
+        <!--To do list-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Jobs to Be Done</h3>
+            <p>
+              In comparison to the SaaS website, this project was a lot more laid
+              back. I had already set the foundation and design system. In other
+              words, the hard work was complete, and it was mostly a matter of
+              applying the system to a new user flow, and a different set of
+              experiences.
+            </p>
+            <p>
+              When I first started, I outlined the following tasks that needed to
+              be complete to consider the project complete:
+            </p>
+            <ul class="project-ul-dashed">
+              <li>Understand how the Zendesk platform works.</li>
+              <li>Design a user flow focusing on helping users find the information they need.</li>
+              <li>Create a fully structured HTML website.</li>
+              <li>Link the frontend to the backend.</li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <!--The Identity-->
+      <section class="container section-gap">
+        <div class="row">
+          <div class="col-12">
+            <h2>Identity</h2>
+          </div>
+        </div>
+
+        <!--Branding-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h-3">Branding colours</h3>
+            <p>
+              To boost brand experience and recognition, I used the brandmark that
+              we had initially set up for the SaaS website.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <a href="#img1"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\brandcolours.png"  title="Brandmark" alt="Brandmark show casing the colours forming the identity and look-and-feel of the website"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img1">
+              <img src="assets\saas-helpcentre\brandcolours.png"  title="Brandmark" alt="Brandmark show casing the colours forming the identity and look-and-feel of the website"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- Typography-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Typography</h3>
+            <p>
+              The typography used in the Help Centre uses the same typographic
+              scale system I set up in the SaaS website.
+            </p>
+            <p>
+              I set all the H1 tags in TTSuperMolot to stay in line with the brand
+              guidelines.
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#img2"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\typography-header.png" title="Header Typography" alt="The selected typeface for the main header or H1 tag is TTSuperMolot"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img2">
+              <img src="assets\saas-helpcentre\typography-header.png" title="Header Typography" alt="The selected typeface for the main header or H1 tag is TTSuperMolot"/>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              Similarly, I also set the rest of the Heading tags and Body text
+              elements in Roboto.
+            </p>
+
+            <a href="#img3"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\typography-text.png" title="Body Typography" alt="The selected typeface for all body content is Roboto in different forms ranging from light to semibold"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img3">
+              <img src="assets\saas-helpcentre\typography-text.png" title="Body Typography" alt="The selected typeface for all body content is Roboto in different forms ranging from light to semibold"/>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              We've finished setting the brand guidelines and showed two live
+              examples. It's important to note that when the company received the
+              new brand guidelines, they only ever received two different font
+              choices, but no identity guidelines.
+            </p>
+            <p>
+              I documented the Help Centre and SaaS website to enable the
+              Marketing team to use them as brand guidelines. I daresay I did a
+              successful job doing so as I no longer receive questions about brand
+              guidelines, nor am I finding myself needing to forward my comments
+              to the Marketing team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section-gap">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="project-h">The Design Process</h2>
+          </div>
+        </div>
+
+        <!--The Research-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h-3">The Research</h3>
+            <p>
+              Just as was the case with the SaaS website, I cannot share the
+              research details, but I will be sharing blog posts in the future
+              that focus on what makes a help centre useful. I'll be sure to link
+              the posts to this section in the future.
+
+              The following are some of my findings based on research and
+              qualitative user research:
+            </p>
+          </div>
+        </div>
+
+        <!--The Criteria-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Criteria</h3>
+            <p>
+              Based on the research I conducted, I found the following criteria I
+              needed to meet to make sure the help centre proves useful:
+            </p>
+
+            <ul class="project-h">
+              <li>The information has to be easy to find (and accessible).</li>
+              <li>The information has to be structured.</li>
+              <li>We need to tag content with words used by our users in their search queries.</li>
+              <li>The search bar needs to stand out, and we need to prioritize it. The search bar is the main element that will allow users to find the answers they're seeking.</li>
+              <li>The FAQ is the second important element in the website. We can answer 80% of user questions through 20% of our documented answers.</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!--The Wireframes-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">The Wireframes</h3>
+            <p>
+              The criteria established above created the wireframes I needed to get started.
+            </p>
+          </div>
+        </div>
+
+        <div class="row img-margin-bottom">
+          <!--Wireframe-->
+          <div class="col-6">
+            <a href="#img4"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\wf1.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img4">
+              <img src="assets\saas-helpcentre\wf1.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop"/>
+            </a>
+          </div>
+          <!--Wireframe-->
+          <div class="col-6">
+            <a href="#img5"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\wf2.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop and a much more refined drawing that clearly delineates the structure of how the homepage UX would develop"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img5">
+              <img src="assets\saas-helpcentre\wf2.png" title="Wireframe 1" alt="Wireframes showing the development of the interface on desktop and a much more refined drawing that clearly delineates the structure of how the homepage UX would develop"/>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              I would prototype my designs directly in HTML/CSS/JS and change them when I ran
+              into problems or when informal user tests pointed towards a different direction
+              than the one I was taking.
+            </p>
+            <p>
+              If you have a design system and a material library ready, your life
+              will be much easier. In fact, for a related project for the same
+              company, I had set aside two entire weeks to create a robust design
+              and material library to allow future platform improvements to occur
+              smoothly.
+            </p>
+          </div>
+        </div>
+
+        <!--Site Architecture-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Site Architecture</h3>
+            <p>
+              The site architecture or plan is straight forward. I'll probably mention this a
+              couple of times as we go through this, but it's worth repeating it: We need the
+              site to be as simple as possible to allow users to get their answers as quickly
+              as possible.
+            </p>
+            <p>
+              As a result, the site plan doesn't encourage depth or an overly
+              complicated menu.
+            </p>
+            <p>
+              For the guide/manual parts of the project, you have the homepage,
+              category pages, section pages, article pages. There's also the
+              community forum which doesn't go deeper than three levels: The
+              forum, the discussion board, and the post level.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+            <a href="#img6"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\sitemap.png" title="Sitemap" alt="Image showcasing the sitemap of the Help centre which contains the following 8 page types: Server status, search page, category page, section page, article page, community, discussion board, and post pages"/>
+            </a>
+
+
+            <a href="#_" class="lightbox" id="img6">
+              <img src="assets\saas-helpcentre\sitemap.png" title="Sitemap" alt="Image showcasing the sitemap of the Help centre which contains the following 8 page types: Server status, search page, category page, section page, article page, community, discussion board, and post pages"/>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              I didn't include the Zendesk utility pages such as the account or
+              profile pages since they're more-or-less a given, and I've very
+              little control over them, past their appearance.
+            </p>
+          </div>
+        </div>
+
+
+        <!--Design Components -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Component Design</h3>
+            <!--Buttons-->
+            <h4 class="h5-size project-h-3">Navigation Bar</h4>
+            <p>
+              The navigation bar will take on the same form as the one used in the
+              main website to build upon the sense of familiarity. I only changed
+              the menu items to reflect the most relevant elements to the help
+              centre.
+            </p>
+          </div>
+        </div>
+        <!--Desktop-->
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+            <a href="#img7"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\headers.png" title="Navigation bar" alt="Image showcasing the header design for Help Centre in all responsive format, which contains a link to the Server status page, forum, ticket request, and sign in"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img7">
+              <img src="assets\saas-helpcentre\headers.png"title="Navigation bar" alt="Image showcasing the header design for Help Centre in all responsive format, which contains a link to the Server status page, forum, ticket request, and sign in"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="row">
+          <div class="col-12">
+            <h4 class="h5-size project-h">Footer</h4>
+            <p>
+              The footer will be the same footer used on the main website. I did
+              not change the footer because I wanted users to have the option to
+              navigate back to the main website.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop-->
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+            <a href="#img8"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\footers.png" title="Footer" alt="Image showcasing the design for the footer in it's various responsive states from desktop to mobile. The Helpcentre does not use a different footer than the SaaS website project to preserve a sense of structural continuity."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img8">
+              <img src="assets\saas-helpcentre\footers.png" title="Footer" alt="Image showcasing the design for the footer in it's various responsive states from desktop to mobile. The Helpcentre does not use a different footer than the SaaS website project to preserve a sense of structural continuity."/>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Category Selection-->
+        <div class="row">
+          <div class="col-12">
+            <h4 class="h5-size project-h">Category Selection</h4>
+            <p>
+              The category selection builds on a design created for the original
+              website. I wanted to test these specific elements for accessibility.
+              The idea being, if these elements performed better on a screen
+              reader, then I would apply the design to the main website.
+            </p>
+            <p>
+              Preliminary testing suggest the elements do perform better, and I'm
+              awaiting approval to apply them to the main website itself.
+            </p>
+          </div>
+        </div>
+        <!--Desktop-->
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+            <a href="#img9"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-buttons.png" title="Category Buttons" alt="Image showing the category selection buttons in it's various interactive states"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img9">
+              <img src="assets\saas-helpcentre\category-buttons.png"  title="Category Buttons" alt="Image showing the category selection buttons in it's various interactive states"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+            <h4 class="h5-size project-h">Buttons</h4>
+            <p>
+              The Help Centre uses more of our button library in comparison to the
+              main website. Each button-type has a specific function associated
+              with it.
+            </p>
+            <p>
+              What's in a button? In simple words: Mental models.
+            </p>
+            <p>
+              We can take advantage of our familiarity with an interface element
+              and build patterns based on that.
+            </p>
+            <p>
+              User experience design isn't about "hey, do you like the green
+              button or the red button more?". What's the point of asking that
+              question if your red button sometimes deletes an item, and at other
+              times adds an item? You've created two contradicting mental models
+              that double the mental effort required to recognize if the button
+              will do what you expect it to do.
+            </p>
+            <p>
+              While it's useful to follow real-world mental models and use 'red'
+              buttons to delete, but it's not nearly as important as consistently
+              using the button. If your red button is a positive input, you should
+              always use it in that context.
+            </p>
+            <p>
+              Let's take a look at the different button types utilized in the Help
+              Centre.
+            </p>
+          </div>
+        </div>
+
+        <!--CTA-->
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h6-size">Call-to-Action Buttons</h5>
+            <p>
+              You use a CTA button when you have an action you want to encourage
+              users to use. That said, you shouldn't be spamming CTA button all
+              over the page since it'll lose its charm. In the context of the Help
+              Centre, the CTA button is the Search button. You could argue the
+              Search button might also work as a primary button, but in this
+              context, I decided I decided that the Search button needs to be
+              prominent.
+            </p>
+            <a href="#img10"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\cta-button.png" title="Call to Action Buttons" alt="The first variant of the call to action buttons that will be used on the website along with it's various visual states"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img10">
+              <img src="assets\saas-helpcentre\cta-button.png"  title="Call to Action Buttons" alt="The first variant of the call to action buttons that will be used on the website along with it's various visual states"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Primary-->
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h6-size">Primary Buttons</h5>
+            <p>
+              You use a primary button when the action associated with it involves
+              inputting data into a database/search field or helps users along
+              their user journey. You might use it for commands such as "Save" or
+              "Next".
+            </p>
+            <a href="#img11"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\primary-button.png"  title="Primary Buttons" alt="The primary button that will be used on the website along with it's various visual and interactive states"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img11">
+              <img src="assets\saas-helpcentre\primary-button.png" title="Primary Buttons" alt="The primary button that will be used on the website along with it's various visual and interactive states"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Tertiary-->
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h6-size">Tertiary Buttons</h5>
+            <p>
+              Use the tertiary button in situations where the action associated
+              with it is not required to complete the user journey.
+            </p>
+            <a href="#img12"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\tertiary-button.png" title="Tertiary Buttons" alt="The tertiary button that will be used on the website along with it's various visual and interactive states"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img12">
+              <img src="assets\saas-helpcentre\tertiary-button.png" title="Tertiary Buttons" alt="The tertiary button that will be used on the website along with it's various visual and interactive states"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Other buttons-->
+        <div class="row">
+          <div class="col-12">
+            <p>
+              There are other button types, namely the Secondary button and
+              perhaps the Delete button. I did not need these buttons in the Help
+              Centre, and as a result, did not include them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Final Designs-->
+      <section class="container section-gap">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="project-h">Final Designs</h2>
+            <h3 class="project-h-3">Homepage</h3>
+          </div>
+        </div>
+
+        <!-- Homepage-->
+        <div class="row">
+          <div class="col-12">
+            <p>
+              The homepage goes straight to business. If you're in the Help Centre, you're
+              probably looking for, and you've guessed it, help.
+            </p>
+            <p>
+              Users land on the page, and the first thing they'll see is a search
+              bar with the title "How can we help you today?". I don't want the
+              users to spend any more time than they had to on the page, because
+              they probably don't want to spend much time on this page either. I
+              want them to come in, get the answers they're looking for, and get
+              back right into their workflow.
+            </p>
+            <p>
+              As the users scroll down, they'll find the category selection page.
+              This section is useful if the users know what they're looking for
+              but can't quite articulate it in words yet.
+            </p>
+            <p>
+              If all else fails, the users will find the FAQ section which will
+              more likely than not have the answers for most questions on their
+              mind.
+            </p>
+          </div>
+        </div>
+        <!--Desktop-->
+        <div class="row img-margin-bottom">
+          <div class="col-12">
+
+            <video class="proto-vid-1" loop autoplay><source src="assets\saas-helpcentre\helpcentre.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the help centre homepage">
+            </video>
+
+          </div>
+        </div>
+        <!--Mobile-->
+        <div class="row img-margin-bottom">
+          <div class="col-4">
+            <!--1-->
+            <a href="#img13"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-1.png" title="Help Centre Homepage - Mobile" alt="Image showcasing the homepage on mobile focusing on the first page fold on landing with the search bar greeting the user and prompting them to begin searching the help centre"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img13">
+              <img src="assets\saas-helpcentre\homepage-mob-1.png" title="Help Centre Homepage - Mobile" alt="Image showcasing the homepage on mobile focusing on the first page fold on landing with the search bar greeting the user and prompting them to begin searching the help centre"/>
+            </a>
+          </div>
+          <!--2-->
+          <div class="col-4">
+            <a href="#img14"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-2.png" title="Help Centre Homepage - Mobile 2" alt="Image showcasing the homepage on mobile focusing on the category selection section. Each category comes in a subtle button format with a drop-shadow. The text content describing the category has an icon above."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img14">
+              <img src="assets\saas-helpcentre\homepage-mob-2.png" title="Help Centre Homepage - Mobile 2" alt="Image showcasing the homepage on mobile focusing on the category selection section. Each category comes in a subtle button format with a drop-shadow. The text content describing the category has an icon above."/>
+            </a>
+          </div>
+          <!--3-->
+          <div class="col-4">
+            <a href="#img15"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\homepage-mob-3.png" title="Help Centre Homepage - Mobile 3" alt="Image showcasing the homepage on mobile focusing on the FAQ section"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img15">
+              <img src="assets\saas-helpcentre\homepage-mob-3.png" title="Help Centre Homepage - Mobile 3" alt="Image showcasing the homepage on mobile focusing on the FAQ section"/>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              Let's take a look at some of the technical details here.
+            </p>
+            <h4 class="h5-size">Category Selection</h4>
+
+            <p>
+              Zendesk does not typically add an icon for the category section, so
+              I needed to do some coding magic here. In pseudo-code, we needed to
+              assign an icon dynamically to a category.
+            </p>
+            <p>
+              In code, this would look like this:
+            </p>
+
+            <pre class="code">
+
+              &lt;!--Generate the icons--&gt;
+              &lt;div class="hp-category-icon"&gt;
+              {{#is id 360001443477}}&lt;img src="{{asset '1.png'}}"/&gt;{{/is}}
+              {{#is id 360001827958}}&lt;img src="{{asset '3.png'}}"/&gt;{{/is}}
+              {{#is id 360001827938}}&lt;img src="{{asset '2.png'}}"/&gt;{{/is}}
+              {{#is id 360001830837}}&lt;img src="{{asset '4.png'}}"/&gt;{{/is}}
+              {{#is id 360001828078}}&lt;img src="{{asset '5.png'}}"/&gt;{{/is}}
+              {{#is id 360001828178}}&lt;img src="{{asset '6.png'}}"/&gt;{{/is}}
+              {{#is id 360001830897}}&lt;img src="{{asset '7.png'}}"/&gt;{{/is}}
+              {{#is id 360001830977}}&lt;img src="{{asset '8.png'}}"/&gt;{{/is}}
+              {{#is id 360001454018}}&lt;img src="{{asset '9.png'}}"/&gt;{{/is}}
+              {{#is id 360001454018}}&lt;img src="{{asset '10.png'}}"/&gt;{{/is}}
+              &lt;/div&gt;
+
+              &lt;!--Card text--&gt;
+              &lt;div class="hp-category-text"&gt;
+              &lt;div class="icon-array-title">{{name}}&lt;/div&gt;
+              &lt;div class="icon-array-text">{{excerpt description}}&lt;/div&gt;
+              &lt;/div&gt;
+            </pre>
+            <p>
+              So what we're doing is the following:
+            </p>
+            <p>
+              We structure the HTML/CSS to look the way we wanted it to, and then we assign
+              the dynamic elements. There's no way to do this in a completely dynamic manner.
+              We needed to allocate an icon to a section, and then let the Zendesk database
+              take care of the rest.
+            </p>
+            <p>
+              We do this through this part of the code:
+            </p>
+
+            <pre class="code">
+
+              {{#is id 360001443477}}&lt;img src="{{asset '1.png'}}"/&gt;{{/is}}
+            </pre>
+            <p>
+              We're telling Zendesk: If this section is X, then add this image.
+            </p>
+
+            <h4 class="h5-size">FAQ</h4>
+            <p>
+              The FAQ section doesn't come with Zendesk by default. Using a
+              similar method as I used above, I added a condition to an article
+              listing that only showed articles that originated from the FAQ
+              category.
+            </p>
+            <pre class="code">
+
+              {{#each categories}}
+              // You can stop paying attention after the line below.
+              // This is the line doing all the magic.
+              {{#is id 360001454018}}
+              &lt;div class="row margin"&gt;
+              //Give it a title connected to a dynamic content called Frequently_Askd.
+              //The dynamic content changes text display depending on the selected language.
+              &lt;h2 class="h2-style center-text"&gt;{{dc "frequently_asked"}} &lt;/h2&gt;
+              &lt;div class="faq-row"&gt;
+              //We're dividing content into two columns
+              &lt;div class="faq-col"&gt;
+              {{#each sections}}
+              {{#each articles}}
+              {{#is @../index 1}}
+              &lt;a href="{{url}}" class="faq-link"&gt;{{title}} &lt;/a&gt;
+              {{/is}}
+              {{/each}}
+              {{/each}}
+              &lt;/div&gt;
+              &lt;div class="faq-col"&gt;
+              {{#each sections}}
+              {{#each articles}}
+              {{#is @../index 0}}
+              &lt;a href="{{url}}" class="faq-link"&gt;{{title}} &lt;/a>
+              {{/is}}
+              {{/each}}
+              {{/each}}
+              &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;/div&gt;
+            </pre>
+
+            <p>
+              If you followed along with the Category section, you'll quickly
+              figure out what element allows the magic to happen.
+            </p>
+          </div>
+        </div>
+
+        <!--Category Pages -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Category Pages</h3>
+            <p>
+              The category page is straight forward. You have a list of sections
+              inside a category and some articles listed under them. You can
+              either go directly to an article's page or explore more listings
+              inside a section page.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop Media-->
+        <div class="row">
+          <!--Desktop 1-->
+          <div class="col-6">
+            <a href="#img16"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-1.png" title="Category - Desktop 1" alt="Image showcasing the Category page on desktop with a list of sections and some samples of articles listed under the sections. Each section leads to a section page with a complete list of articles that are associated with that section. At the top of the page there is the category title and a search bar."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img16">
+              <img src="assets\saas-helpcentre\category-1.png" title="Category - Desktop 1" alt="Image showcasing the Category page on desktop with a list of sections and some samples of articles listed under the sections. Each section leads to a section page with a complete list of articles that are associated with that section. At the top of the page there is the category title and a search bar."/>
+            </a>
+          </div>
+          <!--Desktop 2-->
+          <div class="col-6">
+            <a href="#img17" id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-2.png" title="Category - Desktop 2" alt="Image showcasing more of the category section's body and list of articles to give a better idea of how the content sits together visually in the design, with a focus on the whitespace between elements"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img17">
+              <img src="assets\saas-helpcentre\category-2.png" title="Category - Desktop 2" alt="Image showcasing more of the category section's body and list of articles to give a better idea of how the content sits together visually in the design, with a focus on the whitespace between elements"/>
+            </a>
+          </div>
+        </div>
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img18"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-mob-1.png" title="Category - Mobile 1" alt="Image showcasing the category page on mobile format focusing on the category title and search bar area."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img18">
+              <img src="assets\saas-helpcentre\category-mob-1.png" title="Category - Mobile 1" alt="Image showcasing the category page on mobile format focusing on the category title and search bar area."/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img19"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-mob-2.png" title="Category - Mobile 2" alt="Image showcasing the category page on mobile format focusing on the section listings. Each section listing shows a sample of available articles, and links to a section page with a full list of associated articles."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img19">
+              <img src="assets\saas-helpcentre\category-mob-2.png" title="Category - Mobile 2" alt="Image showcasing the category page on mobile format focusing on the section listings. Each section listing shows a sample of available articles, and links to a section page with a full list of associated articles."/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img20"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\category-mob-3.png" title="Category - Mobile 3" alt="Image showcasing how the Category page on mobile terminates and begins the footer section of the page"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img20">
+              <img src="assets\saas-helpcentre\category-mob-3.png" title="Category - Mobile 3" alt="Image showcasing how the Category page on mobile terminates and begins the footer section of the page"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Section Pages -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Section Pages</h3>
+            <p>
+              The Section page lists articles that are all related to the topic at
+              hand. The page itself is simple and straight forward, and it ought
+              to be that way - Remember: We want users to find the answer they're
+              looking for quickly.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop Media-->
+        <div class="row h-center">
+          <!--Desktop 1-->
+          <div class="col-6">
+            <a href="#img21"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\section-1.png" title="Section Page - 1" alt="Image showcasing the section page on desktop and focusing on the section title and search bar area. The section page has a follow button that allows users to receive updates when new articles are posted. Each section contains links to associated articles"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img21">
+              <img src="assets\saas-helpcentre\section-1.png" title="Section Page - 1" alt="Prototype showcasing the section page on desktop and focusing on the section title and search bar area. The section page has a follow button that allows users to receive updates when new articles are posted. Each section contains links to associated articles"/>
+            </a>
+          </div>
+          <!--Desktop 2-->
+          <div class="col-6">
+            <a href="#img22"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\section-2.png" title="Section Page - 2" alt="Prototype show casing how the section page UI terminates on desktop and begins the footer section of the page"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img22">
+              <img src="assets\saas-helpcentre\section-2.png" title="Section Page - 2" alt="Image show casing how the section page UI terminates on desktop and begins the footer section of the page"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img23"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\section-mob-1.png" title="Section Page - Mobile 1" alt="Prototype showcasing the section page on mobile and focusing on the search bar and section title area. Each section page contains a follow button that allows users to subscribe to get notifications when a new article is posted to the section"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img23">
+              <img src="assets\saas-helpcentre\section-mob-1.png" title="Section Page - Mobile 1" alt="Prototype showcasing the section page on mobile and focusing on the search bar and section title area. Each section page contains a follow button that allows users to subscribe to get notifications when a new article is posted to the section"/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img24"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\section-mob-2.png" title="Section Page - Mobile 2" alt="Prototype showcasing a list of articles listed in the mobile section page. Each article links to an article page."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img24">
+              <img src="assets\saas-helpcentre\section-mob-2.png" title="Section Page - Mobile 2" alt="Prototype showcasing a list of articles listed in the mobile section page. Each article links to an article page."/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img25"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\section-mob-3.png" title="Section Page - Mobile 3" alt="Prototype showcasing how the font family Atomic Age is to be used within the design"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img25">
+              <img src="assets\saas-helpcentre\section-mob-3.png" title="Section Page - Mobile 3" alt="Image showcasing how the section article list terminates on mobile and transitions into the footer section of the design"/>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              The page does have a code intervention that is worth examining.
+            </p>
+            <p>
+              By default, Zendesk only lists article titles but doesn't include
+              any of the interior text content. That usually would do the trick if
+              your article titles are articulate. I wanted to err on the side of
+              caution and give users a sneak peek into the articles so that
+              they're confident they've chosen something relevant to them.
+            </p>
+            <p>
+              I'll admit it was an easy solution, but getting to the answer wasn't. In the
+              spirit of sharing, and in case you also wanted to add an excerpt to your Zendesk
+              article link, take a look below:
+            </p>
+
+            <pre class="code">
+
+              //On Zendesk, you'll find a link such as this.
+              //This links to the article's page.
+              &lt;a href="{{url}}" class="link section-title"&gt;{{title}}&lt;/a&gt;
+              //All you need to do is create and style a CSS class for the excerpt.
+              &lt;p class="section-excerpt"&gt;
+              //Then add this handlebar in side a paragraph element.
+              {{excerpt body characters=150}}
+              &lt;/p>
+            </pre>
+          </div>
+        </div>
+
+        <!-- Article Pages -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Article Pages</h3>
+            <p>
+              The article page contains the article's content and related content.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop Media-->
+        <div class="row">
+          <!--Desktop 1-->
+          <div class="col-6">
+            <a href="#img26"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\article-1.png" title="Article Page - Desktop 1" alt="Prototype showcasing the article page and focusing on the article title, and list of related articles. The user experience allows users to easily navigate between related articles, and even follow specific authors"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img26">
+              <img src="assets\saas-helpcentre\article-1.png" title="Article Page - Desktop 1" alt="Prototype showcasing the article page and focusing on the article title, and list of related articles. The user experience allows users to easily navigate between related articles, and even follow specific authors"/>
+            </a>
+          </div>
+          <!--Desktop 2-->
+          <div class="col-6">
+            <a href="#img27"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\article-2.png" title="Article Page - Desktop 2" alt="Prototype showcasing how the Article content ends. At the end of each article is the opportunity for users to upvote or downvote articles, leave comments, and browse through related articles."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img27">
+              <img src="assets\saas-helpcentre\article-2.png" title="Article Page - Desktop 2" alt="Prototype showcasing how the Article content ends. At the end of each article is the opportunity for users to upvote or downvote articles, leave comments, and browse through related articles."/>
+            </a>
+          </div>
+        </div>
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img28"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\article-mob-1.png" title="Article Page - Mobile 1" alt="Image showcasing the article page on mobile focusing on the article title, follow button, and at the top -  Articles in this section dropdown"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img28">
+              <img src="assets\saas-helpcentre\article-mob-1.png" title="Article Page - Mobile 1" alt="Image showcasing the article page on mobile focusing on the article title, follow button, and at the top -  Articles in this section dropdown"/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img29"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\article-mob-2.png" title="Article Page - Mobile 2" alt="Image showcasing the article page on mobile with the 'articles in this section' dropdown expanded to reveal a list of relevant articles"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img29">
+              <img src="assets\saas-helpcentre\article-mob-2.png" title="Article Page - Mobile 2" alt="Image showcasing the article page on mobile with the 'articles in this section' dropdown expanded to reveal a list of relevant articles"/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img30"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\article-mob-3.png" title="Article Page - Mobile 3" alt="Image showcasing the article page on mobile at the end of an article's content. The section below the article contains a comment section, UI elements such as upvote or downvote buttons, and social share icons"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img30">
+              <img src="assets\saas-helpcentre\article-mob-3.png"title="Article Page - Mobile 3" alt="Image showcasing the article page on mobile at the end of an article's content. The section below the article contains a comment section, UI elements such as upvote or downvote buttons, and social share icons"/>
+            </a>
+          </div>
+        </div>
+
+        <!--Search Pages-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Search Page</h3>
+            <p>
+              The search page is an important page on the Help Centre. As a result, I needed
+              to make sure the information presented in it was easy to read and access. On the
+              backend of things, I had communicated a strategy with the Customer Success team
+              to structure their written content using language that users would use, and
+              using tags that are relevant to make the search function work efficiently.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop Media-->
+        <div class="row">
+          <!--Desktop 1-->
+          <div class="col-6">
+            <a href="#img44"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\search-1.png" title="Search Page - Desktop 1" alt="Image showcasing the search page on desktop with focus on the results, search terms, and a filter by type function"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img44">
+              <img src="assets\saas-helpcentre\search-1.png" title="Search Page - Desktop 1" alt="Image showcasing the search page on desktop with focus on the results, search terms, and a filter by type function"/>
+            </a>
+          </div>
+          <!--Desktop 2-->
+          <div class="col-6">
+            <a href="#img45"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\search-2.png" title="Search Page - Desktop 2" alt="Image showcasing the body of the search page on desktop focusing on the UI/UX design of the search results"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img45">
+              <img src="assets\saas-helpcentre\search-2.png" title="Search Page - Desktop 2" alt="Image showcasing the body of the search page on desktop focusing on the UI/UX design of the search results"/>
+            </a>
+          </div>
+        </div>
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img46"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\search-mob-1.png" title="Search Page - Mobile 1" alt="Prototype showcasing the UI/UX search result page on mobile with a focus on the title and the collapsed filter tab on top of the title that allows users to filter their results"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img46">
+              <img src="assets\saas-helpcentre\search-mob-1.png" title="Atomic Age Type" alt="Image showcasing how the font family Atomic Age is to be used within the design"/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img47"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\search-mob-2.png" title="Search Page - Mobile 1" alt="Prototype showcasing the UI/UX search result page on mobile with a focus on the title and the collapsed filter tab on top of the title that allows users to filter their results"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img47">
+              <img src="assets\saas-helpcentre\search-mob-2.png" title="Search Page - Mobile 2" alt="Prototype showcasing the U/UX of the search result page on mobile with the filter tab open"/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img48"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\search-mob-3.png" title="Search Page - Mobile 3" alt="Image showcasing the search results page on mobile with a focus on how the search results a visually distributing in the UI"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img48">
+              <img src="assets\saas-helpcentre\search-mob-3.png" title="Search Page - Mobile 3" alt="Image showcasing the search results page on mobile with a focus on how the search results a visually distributing in the UI"/>
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <!-- Community Page -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Community Forum</h3>
+            <p>
+              The community forum allows users to post questions to the community
+              and reach out to other users and staff members. The customer support
+              team had divided the forum into different discussion boards.
+            </p>
+          </div>
+        </div>
+        <!--Desktop Media-->
+        <div class="row">
+          <!--Desktop 1-->
+          <div class="col-12">
+            <video class="proto-vid-1" loop autoplay><source src="assets\saas-helpcentre\community.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the Community forum">
+            </video>
+          </div>
+        </div>
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img31"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\community-mob-1.png" title="Community Forum - Mobile 1" alt="Prototype showcasing how the UI/UX of the community form manifests on desktop with a focus on the search bar section of the forum and create new post button"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img31">
+              <img src="assets\saas-helpcentre\community-mob-1.png" title="Community Forum - Mobile 1" alt="Prototype showcasing how the UI/UX of the community form manifests on desktop with a focus on the search bar section of the forum and create new post button"/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img32"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\community-mob-2.png" title="Community Forum - Mobile 2" alt="Prototype showcasing the U/UX forum focusing on the Discussion board listing. Each discussion board listing links to a discussion board that lists a series of posts made by users or staff to encourage an improved CX and customer relationship."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img32">
+              <img src="assets\saas-helpcentre\community-mob-2.png" title="Community Forum - Mobile 2" alt="Prototype showcasing the U/UX forum focusing on the Discussion board listing. Each discussion board listing links to a discussion board that lists a series of posts made by users or staff to encourage an improved CX and customer relationship."/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img33"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\community-mob-3.png" title="Community Forum - Mobile 3" alt="Prototype showcasing the UI/UX of the community forum and focusing on a list of recent forum activities"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img33">
+              <img src="assets\saas-helpcentre\community-mob-3.png" title="Community Forum - Mobile 3" alt="Prototype showcasing the UI/UX of the community forum and focusing on a list of recent forum activities"/>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Discussion Board Page-->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Discussion Boards</h3>
+            <p>
+              Discussion boards contain posts related to a specific subject matter.
+            </p>
+          </div>
+        </div>
+
+        <!--Desktop Media-->
+        <div class="row">
+          <!--Desktop 1-->
+          <div class="col-6">
+            <a href="#img34"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\discussion-board-1.png" title="Discussion Board - Desktop 1" alt="Prototype showcasing the UI/UX of the discussion board which allows users to follow a board and receive notifications, post new topics, or view existing posts."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img34">
+              <img src="assets\saas-helpcentre\discussion-board-1.png" title="Discussion Board - Desktop 1" alt="Prototype showcasing the UI/UX of the discussion board which allows users to follow a board and receive notifications, post new topics, or view existing posts."/>
+            </a>
+          </div>
+          <!--Desktop 2-->
+          <div class="col-6">
+            <a href="#img35"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\discussion-board-2.png"  title="Discussion Board - Desktop 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the discussion board area terminates and transitions into the footer design"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img35">
+              <img src="assets\saas-helpcentre\discussion-board-2.png" title="Discussion Board - Desktop 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the discussion board area terminates and transitions into the footer design"/>
+            </a>
+          </div>
+        </div>
+
+
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img36"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-1.png" title="Discussion Board - Mobile 1" alt="Prototype showcasing the UI/UX of the discussion board focusing on the board title, follow button, and site-wide search bar on top of the page"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img36">
+              <img src="assets\saas-helpcentre\discussion-mob-1.png" title="Discussion Board - Mobile 1" alt="Prototype showcasing the UI/UX of the discussion board focusing on the board title, follow button, and site-wide search bar on top of the page"/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img37"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-2.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on a list of posts available within a discussion board"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img37">
+              <img src="assets\saas-helpcentre\discussion-mob-2.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on a list of posts available within a discussion board"/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img38"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\discussion-mob-3.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the list of posts terminates and transitions to the footer"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img38">
+              <img src="assets\saas-helpcentre\discussion-mob-3.png" title="Discussion Board - Mobile 2" alt="Prototype showcasing the UI/UX of the discussion board focusing on how the list of posts terminates and transitions to the footer"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Us -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Posts</h3>
+          </div>
+        </div>
+
+        <!--Desktop 1-->
+        <div class="row">
+          <div class="col-6">
+            <a href="#img39"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\post-1.png" title="Post Page - Desktop 1" alt="Prototype showcasing the UI/UX of the desktop Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post, and post content."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img39">
+              <img src="assets\saas-helpcentre\post-1.png" title="Post Page - Desktop 1" alt="Prototype showcasing the UI/UX of the Post Page template focusing on the desktop post title, and a button that allows users to receive updates about a specific post, and post content."/>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#img40"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\post-2.png" title="Post Page - Desktop 2" alt="Prototype showcasing the UI/UX of the desktop Post Page template focusing on the post body, the social share icons at the end of the post, and the comments sections"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img40">
+              <img src="assets\saas-helpcentre\post-2.png" title="Atomic Age Type" alt="Image showcasing how the font family Atomic Age is to be used within the design"/>
+            </a>
+          </div>
+        </div>
+        <!--Mobile Images-->
+        <div class="row">
+          <!--Mobile 1-->
+          <div class="col-4">
+            <a href="#img41"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\post-mob-1.png" title="Post Page - Mobile 1" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post."/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img41">
+              <img src="assets\saas-helpcentre\post-mob-1.png" title="Post Page - Mobile 1" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post title, and a button that allows users to receive updates about a specific post."/>
+            </a>
+          </div>
+          <!--Mobile 2-->
+          <div class="col-4">
+            <a href="#img42"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\post-mob-2.png" title="Post Page - Mobile 2" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post body, and the social share icons at the end of the post"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img42">
+              <img src="assets\saas-helpcentre\post-mob-2.png" title="Post Page - Mobile 2" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the post body, and the social share icons at the end of the post"/>
+            </a>
+          </div>
+          <!--Mobile 3 -->
+          <div class="col-4">
+            <a href="#img43"  id="portfolio_item">
+              <img class="img-fluid" src="assets\saas-helpcentre\post-mob-3.png" title="Post Page - Mobile 3" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the comments sections, and the transition of the end of the post page to the footer"/>
+            </a>
+
+            <a href="#_" class="lightbox" id="img43">
+              <img src="assets\saas-helpcentre\post-mob-3.png" title="Post Page - Mobile 3" alt="Prototype showcasing the UI/UX of the mobile Post Page template focusing on the comments sections, and the transition of the end of the post page to the footer"/>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Lessons Learnt-->
+
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Lessons Learnt</h3>
+            <p>
+              The Help Center was a fun project and a quick one, taking no more
+              than three days to complete. The project allowed me to take on a
+              purely code-driven approach towards design, and I was more than
+              happy to do so.
+            </p>
+            <p>
+              If this project highlighted anything, it's the importance of design
+              systems. Since I had already set up a material library and a design
+              system, my workflow was smooth and fast.
+            </p>
+            <p>
+              Projects like this drive home the idea that it's crucial to design
+              like an architect. What do I mean by that?
+            </p>
+            <p>
+              To design like an architect is to design with the whole picture in
+              mind and the details. In other words, you need to design the forest
+              and the trees inside the forest and understand how they work
+              together.
+            </p>
+            <p>
+              In other words, when you give a design to a developer, you need to
+              understand if what you're asking for is feasible. By understanding
+              the micro-details on a macro level, you'll take out the guesswork.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Final Thoughts -->
+      <section class="container-fluid background section-gap-precise section-top-margin">
+        <div class="container row">
+          <div class="col-12">
+            <h2>Final Thoughts</h2>
+            <p>
+              It's crucial to understand how to design pages/apps not from a user
+              perspective alone, but also a developer's perspective. You don't
+              need to know how to code things yourself, but understanding how code
+              works will allow you to be systematic about how you hand-off your
+              designs.
+            </p>
+            <p>
+              In this specific situation, I was the designer and the developer. I
+              designed knowing I would have to apply my designs, which greatly
+              influenced how I approached design/technical problems.  I was also
+              able to fill in the gaps in terms of available developers. By
+              getting my hands dirty with code, our developers were able to focus
+              on the platform itself.
+            </p>
+            <p>
+              In many ways, your designs have two very different audiences: Your
+              users, and your developers/executors, both of which you need to
+              cater to differently. Your users need your elements to fit together,
+              while your developers need to understand how things go together.
+            </p>
+            <p>
+              This project is an extension of the SaaS Website.
+            </p>
+            <a href="saas-website.html">You can find the SaaS website project here.</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer data-include="footer"></footer>
+
+  </body>
+  </html>

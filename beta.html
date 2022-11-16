@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="User Experience, Design, Designer, UX
-User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design, Experience, XD, XD Designer, Service Design, Product Design, Product, Product Manager, PM, Digital Transformation, Design services, branding, graphic, graphic design, multi-discplinary, Mohamad Hachem, Moe Hachem, M.G. Hachem, Dubai, Dubai-based, United Arab Emirates, UAE, UAE-based, MENA">
+  User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design, Experience, XD, XD Designer, Service Design, Product Design, Product, Product Manager, PM, Digital Transformation, Design services, branding, graphic, graphic design, multi-discplinary, Mohamad Hachem, Moe Hachem, M.G. Hachem, Dubai, Dubai-based, United Arab Emirates, UAE, UAE-based, MENA">
   <meta name="description" content="A design proposal that looks at improving the user experience and user interface (UX/UI) of a pet shelter's online presence, and encourage people to choose pet adoption over simply going to a pet store and buying a pet.">
   <meta name="author" content="Mohamad Hachem">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -15,49 +15,15 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
   <link rel="icon" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143942963-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143942963-2');
-  </script>
-
-  <script type="text/javascript">
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-
-  </script>
+  <script src="main.js"></script>
 </head>
 
 
 
 <body>
-  <nav role="navigation" class="navbar">
-    <a class="logotype" href="home.html">
-      m.g. hachem
-    </a>
-    <div class="menuToggle">
-      <input class="burger-box" aria-label="Menu" type="checkbox"/>
-      <span></span>
-      <span></span>
-      <ul id="menu" class="nav-menu">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="work.html">Work</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
-
-
+  <!--Header-->
+  <div data-include="header"></div>
 
   <main>
 
@@ -567,478 +533,350 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
               <li>Companionship.</li>
             </ol>
             <h3 class="h6-size project-h-3">Frustrations</h4>
-            <ol>
-              <li>Unsure which dogs are available.</li>
-              <li>Unsure how long the process will take.</li>
-              <li>Unsure what the adoption criteria is.</li>
-              <li>Unsure if the shelter is trustworthy.</li>
+              <ol>
+                <li>Unsure which dogs are available.</li>
+                <li>Unsure how long the process will take.</li>
+                <li>Unsure what the adoption criteria is.</li>
+                <li>Unsure if the shelter is trustworthy.</li>
+              </ol>
+
+              <h3 class="h4-size">Empathy Map</h3>
+
+              <a href="#img13"  id="portfolio_item">
+                <img class="img-fluid" src="assets\beta\empathy_1.jpg" title="UX User Empathy Map for Maya" alt="UX User Empathy Map for the Persona Maya"/>
+              </a>
+
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img13">
+                <img src="assets\beta\empathy_2.jpg" title="UX User Empathy Map for Maya" alt="UX User Empathy Map for the Persona Maya"/>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Project Goals-->
+      <section class="container section-gap">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="project-h">Determining Goals</h2>
+            <p>
+              The issues needed to be addressed two-fold: once for the human user,
+              and the second time for the animals - who are also users of this
+              application.
+            </p>
+            <p>
+              The biggest precaution I took was to ensure that by addressing and
+              fixing a problem, that I am not creating a new one in the process.
+            </p>
+            <p>
+              Using the 5 Whys Principles, as established in the IBM Enterprise
+              Design Thinking process, two problem statements were formed:
+            </p>
+
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+
+
+            <h3 class="project-h h6-size">Initial Statement 1</h3>
+            <ol class="no-format-list">
+              <li>Animals in shelters live in overpopulated spaces.</li>
+              <li><strong>Why?</strong></li>
+              <li>Less animals are adopted out than taken in.</li>
+              <li><strong>Why?</strong></li>
+              <li>Purebred, younger, or animals considered attractive are considered more desirable.</li>
+              <li><strong>Why?</strong></li>
+              <li>Some pets are considered more valuable than others and are actively sought out by people.</li>
+              <li><strong>Why?</strong></li>
+              <li>People are ill-informed of the responsibilities of owning and caring for pet, and tend to choose to pets that are not suited for their lifestyles.</li>
             </ol>
 
-            <h3 class="h4-size">Empathy Map</h3>
+            <h2 class="h5-size project-h">Problem Statement 1</h2>
+            <p>
+              People are not filtered to suit the needs of the animals to be adopted in shelters.
+            </p>
 
-            <a href="#img13"  id="portfolio_item">
-              <img class="img-fluid" src="assets\beta\empathy_1.jpg" title="UX User Empathy Map for Maya" alt="UX User Empathy Map for the Persona Maya"/>
+            <a href="#img14"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\problem_1.jpg" title="Problem Statement 1" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 1">
             </a>
 
             <!-- lightbox container hidden with CSS -->
-            <a href="#_" class="lightbox" id="img13">
-              <img src="assets\beta\empathy_2.jpg" title="UX User Empathy Map for Maya" alt="UX User Empathy Map for the Persona Maya"/>
+            <a href="#_" class="lightbox" id="img14">
+              <img src="assets\beta\problem_1.jpg" title="Problem Statement 1" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 1">
+            </a>
+
+          </div>
+          <div class="col-6">
+            <h3 class="h6-size project-h">Initial Statement 2</h3>
+            <ol class="no-format-list">
+              <li>People prefer to buy pets over adopting them.</li>
+              <li><strong>Why?</strong></li>
+              <li>People do not generally consider that pet adoption is an available option.</li>
+              <li><strong>Why?</strong></li>
+              <li>Adoption isn´t considered an option because accessing the information is inconvenient.</li>
+              <li><strong>Why?</strong></li>
+              <li>The information is poorly organised and getting to it puts people off from continuing the process.</li>
+              <li><strong>Why?</strong></li>
+              <li>People tend to quit the process because it is much more convenient to find the local pet store.</li>
+            </ol>
+
+            <h2 class="project-h h5-size">Problem Statement 2</h2>
+            <p>
+              Local pet stores are easier and quicker to deal than animal shelters.
+            </p>
+
+            <a href="#img15"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\problem_2.jpg" title="Problem Statement 2" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 2">
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img15">
+              <img src="assets\beta\problem_2.jpg" title="Problem Statement 2" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 2">
             </a>
 
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Project Goals-->
-    <section class="container section-gap">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-h">Determining Goals</h2>
-          <p>
-            The issues needed to be addressed two-fold: once for the human user,
-            and the second time for the animals - who are also users of this
-            application.
-          </p>
-          <p>
-            The biggest precaution I took was to ensure that by addressing and
-            fixing a problem, that I am not creating a new one in the process.
-          </p>
-          <p>
-            Using the 5 Whys Principles, as established in the IBM Enterprise
-            Design Thinking process, two problem statements were formed:
-          </p>
-
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-
-
-          <h3 class="project-h h6-size">Initial Statement 1</h3>
-          <ol class="no-format-list">
-            <li>Animals in shelters live in overpopulated spaces.</li>
-            <li><strong>Why?</strong></li>
-            <li>Less animals are adopted out than taken in.</li>
-            <li><strong>Why?</strong></li>
-            <li>Purebred, younger, or animals considered attractive are considered more desirable.</li>
-            <li><strong>Why?</strong></li>
-            <li>Some pets are considered more valuable than others and are actively sought out by people.</li>
-            <li><strong>Why?</strong></li>
-            <li>People are ill-informed of the responsibilities of owning and caring for pet, and tend to choose to pets that are not suited for their lifestyles.</li>
-          </ol>
-
-          <h2 class="h5-size project-h">Problem Statement 1</h2>
-          <p>
-            People are not filtered to suit the needs of the animals to be adopted in shelters.
-          </p>
-
-          <a href="#img14"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\problem_1.jpg" title="Problem Statement 1" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 1">
-          </a>
-
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img14">
-            <img src="assets\beta\problem_1.jpg" title="Problem Statement 1" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 1">
-          </a>
-
-        </div>
-        <div class="col-6">
-          <h3 class="h6-size project-h">Initial Statement 2</h3>
-          <ol class="no-format-list">
-            <li>People prefer to buy pets over adopting them.</li>
-            <li><strong>Why?</strong></li>
-            <li>People do not generally consider that pet adoption is an available option.</li>
-            <li><strong>Why?</strong></li>
-            <li>Adoption isn´t considered an option because accessing the information is inconvenient.</li>
-            <li><strong>Why?</strong></li>
-            <li>The information is poorly organised and getting to it puts people off from continuing the process.</li>
-            <li><strong>Why?</strong></li>
-            <li>People tend to quit the process because it is much more convenient to find the local pet store.</li>
-          </ol>
-
-          <h2 class="project-h h5-size">Problem Statement 2</h2>
-          <p>
-            Local pet stores are easier and quicker to deal than animal shelters.
-          </p>
-
-          <a href="#img15"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\problem_2.jpg" title="Problem Statement 2" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 2">
-          </a>
-
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img15">
-            <img src="assets\beta\problem_2.jpg" title="Problem Statement 2" alt="Post-It Notes Addressing Issues Associated with the Design Problem Statement 2">
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="container section-gap">
-      <div class="row img-margin-bottom">
-        <div class="col-12">
-          <h2 class="project-h">Design</h2>
-          <h3 class="project-h-3">Site Map</h3>
-          <p>
-            A new site map was drawn up that would better suit BETA's needs.
-            The site map grew horizontally rather than vertically, but the
-            information is now easier to access.
-          </p>
-          <p>
-            I suggested adding a "Pet Manual" page because research indicated
-            potential pet owners were less likely to adopt because they were
-            worried they lacked experience or guidance. This would help users
-            feel supported, and more likely to adopt.
-          </p>
-
-          <a href="#img16"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\sitemap_2.jpg" title="Proposed Site Map" alt="Site Map for the new BETA UX Proposal showing clear user flows">
-          </a>
-
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img16">
-            <img src="assets\beta\sitemap_2.jpg" title="Proposed Site Map" alt="Site Map for the new BETA UX Proposal showing clear user flows">
-          </a>
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Wireframes</h3>
-          <p>
-            One of the key constraints I've set aside for this project is the
-            attempt to make do without a hamburger menu. The biggest issue is
-            that there's a fair amount of menu items, and so a menu button was
-            necessary to avoid needless clutter.
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 img-margin-bottom">
-          <a href="#img17"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\prototype_1.jpg" title="Wireframe Sketches" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase">
-          </a>
-
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img17">
-            <img src="assets\beta\prototype_1.jpg" title="Wireframe Sketches" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
-          </a>
-        </div>
-        <div class="col-4 img-margin-bottom">
-          <a href="#img18"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\prototype_2.jpg" title="Wireframe Sketches 2" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img18">
-            <img src="assets\beta\prototype_2.jpg" title="Wireframe Sketches 2" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
-          </a>
-        </div>
-        <div class="col-4 img-margin-bottom">
-          <a href="#img19"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\prototype_3.jpg" title="Wireframe Sketches 3" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase">
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img19">
-            <img src="assets\beta\prototype_3.jpg" title="Wireframe Sketches 3" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <p>
-            The compromise then was to study which pages needed to be
-            prioritised, and which were secondary pages. The homepage also
-            takes on a menu-styled layout that allows quick access to the
-            pages the websites offer, with the only exception being the
-            topmost segment which acts as a hub for critical issues that
-            requires community mobilisation.
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="project-h">Prototype</h3>
-        </div>
-      </div>
-
-      <!--Stills -->
-      <div class="row">
-        <div class="col-12">
-          <h4 class="h5-size project-h">News and Homepage</h4>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="col-4 img-margin-bottom">
-          <div class="center">
-
-            <video class="proto-vid-1" controls loop><source src="assets\beta\Beta_E.mp4" type="video/mp4"  title="News">
-            </video>
-          </div>
-
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img20"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_11.jpg" title="Homepage Still" alt="Screenshot Still of the Homepage"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img20">
-            <img src="assets\beta\fin_11.jpg"  title="Homepage Still" alt="Screenshot Still of the Homepage's User Interface or UI"/>
-          </a>
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img21"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_13.jpg" title="Footer" alt="Screenshot Still of the Footer of the BETA Project UX/UI"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img21">
-            <img src="assets\beta\fin_13.jpg"  title="Footer" alt="Screenshot Still of the Footer of the BETA Project UX/UI"/>
-          </a>
-        </div>
-
-      </div>
-
-      <!--Dashboard -->
-      <div class="row">
-        <div class="col-12">
-          <h5 class="project-h">Dashboard</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 img-margin-bottom">
-          <div class="center">
-            <video class="proto-vid-1" controls><source src="assets\beta\Beta_B.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the menu and account dashboard">
-            </video>
-          </div>
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img22"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_03.jpg" title=" Menu Sign In" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img22">
-            <img src="assets\beta\fin_03.jpg"  title=" Menu Sign In" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
-          </a>
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img23"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_04.jpg" title="Signed In Dashboard" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img23">
-            <img src="assets\beta\fin_04.jpg"/>
-          </a>
-        </div>
-
-      </div>
-
-      <!--Contact -->
-      <div class="row">
-        <div class="col-12">
-          <h5 class="project-h">Contact</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 img-margin-bottom">
-          <div class="center">
-            <video class="proto-vid-1" controls><source src="assets\beta\Beta_A.mp4" type="video/mp4" alt="Video demonstration of the UX Design for the Menu item select, contact page, and form filling sequence">
-            </video>
-          </div>
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img24"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_01.jpg" title="Contact Us" alt="Screenshot of the UI Design for the Contact Us page Sequence"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img24">
-            <img src="assets\beta\fin_01.jpg"  title="Contact Us" alt="Screenshot of the UI Design for the Contact Us page Sequence"/>
-          </a>
-        </div>
-
-        <div class="col-4 img-margin-bottom">
-          <a href="#img25"  id="portfolio_item">
-            <img class="img-fluid" src="assets\beta\fin_02.jpg" title="Contact Us Form" alt="Screeshot of the UI Design for the Contact Us form"/>
-          </a>
-          <!-- lightbox container hidden with CSS -->
-          <a href="#_" class="lightbox" id="img25">
-            <img src="assets\beta\fin_02.jpg"  title="Contact Us Form" alt="Screeshot of the UI Design for the Contact Us form"/>
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <section class="container-fluid background section-gap-precise section-top-margin">
-      <div class="container row">
-        <div class="col-12">
-          <h2>Final Thoughts</h2>
-          <p>
-            When we design solutions we're usually really ecstatic about having
-            solved a problem but we need to make sure that our solutions aren't
-            replacing one problem with another. In the case of pet adoption, we
-            tend to forget that the pets are our users as well. Granted they
-            can't use the application, but at the end of the day, the decisions
-            made within the app will affect the rest of their lives.
-          </p>
-          <p>
-            Experience design shines when it is allowed to address both the
-            primary users and the secondary users or users that are directly or
-            indirectly affected by the actions taken by the primary users.
-            Taking into consideration all possible users will ensure that the
-            application will have a net positive contribution to society rather
-            than a negative impact.
-          </p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <!--Project navigation-->
-  <section class="proj-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-
-          <a href="mybank.html">
-            <span class="project-prev">
-
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 12">
-                <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.49,11.481a.736.736,0,0,1,.007,1.15L11.07,16.437H27.941a.821.821,0,1,1,0,1.625H11.07L15.5,21.868a.741.741,0,0,1-.007,1.15,1.059,1.059,0,0,1-1.335-.006l-6.01-5.187h0a.915.915,0,0,1-.2-.256.681.681,0,0,1-.073-.312.758.758,0,0,1,.27-.569l6.01-5.187A1.041,1.041,0,0,1,15.49,11.481Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-              Neobanking Concept
-            </span>
-          </a>
-
-          <a href="mentality.html">
-            <span class="project-next">
-              MENtality
-              <svg class="proj-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 12">
-                <path  d="M21.274,23.022a.736.736,0,0,1-.007-1.15l4.428-3.806H8.823a.821.821,0,1,1,0-1.625H25.694L21.26,12.635a.741.741,0,0,1,.007-1.15,1.059,1.059,0,0,1,1.335.006l6.01,5.187h0a.915.915,0,0,1,.2.256.681.681,0,0,1,.073.312.758.758,0,0,1-.27.569L22.6,23A1.041,1.041,0,0,1,21.274,23.022Z" transform="translate(-7.882 -11.252)"/>
-              </svg>
-
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!--Category navigation-->
-    <section class="x-section">
-      <div class="x-row">
-        <a href="physical.html">
-          <div class="x-item">
-            <div class="x-img-src"></div>
-            <div class="x-txt">
-              <h3>Physical</h3>
-              <p class="text_small">
-                Exploring how experience design manifests within the physical
-                world primarily in the form of architecture.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <a href="intersection.html">
-          <div class="x-item">
-            <div class="x-img-src-2"></div>
-            <div class="x-txt">
-              <h3>Intersection</h3>
-              <p class="text_small">
-                Exploring experience design at the crossroads between the digital
-                and the physical world, as well as mixed reality (MR) experiences.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <a href="digital.html">
-          <div class="x-item">
-            <div class="x-img-src-3"></div>
-            <div class="x-txt">
-              <h3>Digital</h3>
-              <p class="text_small">
-                Exploring how user experience design is typically understood,
-                and how visual communication affects perception.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-  <footer>
-    <section class="container">
-      <div class="footer-col-moe">
-        <span class="footer-h6">
-          Moe Hachem
-        </span>
-        <p class="text_small">
-          Creating digital, physical, and mixed user experiences for humans, mostly.
-        </p>
-      </div>
-
-      <div class="footer-row">
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a>Work</a></li>
-            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
-            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
-            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="footer-col-5">
-        <a href="contact.html" class="footer-social-icon">
-          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
-        </a>
-        <a href="https://www.linkedin.com/in/mohamadhachem/">
-          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="container">
-      <div class="footer-trademark">
-        <div class="footer-row">
+      <section class="container section-gap">
+        <div class="row img-margin-bottom">
           <div class="col-12">
-            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
+            <h2 class="project-h">Design</h2>
+            <h3 class="project-h-3">Site Map</h3>
+            <p>
+              A new site map was drawn up that would better suit BETA's needs.
+              The site map grew horizontally rather than vertically, but the
+              information is now easier to access.
+            </p>
+            <p>
+              I suggested adding a "Pet Manual" page because research indicated
+              potential pet owners were less likely to adopt because they were
+              worried they lacked experience or guidance. This would help users
+              feel supported, and more likely to adopt.
+            </p>
+
+            <a href="#img16"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\sitemap_2.jpg" title="Proposed Site Map" alt="Site Map for the new BETA UX Proposal showing clear user flows">
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img16">
+              <img src="assets\beta\sitemap_2.jpg" title="Proposed Site Map" alt="Site Map for the new BETA UX Proposal showing clear user flows">
+            </a>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Wireframes</h3>
+            <p>
+              One of the key constraints I've set aside for this project is the
+              attempt to make do without a hamburger menu. The biggest issue is
+              that there's a fair amount of menu items, and so a menu button was
+              necessary to avoid needless clutter.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 img-margin-bottom">
+            <a href="#img17"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\prototype_1.jpg" title="Wireframe Sketches" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase">
+            </a>
+
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img17">
+              <img src="assets\beta\prototype_1.jpg" title="Wireframe Sketches" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
+            </a>
+          </div>
+          <div class="col-4 img-margin-bottom">
+            <a href="#img18"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\prototype_2.jpg" title="Wireframe Sketches 2" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img18">
+              <img src="assets\beta\prototype_2.jpg" title="Wireframe Sketches 2" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
+            </a>
+          </div>
+          <div class="col-4 img-margin-bottom">
+            <a href="#img19"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\prototype_3.jpg" title="Wireframe Sketches 3" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase">
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img19">
+              <img src="assets\beta\prototype_3.jpg" title="Wireframe Sketches 3" alt="A series of preliminary wireframes drawn by hand that were part of the UX design development phase"/>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>
+              The compromise then was to study which pages needed to be
+              prioritised, and which were secondary pages. The homepage also
+              takes on a menu-styled layout that allows quick access to the
+              pages the websites offer, with the only exception being the
+              topmost segment which acts as a hub for critical issues that
+              requires community mobilisation.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h3 class="project-h">Prototype</h3>
+          </div>
+        </div>
+
+        <!--Stills -->
+        <div class="row">
+          <div class="col-12">
+            <h4 class="h5-size project-h">News and Homepage</h4>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-4 img-margin-bottom">
+            <div class="center">
+
+              <video class="proto-vid-1" controls loop><source src="assets\beta\Beta_E.mp4" type="video/mp4"  title="News">
+              </video>
+            </div>
+
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img20"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_11.jpg" title="Homepage Still" alt="Screenshot Still of the Homepage"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img20">
+              <img src="assets\beta\fin_11.jpg"  title="Homepage Still" alt="Screenshot Still of the Homepage's User Interface or UI"/>
+            </a>
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img21"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_13.jpg" title="Footer" alt="Screenshot Still of the Footer of the BETA Project UX/UI"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img21">
+              <img src="assets\beta\fin_13.jpg"  title="Footer" alt="Screenshot Still of the Footer of the BETA Project UX/UI"/>
+            </a>
           </div>
 
         </div>
-      </div>
-    </section>
-  </footer>
-</body>
-</html>
+
+        <!--Dashboard -->
+        <div class="row">
+          <div class="col-12">
+            <h5 class="project-h">Dashboard</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 img-margin-bottom">
+            <div class="center">
+              <video class="proto-vid-1" controls><source src="assets\beta\Beta_B.mp4" type="video/mp4" alt="Video demonstration of the UX and UI of the menu and account dashboard">
+              </video>
+            </div>
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img22"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_03.jpg" title=" Menu Sign In" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img22">
+              <img src="assets\beta\fin_03.jpg"  title=" Menu Sign In" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
+            </a>
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img23"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_04.jpg" title="Signed In Dashboard" alt="Screenshot of the UI Design for the Account Dashboard's Sign In Sequence"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img23">
+              <img src="assets\beta\fin_04.jpg"/>
+            </a>
+          </div>
+
+        </div>
+
+        <!--Contact -->
+        <div class="row">
+          <div class="col-12">
+            <h5 class="project-h">Contact</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 img-margin-bottom">
+            <div class="center">
+              <video class="proto-vid-1" controls><source src="assets\beta\Beta_A.mp4" type="video/mp4" alt="Video demonstration of the UX Design for the Menu item select, contact page, and form filling sequence">
+              </video>
+            </div>
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img24"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_01.jpg" title="Contact Us" alt="Screenshot of the UI Design for the Contact Us page Sequence"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img24">
+              <img src="assets\beta\fin_01.jpg"  title="Contact Us" alt="Screenshot of the UI Design for the Contact Us page Sequence"/>
+            </a>
+          </div>
+
+          <div class="col-4 img-margin-bottom">
+            <a href="#img25"  id="portfolio_item">
+              <img class="img-fluid" src="assets\beta\fin_02.jpg" title="Contact Us Form" alt="Screeshot of the UI Design for the Contact Us form"/>
+            </a>
+            <!-- lightbox container hidden with CSS -->
+            <a href="#_" class="lightbox" id="img25">
+              <img src="assets\beta\fin_02.jpg"  title="Contact Us Form" alt="Screeshot of the UI Design for the Contact Us form"/>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="container-fluid background section-gap-precise section-top-margin">
+        <div class="container row">
+          <div class="col-12">
+            <h2>Final Thoughts</h2>
+            <p>
+              When we design solutions we're usually really ecstatic about having
+              solved a problem but we need to make sure that our solutions aren't
+              replacing one problem with another. In the case of pet adoption, we
+              tend to forget that the pets are our users as well. Granted they
+              can't use the application, but at the end of the day, the decisions
+              made within the app will affect the rest of their lives.
+            </p>
+            <p>
+              Experience design shines when it is allowed to address both the
+              primary users and the secondary users or users that are directly or
+              indirectly affected by the actions taken by the primary users.
+              Taking into consideration all possible users will ensure that the
+              application will have a net positive contribution to society rather
+              than a negative impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer data-include="footer"></footer>
+
+
+  </body>
+  </html>

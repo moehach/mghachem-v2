@@ -13,51 +13,18 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
   <link href="simple-grid.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143942963-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143942963-2');
-  </script>
-
-
-  <script type="text/javascript">
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-
-  </script>
+  <script src="main.js"></script>
 </head>
 
 
 
 <body>
 
-  <nav role="navigation" class="navbar">
-
-    <a class="logotype" href="home.html">
-      m.g. hachem
-    </a>
-    <div class="menuToggle">
-      <input class="burger-box" aria-label="Menu" type="checkbox"/>
-      <span></span>
-      <span></span>
-      <ul id="menu" class="nav-menu">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="work.html">Work</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <li class="nav-item"><a href="https://www.theblog.mghachem.com/">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!--Header-->
+  <div data-include="header"></div>
 
 
 
@@ -349,150 +316,29 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
 
     <!--Featured Articles-->
     <section class="container">
-      <div class="row">
+      <div class="row section-gap">
         <div class="col-12">
-          <h2>Featured Posts</h2>
-        </div>
-      </div>
-
-      <div class="row blog-container project-margin-bottom">
-
-          <div class="blog-featured">
-            <a href="https://theblog.mghachem.com/the-m-blog-introduction/">
-            <img class="blog-image" src="assets\about\blog1.jpg" alt="Link to The Moe Blog introduction post"/>
-            <span class="blog-article-tag">About</span>
-            <p class="blog-article">An Introduction</p>
-            <p class="blog-article-description">
-              The M Blog is an online resource created to help all aspiring
-              and professional designers/architects in their design journey by
-              providing insight, and anecdotes.
-            </p>
-          </a>
-          </div>
-
-          <div class="blog-featured">
-            <a href="https://www.theblog.mghachem.com/who-is-mg-hachem/">
-            <img class="blog-image" src="assets\about\blog2.jpg" alt="Link to the Who is Moe? Blog Post"/>
-            <span class="blog-article-tag">About</span>
-            <p class="blog-article">Who's Moe?</p>
-            <p class="blog-article-description">
-              I am a Lebanese designer and grew up in many different countries
-              and amongst very different cultures. I’m what you might call a
-              third culture kid.
-            </p>
-          </a>
-          </div>
-
-          <div class="blog-featured">
-            <a href="https://www.theblog.mghachem.com/what-is-experience-design/">
-            <img class="blog-image" src="assets\about\blog3.jpg" title="What is Experience Design Post" alt="Link to the What is experience design? Blog Post"/>
-            <span class="blog-article-tag">Philosophy</span>
-            <p class="blog-article">What is Experence Design?</p>
-            <p class="blog-article-description">
-              It is tempting to break up and package (user) experience design into smaller
-              subcategories to limit their scope, but is that truly reflective of how we
-              experience the world?
-            </p>
-          </a>
-          </div>
-      </div>
-    </section>
-
-    <section class="background-color">
-      <div class="container">
-        <div class="heromode">
-
-          <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-              <h2>Reachout</h2>
-
-              <p>
-                Reach out, and we can talk about work, design, philosophy, or
-                grab a cup of coffee, I'll be more than happy to get back to
-                you.
-              </p>
-              <div class="form-container">
-                <form id="my-form" name="contact" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="contact">
-
-                  <label for="name">Your Name (required)
-                    <input type="text" name="name" placeholder="" label="name" required>
-                  </label>
-                  <label for="email">Your Email (required)
-                    <input type="text" name="email" placeholder="" label="email" required>
-                  </label>
-                  <label for="message">Your Message (required)
-                    <textarea name="message" placeholder="What's on your mind?" required></textarea>
-                  </label>
-                  <input type="submit" value="Send It!">
-
-                </form>
-              </div>
-            </div>
-            <div class="col-3"></div>
-          </div>
+          <h2 class=project-h-3>Reading List</h2>
+          <p>
+            I've compiled a list of books I've read that benefited me. I highly
+            recommend the books in this list to anyone interested in
+            professional development, user experience, design, and
+            entrepreneurship.
+          </p>
+          <a class="education-p link-symbol" rel="noopener" href="https://www.coursera.org/account/accomplishments/specialization/certificate/5LY8GADRL53D">View recommended reading list <span class="material-symbols-outlined">arrow_forward</span></a>
         </div>
       </div>
     </section>
+
+    <!--Contact-->
+    <div data-include="contact-form"></div>
+
+
 
 
   </main>
+  <!--FOOTER-->
+  <footer data-include="footer"></footer>
 
-
-  <footer>
-    <section class="container">
-      <div class="footer-col-moe">
-        <span class="footer-h6">
-          Moe Hachem
-        </span>
-        <p class="text_small">
-          Creating digital, physical, and mixed user experiences for humans, mostly.
-        </p>
-      </div>
-
-      <div class="footer-row">
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://www.blog.mghachem.com/">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col-2">
-          <ul class="footer-link-menu">
-            <li><a>Work</a></li>
-            <li><a href="physical.html" class="footer-link-sub">Physical</a></li>
-            <li><a href="intersection.html" class="footer-link-sub">Intersection</a></li>
-            <li><a href="digital.html" class="footer-link-sub">Digital</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="footer-col-5">
-        <a href="contact.html" class="footer-social-icon">
-          <img class="footer-social-icon" alt="Email icon, tap this to proceed to the contact form" src="assets\social-sharing\email.svg"/>
-        </a>
-        <a href="https://www.linkedin.com/in/mohamadhachem/">
-          <img class="footer-social-icon"  alt="Linkedin icon, tap this to proceed to my LinkedIn page" src="assets\social-sharing\linked-in.svg"/>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="container">
-      <div class="footer-trademark">
-        <div class="footer-row">
-          <div class="col-12">
-            <p class="caption">Designed and developed by Moe Hachem. 2020.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </footer>
 </body>
 </html>
