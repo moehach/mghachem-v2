@@ -117,13 +117,11 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
             technology and design to create solutions for the different
             challenges we face.
           </p>
-          <a class="link-symbol" rel="noopener" href="b-side.html">View B-Side projects <span class="material-symbols-outlined">arrow_forward</span></a>
+          <a class="link-symbol" rel="noopener" href="other-projects.html">View Other Projects <span class="material-symbols-outlined">arrow_forward</span></a>
 
         </div>
       </div>
     </section>
-    <!-- Contact Soon-->
-
 
     <!--Contact-->
     <div data-include="contact-form"></div>
@@ -133,45 +131,5 @@ User Interface, UI, UI/UX, UX/UI, UIUX, UXUI, Interface, User, Experience Design
 
   <footer data-include="footer"></footer>
 
-  <!--
-  <script type="text/javascript">
-  // If a filter is activated, with click event
-  $(".filter").on("click", function () {
-
-    // if we click the active tab nothing happens
-    var $this = $(this);
-    //set an active filter
-
-    if ( !$this.hasClass("filteractive") ) {
-      $(".filter").removeClass("filteractive");
-      $this.addClass("filteractive");
-
-
-      // Here we get the data-category value from selected button, and set it as a filter
-      var $filter = $this.data("category");
-
-      // if we select show all, return to initial settings and show all
-
-      $filter == 'all' ?
-      $(".work-item")
-      .attr("data-image-filter", "gallery")
-      .not(":visible")
-      .fadeIn()
-      : // or otherwise
-      $(".work-item")
-      .fadeOut(0)
-      .filter(function () {
-        // Set data-filter value to the data-category value of selected filter
-        return ($(this).data("filter").indexOf($filter) > -1);
-
-      })
-      // Set data-image-filter, and filter elements
-      .attr("data-image-filter", $filter)
-      .fadeIn(1000);
-    }
-  });
-
-  </script>
--->
 </body>
 </html>
