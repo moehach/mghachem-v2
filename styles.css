@@ -980,7 +980,7 @@ background-color: #F4B3C4;
 }
 
 .work-container.homepage{
-  width: 100%;
+  max-width: 60em;
 }
 
 .work-grid{
