@@ -24,7 +24,7 @@ html {
 body {
   background-color: var(--white);
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.25;
   color: var(--black);
 }
@@ -50,7 +50,7 @@ p {margin-bottom: 1.25rem;}
 h1, h2, h3, h4 {
   margin: 36px 0 1.125rem 0;
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -82,19 +82,15 @@ h6 {font-size: 1.125rem;}
 
 .h4-size{
   font-size: 1.758125rem;
-  font-weight: 600;
 }
 
 .h5-size{
   font-size: 1.40625rem;
-  font-weight: 600;
 }
 
 .h6-size{
   font-size: 1.125rem;
-  font-weight: 600;
 }
-
 .caption{font-weight:600;}
 
 pre.code {
@@ -163,6 +159,9 @@ strong {
 }
 
 small, .text_small {font-size: 0.9rem;}
+
+.font-400{font-weight:400;}
+.font-700{font-weight:700;}
 
 
 figcaption, caption, label, .caption {font-size:0.72rem;}
@@ -484,7 +483,45 @@ li.nav-active{
   transition: color 450ms linear;
 }
 
+
+/*Margins*/
+
+
+.m-72{
+  margin-top:72px;
+  margin-bottom:72px;
+}
+
+.m-32{
+  margin-top:32px;
+  margin-bottom:32px;
+}
+
+.m-64{
+  margin-top:64px;
+  margin-bottom:64px;
+}
+.m-t-0{
+  margin-top:0;
+}
+.m-t-8{
+  margin-top: 8px;
+}
+
+.m-b-16{
+  margin-bottom:16px;
+}
+
+/*PAdding*/
+.p-64{
+  padding-top:64px;
+  padding-bottom:64px;
+}
+
+
 /*Hero*/
+
+
 
 .background{
   background-color: var(--silver);
@@ -615,7 +652,6 @@ li.nav-active{
 
 
 /*Project Space*/
-
 .project-lead{
   margin:72px 0;
 }
@@ -678,8 +714,6 @@ li.nav-active{
 }
 
 
-
-
 .img-contain{
   width: 20%;
   object-fit: cover;
@@ -702,7 +736,6 @@ figcaption.img-caption{
   margin-top: 9px;
   text-align: center;
 }
-
 
 
 .img-fix{
@@ -909,6 +942,12 @@ figcaption.img-caption{
   }
 
 }
+
+
+/*Colours*/
+.clr-hotpink{color:  var(--hotPink);
+}
+
 
 /*Table*/
 
@@ -1901,7 +1940,10 @@ input[type=submit]:disabled{
 
 }
 
-
+/*Height*/
+.h-64{
+  height:64px;
+}
 /*Experience*/
 
 .experience-container{
